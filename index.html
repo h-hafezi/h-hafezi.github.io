@@ -32,13 +32,12 @@
         .profile-picture {
             max-width: 300px;
             border-radius: 50%;
-            margin-right: 0; /* Removed the margin-right */
+            margin-right: 0; /* Adjusted */
         }
 
         .title {
             text-align: left;
             color: #f8f8f8;
-
         }
 
         h1 {
@@ -46,15 +45,12 @@
             text-align: left;
             margin-bottom: -10px;
             color: #f8f8f8;
-
-
         }
 
         p {
             font-size: 18px;
             margin-right: 20px;
             color: #f8f8f8;
-
         }
 
         section {
@@ -65,7 +61,6 @@
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             color: #f8f8f8;
-
         }
 
         h2 {
@@ -79,14 +74,42 @@
             padding: 0;
             margin: 0;
             color: #f8f8f8;
-
         }
 
         li {
             font-size: 16px;
             margin-bottom: 8px;
             color: #f8f8f8;
+        }
 
+        @media only screen and (max-width: 600px) {
+            body, header, section {
+                padding: 10px;
+                margin: 0;
+                max-width: 100%;
+            }
+
+            .profile-picture img {
+                width: 90%;
+                height: auto;
+            }
+
+            header {
+                flex-direction: column;
+            }
+
+            .title h1 {
+                font-size: 24px;
+            }
+
+            .title p, section p, li {
+                font-size: 14px;
+                margin-right: 0;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
@@ -95,7 +118,7 @@
 
     <header>
         <div class="profile-picture">
-            <img src="profile.jpg" alt="Profile Picture" style="width: 270px;height: auto;">
+            <img src="profile.jpg" alt="Profile Picture" style="width: 270px; height: auto;">
         </div>
         <div class="title">
             <h1>Hossein Hafezi</h1>
@@ -105,10 +128,10 @@
 
     <section>
         <h2>About Me</h2>
-        <p>I'm a senior undergraduate student at Sharif University of Technology in Tehran, majoring in Mathematics and Applications. I've had the privilege of completing research internships under supervision of Prof Bryan Ford at EPFL, Prof Ian Miers at University of Maryland, and Prof Ghassan Karame at Ruhr University of Bochum. 
+        <p>I'm a senior undergraduate student at Sharif University of Technology in Tehran, majoring in Mathematics and Applications. I've had the privilege of completing research internships under the supervision of Prof Bryan Ford at EPFL, Prof Ian Miers at the University of Maryland, and Prof Ghassan Karame at Ruhr University of Bochum. 
 
             <br><br>
-            My research interests are broad but mostly building secure platforms using novel cryptographic primitives, especially SNARKs. Presently, I'm working with Prof Ian Miers (UMD) and Prof Pratyush Mishra (UPenn) working on scalibality of SNARKs and a novel mechanism for a verifiable CPU.
+            My research interests are broad but mostly focus on building secure platforms using novel cryptographic primitives, especially SNARKs. Currently, I'm working with Prof Ian Miers (UMD) and Prof Pratyush Mishra (UPenn) working on scalability of SNARKs and a novel mechanism for a verifiable CPU.
         </p>
     </section>
     <section>
@@ -116,10 +139,9 @@
         <ul>
             <li>They are about to come!</li>
         </ul>
-    </section> 
-    
+</section>
 
-    <section>
+     <section>
         <h2>Contact</h2>
         <p>Email: contact@hosseinhafezi.com</p>
     </section>
