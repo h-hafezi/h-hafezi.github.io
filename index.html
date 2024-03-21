@@ -12,37 +12,18 @@
             max-width: 800px;
             padding: 20px;
             box-sizing: border-box;
-            background: linear-gradient(to bottom, #97e5ea, #140845);
+            background: #ffffff; /* Changed to white */
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(10, 0, 74, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adjusted shadow color */
         }
 
-        nav {
-            background: #013b79;
-            padding: 10px 0;
-            border-radius: 10px 10px 0 0;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            font-size: 18px;
-        }
-
-        nav a:hover {
-            background-color: #000000;
-            border-radius: 5px;
-        }
-
-        /* Existing Styles Unchanged Below */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px;
-            background: linear-gradient(to bottom, #000000, #013b79);
-            color: #fff;
+            background: #ffffff; /* Changed to white */
+            color: #000000; /* Changed to black */
             border-radius: 10px;
             margin-bottom: 20px;
         }
@@ -55,21 +36,80 @@
 
         .title {
             text-align: left;
-            color: #f8f8f8;
+            color: #000000; /* Changed to black */
         }
 
-        h1, p, li, section, h2, ul {
-            text-align: justify;
+        h1, p, li {
             font-size: 18px;
-            color: #f8f8f8;
+            margin-right: 20px;
+            color: #000000; /* Changed to black */
+            text-align: justify;
+        }
+
+        section {
+            margin-bottom: 20px;
+            text-align: left;
+            background: #ffffff; /* Changed to white */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adjusted shadow color */
+            color: #000000; /* Changed to black */
+        }
+
+        h2 {
+            color: #000000; /* Changed to black */
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            color: #000000; /* Changed to black */
+        }
+
+        li {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #000000; /* Changed to black */
         }
 
         @media only screen and (max-width: 600px) {
-            /* Media Query Adjustments Unchanged */
+            body, header, section {
+                padding: 10px;
+                margin: 0;
+                max-width: 100%;
+            }
+
+            .profile-picture img {
+                width: 90%;
+                height: auto;
+            }
+
+            header {
+                flex-direction: column;
+                margin-bottom: 30px;
+            }
+
+            .title h1, .title p, section p, li, h2 {
+                font-size: 14px;
+            }
+
+            section {
+                margin-bottom: 30px;
+            }
+        }
+
+        /* Adjustments for icons to black */
+        .icon-link img {
+            filter: grayscale(100%) brightness(0);
         }
     </style>
 </head>
-<body>
+    
+    
+    <body>
     <!-- Navigation Menu -->
     <nav>
         <a href="#part-one">Part One</a>
