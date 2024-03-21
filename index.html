@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hossein Hafezi</title>
     <style>
@@ -21,17 +21,16 @@
         nav {
             text-align: center;
             margin-bottom: 20px;
-            border: 2px solid black; /* Match the border style of the body */
-            padding: 10px 0; /* Add some padding inside the nav bar */
-            border-radius: 5px; /* Optional: added for consistent styling */
-
+            border: 2px solid black; 
+            padding: 10px 0; 
+            border-radius: 5px; 
         }
 
         nav a {
             margin: 0 10px;
             color: black;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 18px; /* Default font size */
             padding: 5px 10px;
         }
 
@@ -39,17 +38,16 @@
             text-decoration: underline;
         }
 
-
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px;
-            background: #FFFFFF; /* Set background to white */
-            color: black; /* Text color to black */
+            background: #FFFFFF; 
+            color: black;
             border-radius: 10px;
             margin-bottom: 20px;
-            border-bottom: 2px solid #FFFFFF; /* Making the header border white */
+            border-bottom: 2px solid #FFFFFF;
         }
 
         .profile-picture {
@@ -60,29 +58,29 @@
 
         .title {
             text-align: left;
-            color: black; /* Text color to black */
+            color: black; 
         }
 
         h1, p, li {
             font-size: 18px;
             margin-right: 20px;
-            color: black; /* Text color to black */
-            text-align: justify; /* Justify text for paragraphs and list items */
+            color: black;
+            text-align: justify;
         }
 
         section {
             margin-bottom: 20px;
             text-align: left;
-            background: #FFFFFF; /* Set background to white */
+            background: #FFFFFF; 
             border-radius: 10px;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Consistent shadow for depth */
-            color: black; /* Text color to black */
-            border: 2px solid black; /* Thicker black border for definition */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            color: black;
+            border: 2px solid black;
         }
 
         h2 {
-            color: black; /* Text color to black */
+            color: black; 
             font-size: 24px;
             margin-bottom: 10px;
         }
@@ -91,15 +89,16 @@
             list-style-type: none;
             padding: 0;
             margin: 0;
-            color: black; /* Text color to black */
+            color: black;
         }
 
         li {
             font-size: 16px;
             margin-bottom: 8px;
-            color: black; /* Text color to black */
+            color: black; 
         }
 
+        /* Adjustments for mobile devices */
         @media only screen and (max-width: 600px) {
             body, header, section {
                 padding: 10px;
@@ -121,13 +120,25 @@
                 font-size: 14px;
             }
 
+            nav a {
+                font-size: 16px; /* Smaller font size for navigation links */
+            }
+
             section {
                 margin-bottom: 30px;
             }
         }
+
+        /* Adjustments for laptops and larger screens */
+        @media only screen and (min-width: 1024px) {
+            .title h1 {
+                font-size: 48px; /* Increased font size for the title */
+            }
+        }
     </style>
-</head>        
-    <body>
+</head>  
+        
+        <body>
 
     <!-- Navigation Bar -->
     <nav>
