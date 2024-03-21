@@ -18,6 +18,22 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
+          /* Centering the image container */
+          .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Make the container fill the screen */
+          }
+        
+          /* Specifying the size of the image */
+          .centered-image {
+            width: 300px; /* Your specific width */
+            height: 200px; /* Your specific height */
+            object-fit: contain; /* This ensures the image maintains its aspect ratio */
+          }
+        
+
         .row {
             display: flex;
             justify-content: space-around; /* Adjusts the spacing between the images */
@@ -258,9 +274,25 @@ As for my go-to TV shows, picking favorites is tough 'cause there's just so much
     </p> 
 <ul style="list-style-type: disc; margin-left: 0;">
   <li style="margin-left: 20px;">24 – Caught this when I was just 12, and it's all about Jack Bauer being a total hero for his country. Though, I've got to be honest, I'm not cool with how it kinda throws shade at Muslims, Russians, and Chinese. Still love it, though.</li>
+    <div class="image-container">
+  <img src="photos/24.jpg" alt="Descriptive text of the image" class="centered-image">
+</div>
+
   <li style="margin-left: 20px;">Modern Family – The humour in this show really has its own unique and distinct flavour. </li>
-  <li style="margin-left: 20px;">How I Met Your Mother – Well Barney Stinson is not something I wanna miss. </li>
-  <li style="margin-left: 20px;">Gilmore Girls – Never got to live through the '90s and '00s, but something about those times feels just right. Watching this show kinda takes me back, and it's hard to put into words how awesome that feels.</li>
+      <div class="image-container">
+  <img src="photos/modern family.webp" alt="Descriptive text of the image" class="centered-image">
+</div>
+
+    <li style="margin-left: 20px;">How I Met Your Mother – Well Barney Stinson is not something I wanna miss. </li>
+      <div class="image-container">
+  <img src="photos/himym.jpg" alt="Descriptive text of the image" class="centered-image">
+</div>
+<li style="margin-left: 20px;">Gilmore Girls – Never got to live through the '90s and '00s, but something about those times feels just right. Watching this show kinda takes me back, and it's hard to put into words how awesome that feels.</li>
+      <div class="image-container">
+  <img src="photos/gilmore.jpg" alt="Descriptive text of the image" class="centered-image">
+</div>
+
+
 </ul>
             </section>
             
