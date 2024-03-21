@@ -18,6 +18,23 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
+        .row {
+            display: flex;
+            justify-content: space-around; /* Adjusts the spacing between the images */
+            align-items: center; /* Aligns items vertically */
+        }
+        
+        .column {
+            flex: 1; /* Ensures each column takes equal width */
+            padding: 10px; /* Optional: adds some space around the images */
+        }
+        
+        .column img {
+            width: 100%; /* Makes the image fill the column width */
+            height: auto; /* Keeps the image aspect ratio */
+        }
+
+
         .highlighted {
             background-color: black; /* Background color for highlight */
             color: white; /* Text color for highlight */
@@ -172,6 +189,18 @@
   <li style="margin-left: 20px;">🇨🇭 Switzerland – Spent four awesome months in Lausanne from July to October in 2022. Ended up making friends from over 20 different countries! Did a bunch of hiking and checked out loads of gorgeous Swiss cities like Geneva, Zermatt, Kinderstagen, Zurich, Neuchâtel, etc. Also went around Europe a bit e.g. Austria, Italy and Germany. Totally would choose Switzerland for my honeymoon, no doubt about it.</li>
   <li style="margin-left: 20px;">🇩🇪 Germany – I lived in Bochum for 6 months from July to December 2023. It was a pretty chill time, mostly sticking to indoor stuff like hitting the gym and swimming. Totally obsessed with Unifit back then – that place was my paradise. Also took some trips to Paris, Munich, and Switzerland (again), plus hit up nearby cities like Dortmund, Düsseldorf, and Cologne while I was there.</li>
 </ul>
+            <div class="row">
+    <div class="column">
+        <img src="IMG_2978.JPEG" alt="Description of Image 1">
+    </div>
+    <div class="column">
+        <img src="IMG_2978.JPEG" alt="Description of Image 2">
+    </div>
+    <div class="column">
+        <img src="IMG_2978.JPEG" alt="Description of Image 3">
+    </div>
+</div>
+
             </section>
      
     <section>
