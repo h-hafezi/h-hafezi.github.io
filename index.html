@@ -26,13 +26,13 @@
             background: linear-gradient(to bottom, #000000, #013b79);
             color: #fff;
             border-radius: 10px 10px 0 0;
-            margin-bottom: 20px;
+            margin-bottom: 20px; /* Default margin for non-mobile devices */
         }
 
         .profile-picture {
             max-width: 300px;
             border-radius: 50%;
-            margin-right: 0; /* Adjusted */
+            margin-right: 0;
         }
 
         .title {
@@ -96,24 +96,15 @@
 
             header {
                 flex-direction: column;
+                margin-bottom: 30px; /* Increased margin for mobile devices */
             }
 
-            .title h1 {
-                font-size: 24px;
-            }
-
-            .title p, section p, li {
+            .title h1, .title p, section p, li, h2 {
                 font-size: 14px;
-                margin-right: 0;
             }
 
-            h2 {
-                font-size: 20px;
-            }
-
-            /* Increase spacing between sections on mobile */
             section {
-                margin-bottom: 30px; /* Adjusted for more space */
+                margin-bottom: 30px; /* Ensure consistency in spacing for mobile */
             }
         }
     </style>
