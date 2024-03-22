@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hossein Hafezi</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+            background: #FFFFFF;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+          /* Centering the image container */
+          .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        
+          /* Specifying the size of the image */
+          .centered-image {
+            width: 300px; /* Your specific width */
+            height: 200px; /* Your specific height */
+            object-fit: contain; /* This ensures the image maintains its aspect ratio */
+            margin-bottom: 20px;
+            margin-top: 20px;
+          }
+        
+
+        .row {
+            display: flex;
+            justify-content: space-around; /* Adjusts the spacing between the images */
+            align-items: center; /* Aligns items vertically */
+        }
+        
+        .column {
+            flex: 1; /* Ensures each column takes equal width */
+            padding: 10px; /* Optional: adds some space around the images */
+        }
+        
+        .column img {
+            width: 100%; /* Makes the image fill the column width */
+            height: auto; /* Keeps the image aspect ratio */
+        }
+
+
+        .highlighted {
+            background-color: black; /* Background color for highlight */
+            color: white; /* Text color for highlight */
+            border-radius: 5px; /* Rounded corners for highlight */
+            padding: 5px 10px; /* Padding for highlight */
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+            border: 2px solid black; 
+            padding: 10px 0; 
+            border-radius: 5px; 
+        }
+
+        nav a {
+            margin: 0 10px;
+            color: black;
+            text-decoration: none;
+            font-size: 18px; /* Default font size */
+            padding: 5px 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #FFFFFF; 
+            color: black;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #FFFFFF;
+        }
+
+        .profile-picture {
+            max-width: 300px;
+            border-radius: 50%;
+            margin-right: 0;
+        }
+
+        .title {
+            text-align: left;
+            color: black; 
+        }
+
+        h1, p, li {
+            font-size: 18px;
+            margin-right: 20px;
+            color: black;
+            text-align: justify;
+        }
+
+        section {
+            margin-bottom: 20px;
+            text-align: left;
+            background: #FFFFFF; 
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            color: black;
+            border: 2px solid black;
+        }
+
+        h2 {
+            color: black; 
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            color: black;
+        }
+
+        li {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: black; 
+        }
+
+        /* Adjustments for mobile devices */
+        @media only screen and (max-width: 600px) {
+            body, header, section {
+                padding: 10px;
+                margin: 0;
+                max-width: 100%;
+            }
+
+            .profile-picture img {
+                width: 90%;
+                height: auto;
+            }
+
+            header {
+                flex-direction: column;
+                margin-bottom: 30px;
+            }
+
+            .title p, section p, li, h2 {
+                font-size: 14px;
+            }
+
+            .title h1 {
+                font-size: calc(18px * 1.5); /* Increase font size by 50% */
+                margin-top: 20px; /* Add margin between the title and the photo */
+            }
+
+
+            nav a {
+                font-size: 8px; /* Smaller font size for navigation links */
+            }
+
+            section {
+                margin-bottom: 30px;
+            }
+        }
+
+        /* Adjustments for laptops and larger screens */
+        @media only screen and (min-width: 1024px) {
+            .title h1 {
+                font-size: 48px; /* Increased font size for the title */
+            }
+        }
+    </style>
+</head>  
+        
+        <body>
+
+    <!-- Navigation Bar -->
+     <nav>
+        <a href="index.html" >Academic Life</a> <!-- Highlighted link -->
+        <a href="personal-life.html">Personal Life</a>
+        <a href="blogs.html" class="highlighted">Blogs</a>
+    </nav>
+        <section>
+    <h2>Blogs</h2>
+    <p> 
+ No blogs yet! 
+    </p> 
+        </section>
+
+            
+            <!-- FOOTER -->
+        <div id="footer">
+            <!-- 
+              TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
+      
+              This should be the same across all pages.
+            -->
+            <a class="icon-link"  href="https://www.instagram.com/official_h2/">
+              <image src="./asset/icon/instagram.svg" class="footer-icon"/>
+            </a>
+            <!-- 
+              TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
+            
+              This should be the same across all pages.
+            -->
+            <a class="icon-link" href="https://twitter.com/RandomString00">
+              <image src="./asset/icon/twitter.svg" class="footer-icon"/>
+            </a>
+            <!-- 
+              TODO - Change the email after "mailto" to your contact email 
+            
+              This should be the same across all pages.
+            -->
+            <a class="icon-link" href="mailto:contact@hosseinhafezi.com">
+              <image src="./asset/icon/mail.svg" class="footer-icon"/>
+            </a>
+          </div>
+      
+</body>
+
+</html>
