@@ -220,7 +220,7 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&bull; <span class="small-text">Submitted to CCS2024, in collaboration with Ian Miers, Pratyush Mishra, Michael Rosenberg and Tushar Mopuri</span></p>
         </li>
     </ul>
-<div class="paper-box">
+<div class="paper-box" onclick="toggleContent(this)">
     <div class="paper-title">Humanitarian Aid Token: Fostering Economic Activity in Conflict Zones with Digital Payment Tokens</div>
     <div class="authors">Authors: John Doe, Jane Smith</div>
     <div class="links">
@@ -229,6 +229,17 @@
         <a href="#">GitHub Repository</a>
     </div>
 </div>
+
+<script>
+function toggleContent(box) {
+    var links = box.querySelector('.links');
+    if (links.style.display === "none") {
+        links.style.display = "block";
+    } else {
+        links.style.display = "none";
+    }
+}
+</script>
 
 </section>
 
