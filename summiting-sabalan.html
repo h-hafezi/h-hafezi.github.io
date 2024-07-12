@@ -19,45 +19,26 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
-
-          /* Centering the image container */
-          .image-container {
+        
+        .container {
             display: flex;
             justify-content: center;
             align-items: center;
-          }
+            height: 100vh; /* Full height */
+            text-align: center;
+        }
         
-          /* Specifying the size of the image */
-          .centered-image {
-            width: 300px; /* Your specific width */
-            height: 200px; /* Your specific height */
-            object-fit: contain; /* This ensures the image maintains its aspect ratio */
-            margin-bottom: 20px;
-            margin-top: 20px;
-          }
-        
+        .responsive-img {
+            width: 80%; /* Adjust the width as needed */
+            max-width: 500px; /* Maximum width */
+            height: auto; /* Maintain aspect ratio */
+        }
 
         a.custom-link {
             color: blue; /* Set the color to blue */
             text-decoration: underline; /* Underline the text */
         }
-
-        .row {
-            display: flex;
-            justify-content: space-around; /* Adjusts the spacing between the images */
-            align-items: center; /* Aligns items vertically */
-        }
         
-        .column {
-            flex: 1; /* Ensures each column takes equal width */
-            padding: 10px; /* Optional: adds some space around the images */
-        }
-        
-        .column img {
-            width: 100%; /* Makes the image fill the column width */
-            height: auto; /* Keeps the image aspect ratio */
-        }
-
 
         .highlighted {
             background-color: black; /* Background color for highlight */
@@ -208,9 +189,10 @@ As an amateur hiker, my experience in serious hiking was almost non-existent. Wh
     <p> 
 Sabalan stands as the third tallest mountain in Iran, after Alam-Kuh and Damavand, reaching a majestic height of 4811 meters. Remarkably, it is the 66th tallest mountain in the world based on its prominence, boasting around 3100 meters. It’s also worth noting that Sabalan is even higher than Mont Blanc, the highest mountain in Europe. Located in northwest Iran, Sabalan features an outstanding, almost year-round frozen lake at its summit. Given its volcanic nature, there are numerous hot springs scattered around it.
     </p> 
-        <div class="profile-picture">
-            <img src="photos/sabalan1.jpg" alt="Profile Picture" style="width: 270px; height: auto;">
-        </div>
+    <div class="container">
+        <img src="photos/sabalan1.jpg" alt="Descriptive Alt Text" class="responsive-img">
+    </div>
+
     <p> 
 My adventure began in Mashhad, where I reside. I had to meet my hiking group in Tehran, so I took a 1.5-hour flight from Mashhad to Tehran. From there, our group boarded a bus to Ardabil.
 Upon arriving in Ardabil, we had a delightful breakfast at a cosy, classic café. The local honey and sarshir, paired with traditional bread, gave us the energy needed for the journey ahead. Next, we took a cab from Ardabil to Shabil, a two-hour drive, where we officially started our hike at an altitude of 1100 meters. 
@@ -219,6 +201,7 @@ Upon arriving in Ardabil, we had a delightful breakfast at a cosy, classic café
      <p> 
     The initial part of our trek took about four hours to reach the first shelter. This segment of the hike traversed grassy grounds and was not particularly steep. For me, this was the most enjoyable part of the trip. There is an extremely rough track through the mountain to the shelter that only some Land Rovers can navigate, but we opted to walk.
     </p> 
+            
     <p> 
 Around 2 PM, we arrived at the first shelter, located at a height of 3700 meters. Initially, we planned to camp and sleep in our tents. However, a storm rolled in around 6 PM, and there had been recent sightings of bears in the area. These factors convinced us to retreat to the shelter for the night—a decision none of us regretted.
 Around 9 PM, I was walking around the shelter when I saw two bears about 15 meters away. I hurried back to the shelter and notified the others. Apparently, these bears are accustomed to hikers and won't attack unless provoked.
