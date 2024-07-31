@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hossein Hafezi</title>
-        <link rel="icon" href="nyu-logo.jpg">
+    <link rel="icon" href="nyu-logo.jpg">
 
     <style>
         body {
@@ -20,39 +20,37 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
-          /* Centering the image container */
-          .image-container {
+        /* Centering the image container */
+        .image-container {
             display: flex;
             justify-content: center;
             align-items: center;
-          }
-        
-          /* Specifying the size of the image */
-          .centered-image {
+        }
+
+        /* Specifying the size of the image */
+        .centered-image {
             width: 300px; /* Your specific width */
             height: 200px; /* Your specific height */
             object-fit: contain; /* This ensures the image maintains its aspect ratio */
             margin-bottom: 20px;
             margin-top: 20px;
-          }
-        
+        }
 
         .row {
             display: flex;
             justify-content: space-around; /* Adjusts the spacing between the images */
             align-items: center; /* Aligns items vertically */
         }
-        
+
         .column {
             flex: 1; /* Ensures each column takes equal width */
             padding: 10px; /* Optional: adds some space around the images */
         }
-        
+
         .column img {
             width: 100%; /* Makes the image fill the column width */
             height: auto; /* Keeps the image aspect ratio */
         }
-
 
         .highlighted {
             background-color: black; /* Background color for highlight */
@@ -64,9 +62,9 @@
         nav {
             text-align: center;
             margin-bottom: 20px;
-            border: 2px solid black; 
-            padding: 10px 0; 
-            border-radius: 5px; 
+            border: 2px solid black;
+            padding: 10px 0;
+            border-radius: 5px;
         }
 
         nav a {
@@ -86,7 +84,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px;
-            background: #FFFFFF; 
+            background: #FFFFFF;
             color: black;
             border-radius: 10px;
             margin-bottom: 20px;
@@ -101,7 +99,7 @@
 
         .title {
             text-align: left;
-            color: black; 
+            color: black;
         }
 
         h1, p, li {
@@ -114,7 +112,7 @@
         section {
             margin-bottom: 20px;
             text-align: left;
-            background: #FFFFFF; 
+            background: #FFFFFF;
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -123,7 +121,7 @@
         }
 
         h2 {
-            color: black; 
+            color: black;
             font-size: 24px;
             margin-bottom: 10px;
         }
@@ -139,7 +137,7 @@
         li {
             font-size: 16px;
             margin-bottom: 8px;
-            color: black; 
+            color: black;
         }
 
         /* Adjustments for mobile devices */
@@ -169,7 +167,6 @@
                 margin-top: 20px; /* Add margin between the title and the photo */
             }
 
-
             nav a {
                 font-size: 8px; /* Smaller font size for navigation links */
             }
@@ -185,53 +182,47 @@
                 font-size: 48px; /* Increased font size for the title */
             }
         }
+
+        /* New CSS for Sabalan Peak */
+        .sabalan-link {
+            font-size: 20px; /* Increased font size by 25% from 16px */
+        }
+
+        .sabalan-link:hover {
+            text-decoration: underline;
+        }
     </style>
-</head>  
-        
-        <body>
+</head>
+
+<body>
 
     <!-- Navigation Bar -->
-     <nav>
-        <a href="index.html" >Academic Life</a> <!-- Highlighted link -->
+    <nav>
+        <a href="index.html">Academic Life</a>
         <a href="personal-life.html">Personal Life</a>
         <a href="blogs.html" class="highlighted">Blogs</a>
     </nav>
+
     <section>
         <h2>Blogs</h2>
-             <ul>
-                <li><a href="summiting-sabalan.html">Sabalan Peak</a></li>
-            </ul>  
+        <ul>
+            <li><a href="summiting-sabalan.html" class="sabalan-link">Sabalan Peak</a></li>
+        </ul>
     </section>
 
-            
-            <!-- FOOTER -->
-        <div id="footer">
-            <!-- 
-              TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
-      
-              This should be the same across all pages.
-            -->
-            <a class="icon-link"  href="https://www.instagram.com/official_h2/">
-              <image src="./asset/icon/instagram.svg" class="footer-icon"/>
-            </a>
-            <!-- 
-              TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
-            
-              This should be the same across all pages.
-            -->
-            <a class="icon-link" href="https://twitter.com/RandomString00">
-              <image src="./asset/icon/twitter.svg" class="footer-icon"/>
-            </a>
-            <!-- 
-              TODO - Change the email after "mailto" to your contact email 
-            
-              This should be the same across all pages.
-            -->
-            <a class="icon-link" href="mailto:h.hafezi@nyu.edu">
-              <image src="./asset/icon/mail.svg" class="footer-icon"/>
-            </a>
-          </div>
-      
+    <!-- FOOTER -->
+    <div id="footer">
+        <a class="icon-link" href="https://www.instagram.com/official_h2/">
+            <img src="./asset/icon/instagram.svg" class="footer-icon"/>
+        </a>
+        <a class="icon-link" href="https://twitter.com/RandomString00">
+            <img src="./asset/icon/twitter.svg" class="footer-icon"/>
+        </a>
+        <a class="icon-link" href="mailto:h.hafezi@nyu.edu">
+            <img src="./asset/icon/mail.svg" class="footer-icon"/>
+        </a>
+    </div>
+
 </body>
 
 </html>
