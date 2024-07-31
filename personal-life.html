@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hossein Hafezi</title>
-        <link rel="icon" href="nyu-logo.jpg">
+    <link rel="icon" href="nyu-logo.jpg">
 
     <style>
         body {
@@ -20,23 +20,22 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
-          /* Centering the image container */
-          .image-container {
+        /* Centering the image container */
+        .image-container {
             display: flex;
             justify-content: center;
             align-items: center;
-          }
+        }
         
-          /* Specifying the size of the image */
-          .centered-image {
+        /* Specifying the size of the image */
+        .centered-image {
             width: 300px; /* Your specific width */
             height: 200px; /* Your specific height */
             object-fit: contain; /* This ensures the image maintains its aspect ratio */
             margin-bottom: 20px;
             margin-top: 20px;
-          }
+        }
         
-
         .row {
             display: flex;
             justify-content: space-around; /* Adjusts the spacing between the images */
@@ -52,7 +51,6 @@
             width: 100%; /* Makes the image fill the column width */
             height: auto; /* Keeps the image aspect ratio */
         }
-
 
         .highlighted {
             background-color: black; /* Background color for highlight */
@@ -120,6 +118,11 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             color: black;
             border: 2px solid black;
+            transition: background-color 0.3s ease; /* Smooth transition for background color change */
+        }
+
+        section:hover {
+            background-color: #f0f0f0; /* Light grey background on hover */
         }
 
         h2 {
@@ -168,7 +171,6 @@
                 margin-top: 20px; /* Add margin between the title and the photo */
             }
 
-
             nav a {
                 font-size: 8px; /* Smaller font size for navigation links */
             }
@@ -187,171 +189,138 @@
     </style>
 </head>  
         
-        <body>
+<body>
 
     <!-- Navigation Bar -->
-     <nav>
+    <nav>
         <a href="index.html" >Academic Life</a> <!-- Highlighted link -->
         <a href="personal-life.html" class="highlighted">Personal Life</a>
         <a href="blogs.html">Blogs</a>
     </nav>
-        <section>
-    <h2>Places I've Called Home</h2>
-    <p> 
- I'm glad you asked. I've been lucky enough to live in a few different countries. 
-    </p> 
-<ul style="list-style-type: disc; margin-left: 0;">
-  <li style="margin-left: 20px;">Iran – So, I grew up in Mashhad, this city in the eastern part of Iran, and hung out there for like 14 years. I also spent a year and a half in Tehran, the capital, and another six years in Shahroud, which is this really charming small town.</li>
- <li style="margin-left: 20px;">Japan – I was in Sendai, Japan for about 9 months when I was little, tagging along with my family. I have some adorable pics of me dressed up in Japanese outfits!</li>
- </ul>
-<div class="row">
-    <div class="column">
-        <img src="photos/japan1.PNG" alt="Description of Image 1">
-    </div>
-    <div class="column">
-        <img src="photos/japan2.PNG" alt="Description of Image 2">
-    </div>
-</div>
 
-    <ul style="list-style-type: disc; margin-left: 0;">
-  <li style="margin-left: 20px;">Australia – Australia might just top my list of faves for its awesome vibes, cool people, and culture! I spent 6 months there in year 10, went to Kingswood Highschool in Penrith, a suburb of Sydney. Totally picked up the Australian accent while I was there, though it's pretty much gone now. Hit up Brisbane, Melbourne, Canberra, and did loads of sightseeing in Sydney too.</li>
-  </ul>
-
-    <div class="row">
-    <div class="column">
-        <img src="photos/20161106_115119.jpg" alt="Description of Image 1">
-    </div>
-    <div class="column">
-        <img src="photos/20161111_123633.jpg" alt="Description of Image 2">
-    </div>
-</div>
-
-<div class="row">
-    <div class="column">
-        <img src="photos/20161226_150600.jpg" alt="Description of Image 5">
-    </div>
-    <div class="column">
-        <img src="photos/IMG_20161031_004958.jpg" alt="Description of Image 6">
-    </div>
-</div>
-
-<ul style="list-style-type: disc; margin-left: 0;">
-<li style="margin-left: 20px;">Switzerland – Spent four awesome months in Lausanne from July to October in 2022. Ended up making friends from over 20 different countries! Did a bunch of hiking and checked out loads of gorgeous Swiss cities like Geneva, Zermatt, Kinderstagen, Zurich, Neuchâtel, etc. Also went around Europe a bit e.g. Austria, Italy and Germany. Totally would choose Switzerland for my honeymoon, no doubt about it.</li>
-</ul>
-    <div class="row">
-    <div class="column">
-        <img src="photos/IMG_3005.JPEG" alt="Description of Image 1">
-    </div>
-    <div class="column">
-        <img src="photos/IMG_20240321_174802_835.jpg" alt="Description of Image 3">
-    </div>
-</div>
-
-<div class="row">
-    <div class="column">
-        <img src="photos/IMG_20240321_174658_649.jpg" alt="Description of Image 4">
-    </div>
-    <div class="column">
-        <img src="photos/IMG_20240321_174556_171.jpg" alt="Description of Image 6">
-    </div>
-</div>
-
-<ul style="list-style-type: disc; margin-left: 0;">
-  <li style="margin-left: 20px;">Germany – I lived in Bochum for 6 months from July to December 2023. It was a pretty chill time, mostly sticking to indoor stuff like hitting the gym and swimming. Totally obsessed with Unifit back then – that place was my paradise. Also took some trips to Paris, Munich, and Switzerland (again), plus hit up nearby cities like Dortmund, Düsseldorf, and Cologne while I was there.</li>
-</ul>
-    <div class="row">
-    <div class="column">
-        <img src="photos/IMG_20240321_183705_309.jpg" alt="Description of Image 1">
-    </div>
-    <div class="column">
-        <img src="photos/IMG_20240321_183709_077.jpg" alt="Description of Image 2">
-    </div>
-</div>
-
-<div class="row">
-    <div class="column">
-        <img src="photos/IMG_20240321_183719_569.jpg" alt="Description of Image 4">
-    </div>
-        <div class="column">
-        <img src="photos/IMG_20240321_183712_411.jpg" alt="Description of Image 3">
-    </div>
-</div>
-
-            </section>
+    <section>
+        <h2>Places I've Called Home</h2>
+        <p>I'm glad you asked. I've been lucky enough to live in a few different countries.</p> 
+        <ul style="list-style-type: disc; margin-left: 0;">
+            <li style="margin-left: 20px;">Iran – So, I grew up in Mashhad, this city in the eastern part of Iran, and hung out there for like 14 years. I also spent a year and a half in Tehran, the capital, and another six years in Shahroud, which is this really charming small town.</li>
+            <li style="margin-left: 20px;">Japan – I was in Sendai, Japan for about 9 months when I was little, tagging along with my family. I have some adorable pics of me dressed up in Japanese outfits!</li>
+        </ul>
+        <div class="row">
+            <div class="column">
+                <img src="photos/japan1.PNG" alt="Description of Image 1">
+            </div>
+            <div class="column">
+                <img src="photos/japan2.PNG" alt="Description of Image 2">
+            </div>
+        </div>
+        <ul style="list-style-type: disc; margin-left: 0;">
+            <li style="margin-left: 20px;">Australia – Australia might just top my list of faves for its awesome vibes, cool people, and culture! I spent 6 months there in year 10, went to Kingswood Highschool in Penrith, a suburb of Sydney. Totally picked up the Australian accent while I was there, though it's pretty much gone now. Hit up Brisbane, Melbourne, Canberra, and did loads of sightseeing in Sydney too.</li>
+        </ul>
+        <div class="row">
+            <div class="column">
+                <img src="photos/20161106_115119.jpg" alt="Description of Image 1">
+            </div>
+            <div class="column">
+                <img src="photos/20161111_123633.jpg" alt="Description of Image 2">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="photos/20161226_150600.jpg" alt="Description of Image 5">
+            </div>
+            <div class="column">
+                <img src="photos/IMG_20161031_004958.jpg" alt="Description of Image 6">
+            </div>
+        </div>
+        <ul style="list-style-type: disc; margin-left: 0;">
+            <li style="margin-left: 20px;">Switzerland – Spent four awesome months in Lausanne from July to October in 2022. Ended up making friends from over 20 different countries! Did a bunch of hiking and checked out loads of gorgeous Swiss cities like Geneva, Zermatt, Kinderstagen, Zurich, Neuchâtel, etc. Also went around Europe a bit e.g. Austria, Italy and Germany. Totally would choose Switzerland for my honeymoon, no doubt about it.</li>
+        </ul>
+        <div class="row">
+            <div class="column">
+                <img src="photos/IMG_3005.JPEG" alt="Description of Image 1">
+            </div>
+            <div class="column">
+                <img src="photos/IMG_20240321_174802_835.jpg" alt="Description of Image 3">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="photos/IMG_20240321_174658_649.jpg" alt="Description of Image 4">
+            </div>
+            <div class="column">
+                <img src="photos/IMG_20240321_174556_171.jpg" alt="Description of Image 6">
+            </div>
+        </div>
+        <ul style="list-style-type: disc; margin-left: 0;">
+            <li style="margin-left: 20px;">Germany – I lived in Bochum for 6 months from July to December 2023. It was a pretty chill time, mostly sticking to indoor stuff like hitting the gym and swimming. Totally obsessed with Unifit back then – that place was my paradise. Also took some trips to Paris, Munich, and Switzerland (again), plus hit up nearby cities like Dortmund, Düsseldorf, and Cologne while I was there.</li>
+        </ul>
+        <div class="row">
+            <div class="column">
+                <img src="photos/IMG_20240321_183705_309.jpg" alt="Description of Image 1">
+            </div>
+            <div class="column">
+                <img src="photos/IMG_20240321_183709_077.jpg" alt="Description of Image 2">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="photos/IMG_20240321_183719_569.jpg" alt="Description of Image 4">
+            </div>
+            <div class="column">
+                <img src="photos/IMG_20240321_183712_411.jpg" alt="Description of Image 3">
+            </div>
+        </div>
+    </section>
      
     <section>
         <h2>My Hobbies</h2>
         <p> 
-Talking about my hobbies, apart from enjoying some downtime, a big part of my life involves sports. I used to swim competitively, specializing in the butterfly stroke, and I still dream about swimming the 100m butterfly in under 60 seconds. Currently, I'm practicing for the NYC half-marathon in 2025, aiming to complete it in under 1:45h.
-
-<br><br>
-Occasionally, I do bouldering and ice skating. I also play hockey for fun and enjoy the speed of the sport. I’m a big fan of ballroom and dancing events. Salsa dancing, which I started as a joke with a friend, has become a favorite of mine, even though I’m still learning.
-         </p> 
+            Talking about my hobbies, apart from enjoying some downtime, a big part of my life involves sports. I used to swim competitively, specializing in the butterfly stroke, and I still dream about swimming the 100m butterfly in under 60 seconds. Currently, I'm practicing for the NYC half-marathon in 2025, aiming to complete it in under 1:45h.
+            <br><br>
+            Occasionally, I do bouldering and ice skating. I also play hockey for fun and enjoy the speed of the sport. I’m a big fan of ballroom and dancing events. Salsa dancing, which I started as a joke with a friend, has become a favorite of mine, even though I’m still learning.
+        </p> 
     </section>
 
-   <section>
-    <h2>Favourite Shows</h2>
-    <p> 
-Picking favorites is tough 'cause there's just so much good stuff. 
-    </p> 
-<ul style="list-style-type: disc; margin-left: 0;">
-  <li style="margin-left: 20px;">24 – Caught this when I was just 12, and it's all about Jack Bauer being a total hero for his country. Though, I've got to be honest, I'm not cool with how it kinda throws shade at Muslims, Russians, and Chinese. Still love it, though.</li>
-    <div class="image-container">
-  <img src="photos/24.jpg" alt="Descriptive text of the image" class="centered-image">
-</div>
-
-  <li style="margin-left: 20px;">Modern Family – This show's humour has its unique and distinct flavour. </li>
-      <div class="image-container">
-  <img src="photos/modern family.webp" alt="Descriptive text of the image" class="centered-image">
-</div>
-
-      <li style="margin-left: 20px;">Peaky Blinders – I had to include it, BY THE ORDER OF THE PEAKY FUCKING BLINDERS. </li>
-      <div class="image-container">
-  <img src="photos/ada_y_tommy.jpg_835420363.webp" alt="Descriptive text of the image" class="centered-image">
-</div>
-
-
-    <li style="margin-left: 20px;">How I Met Your Mother – Well Barney Stinson is not something I wanna miss. </li>
-      <div class="image-container">
-  <img src="photos/himym.jpg" alt="Descriptive text of the image" class="centered-image">
-</div>
-<li style="margin-left: 20px;">Gilmore Girls – Never got to live through the '90s and '00s, but something about those times feels just right. Watching this show kinda takes me back, and it's hard to put into words how awesome that feels.</li>
-</ul>      
-
-<div class="image-container">
-  <img src="photos/gilmore.jpg" alt="Descriptive text of the image" class="centered-image">
-</div>
-
-            </section>
+    <section>
+        <h2>Favourite Shows</h2>
+        <p> 
+            Picking favorites is tough 'cause there's just so much good stuff. 
+        </p> 
+        <ul style="list-style-type: disc; margin-left: 0;">
+            <li style="margin-left: 20px;">24 – Caught this when I was just 12, and it's all about Jack Bauer being a total hero for his country. Though, I've got to be honest, I'm not cool with how it kinda throws shade at Muslims, Russians, and Chinese. Still love it, though.</li>
+            <div class="image-container">
+                <img src="photos/24.jpg" alt="Descriptive text of the image" class="centered-image">
+            </div>
+            <li style="margin-left: 20px;">Modern Family – This show's humour has its unique and distinct flavour.</li>
+            <div class="image-container">
+                <img src="photos/modern family.webp" alt="Descriptive text of the image" class="centered-image">
+            </div>
+            <li style="margin-left: 20px;">Peaky Blinders – I had to include it, BY THE ORDER OF THE PEAKY FUCKING BLINDERS.</li>
+            <div class="image-container">
+                <img src="photos/ada_y_tommy.jpg_835420363.webp" alt="Descriptive text of the image" class="centered-image">
+            </div>
+            <li style="margin-left: 20px;">How I Met Your Mother – Well Barney Stinson is not something I wanna miss.</li>
+            <div class="image-container">
+                <img src="photos/himym.jpg" alt="Descriptive text of the image" class="centered-image">
+            </div>
+            <li style="margin-left: 20px;">Gilmore Girls – Never got to live through the '90s and '00s, but something about those times feels just right. Watching this show kinda takes me back, and it's hard to put into words how awesome that feels.</li>
+        </ul>      
+        <div class="image-container">
+            <img src="photos/gilmore.jpg" alt="Descriptive text of the image" class="centered-image">
+        </div>
+    </section>
             
-            <!-- FOOTER -->
-        <div id="footer">
-            <!-- 
-              TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
-      
-              This should be the same across all pages.
-            -->
-            <a class="icon-link"  href="https://www.instagram.com/official_h2/">
-              <image src="./asset/icon/instagram.svg" class="footer-icon"/>
-            </a>
-            <!-- 
-              TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
-            
-              This should be the same across all pages.
-            -->
-            <a class="icon-link" href="https://twitter.com/RandomString00">
-              <image src="./asset/icon/twitter.svg" class="footer-icon"/>
-            </a>
-            <!-- 
-              TODO - Change the email after "mailto" to your contact email 
-            
-              This should be the same across all pages.
-            -->
-            <a class="icon-link" href="mailto:h.hafezi@nyu.edu">
-              <image src="./asset/icon/mail.svg" class="footer-icon"/>
-            </a>
-          </div>
-      
+    <!-- FOOTER -->
+    <div id="footer">
+        <a class="icon-link" href="https://www.instagram.com/official_h2/">
+            <img src="./asset/icon/instagram.svg" class="footer-icon"/>
+        </a>
+        <a class="icon-link" href="https://twitter.com/RandomString00">
+            <img src="./asset/icon/twitter.svg" class="footer-icon"/>
+        </a>
+        <a class="icon-link" href="mailto:h.hafezi@nyu.edu">
+            <img src="./asset/icon/mail.svg" class="footer-icon"/>
+        </a>
+    </div>
 </body>
-
 </html>
