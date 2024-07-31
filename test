@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect Example</title>
+    <style>
+        .text-box {
+            width: 300px;
+            height: 150px;
+            margin: 100px auto;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #000;
+            background-color: lightblue;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+    <script>
+        function changeColor(element, color) {
+            element.style.backgroundColor = color;
+        }
+    </script>
+</head>
+<body>
+    <div class="text-box"
+         onmouseover="changeColor(this, 'lightcoral')"
+         onmouseout="changeColor(this, 'lightblue')">
+        Hover over this box to change its color!
+    </div>
+</body>
+</html>
