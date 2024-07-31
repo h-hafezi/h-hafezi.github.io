@@ -43,164 +43,168 @@
         color: #007bff;
     }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-align: center;
-            margin: 20px auto;
-            max-width: 800px;
-            padding: 20px;
-            box-sizing: border-box;
-            background: #FFFFFF;
-            border: 2px solid black;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        margin: 20px auto;
+        max-width: 800px;
+        padding: 20px;
+        box-sizing: border-box;
+        background: #FFFFFF;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .highlighted {
+        background-color: black; /* Background color for highlight */
+        color: white; /* Text color for highlight */
+        border-radius: 5px; /* Rounded corners for highlight */
+        padding: 5px 10px; /* Padding for highlight */
+    }
+
+    nav {
+        text-align: center;
+        margin-bottom: 20px;
+        border: 2px solid black; 
+        padding: 10px 0; 
+        border-radius: 5px; 
+    }
+
+    nav a {
+        margin: 0 10px;
+        color: black;
+        text-decoration: none;
+        font-size: 18px; /* Default font size */
+        padding: 5px 10px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background: #FFFFFF; 
+        color: black;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #FFFFFF;
+    }
+
+    .profile-picture {
+        max-width: 300px;
+        border-radius: 50%;
+        margin-right: 0;
+    }
+
+    .title {
+        text-align: left;
+        color: black; 
+    }
+
+    h1, p, li {
+        font-size: 18px;
+        margin-right: 20px;
+        color: black;
+        text-align: justify;
+    }
+
+    .small-text {
+        font-size: 0.8em; /* Adjust the font size as needed */
+    }
+
+    .paper-text {
+        font-size: 0.9em; /* Adjust the font size as needed */
+    }
+
+    section {
+        margin-bottom: 20px;
+        text-align: left;
+        background: #FFFFFF; 
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        color: black;
+        border: 2px solid black;
+        transition: background-color 0.3s ease; /* Smooth transition */
+    }
+
+    section:hover {
+        background-color: #f2f2f2; /* Slightly greyish color on hover */
+    }
+
+    h2 {
+        color: black; 
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        color: black;
+    }
+
+    li {
+        font-size: 16px;
+        margin-bottom: 8px;
+        color: black; 
+    }
+
+    /* Adjustments for mobile devices */
+    @media only screen and (max-width: 600px) {
+        body, header, section {
+            padding: 10px;
+            margin: 0;
+            max-width: 100%;
         }
 
-        .highlighted {
-            background-color: black; /* Background color for highlight */
-            color: white; /* Text color for highlight */
-            border-radius: 5px; /* Rounded corners for highlight */
-            padding: 5px 10px; /* Padding for highlight */
-        }
-
-        nav {
-            text-align: center;
-            margin-bottom: 20px;
-            border: 2px solid black; 
-            padding: 10px 0; 
-            border-radius: 5px; 
-        }
-
-        nav a {
-            margin: 0 10px;
-            color: black;
-            text-decoration: none;
-            font-size: 18px; /* Default font size */
-            padding: 5px 10px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
+        .profile-picture img {
+            width: 90%;
+            height: auto;
         }
 
         header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background: #FFFFFF; 
-            color: black;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #FFFFFF;
+            flex-direction: column;
+            margin-bottom: 30px;
         }
 
-        .profile-picture {
-            max-width: 300px;
-            border-radius: 50%;
-            margin-right: 0;
+        .title p, section p, li, h2 {
+            font-size: 14px;
         }
 
-        .title {
-            text-align: left;
-            color: black; 
+        .title h1 {
+            font-size: calc(18px * 1.5); /* Increase font size by 50% */
+            margin-top: 20px; /* Add margin between the title and the photo */
         }
 
-        h1, p, li {
-            font-size: 18px;
-            margin-right: 20px;
-            color: black;
-            text-align: justify;
-        }
-
-        .small-text {
-            font-size: 0.8em; /* Adjust the font size as needed */
-        }
-
-        .paper-text {
-            font-size: 0.9em; /* Adjust the font size as needed */
+        nav a {
+            font-size: 8px; /* Smaller font size for navigation links */
         }
 
         section {
-            margin-bottom: 20px;
-            text-align: left;
-            background: #FFFFFF; 
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            color: black;
-            border: 2px solid black;
+            margin-bottom: 30px;
         }
+    }
 
-        h2 {
-            color: black; 
-            font-size: 24px;
-            margin-bottom: 10px;
+    /* Adjustments for laptops and larger screens */
+    @media only screen and (min-width: 1024px) {
+        .title h1 {
+            font-size: 48px; /* Increased font size for the title */
         }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            color: black;
-        }
-
-        li {
-            font-size: 16px;
-            margin-bottom: 8px;
-            color: black; 
-        }
-
-        /* Adjustments for mobile devices */
-        @media only screen and (max-width: 600px) {
-            body, header, section {
-                padding: 10px;
-                margin: 0;
-                max-width: 100%;
-            }
-
-            .profile-picture img {
-                width: 90%;
-                height: auto;
-            }
-
-            header {
-                flex-direction: column;
-                margin-bottom: 30px;
-            }
-
-            .title p, section p, li, h2 {
-                font-size: 14px;
-            }
-
-            .title h1 {
-                font-size: calc(18px * 1.5); /* Increase font size by 50% */
-                margin-top: 20px; /* Add margin between the title and the photo */
-            }
-
-
-            nav a {
-                font-size: 8px; /* Smaller font size for navigation links */
-            }
-
-            section {
-                margin-bottom: 30px;
-            }
-        }
-
-        /* Adjustments for laptops and larger screens */
-        @media only screen and (min-width: 1024px) {
-            .title h1 {
-                font-size: 48px; /* Increased font size for the title */
-            }
-        }
+    }
     </style>
 </head>  
         
-        <body>
+<body>
 
     <!-- Navigation Bar -->
-     <nav>
+    <nav>
         <a href="" class="highlighted">Academic Life</a> <!-- Highlighted link -->
         <a href="personal-life.html">Personal Life</a>
         <a href="blogs.html">Blogs</a>
@@ -220,56 +224,42 @@
         <h2>About Me</h2>
         <p>I'm an incoming PhD student at NYU, to be supervised by Benedikt Bunz and Joseph Bonneau. My research interests are broad, primarily focused on building secure platforms using novel cryptographic primitives, especially SNARKs. I also closely collaborate with Ian Miers at UMD.
             <br><br>
-             I've had the privilege of doing research internships with Prof Bryan Ford at EPFL, Prof Ian Miers at UMD, and Prof Ghassan Karame at RUB.
+            I've had the privilege of doing research internships with Prof Bryan Ford at EPFL, Prof Ian Miers at UMD, and Prof Ghassan Karame at RUB.
         </p>
     </section>
-<section>
-    <h2>Publication</h2>
-    <ul>
-        <li>
-            <p><span class="paper-text"><strong>Humanitarian Aid Token: Fostering Economic Activity in Conflict Zones with Digital Payment Tokens</strong></span><br>
-                <span class="small-text">To be submitted to USENIX Security, in collaboration with DEDIS, EPFL</span></p>
-        </li>
-        <li>
-            <p><span class="paper-text"><strong>HEKATON: Horizontally-Scalable zkSNARKs via Proof Aggregation</strong></span><br>
-                <span class="small-text">To appear on CCS2024, in collaboration with Ian Miers, Pratyush Mishra, Michael Rosenberg and Tushar Mopuri</span></p>
-        </li>
-    </ul>
-</section>
 
-     <section>
+    <section>
+        <h2>Publication</h2>
+        <ul>
+            <li>
+                <p><span class="paper-text"><strong>Humanitarian Aid Token: Fostering Economic Activity in Conflict Zones with Digital Payment Tokens</strong></span><br>
+                    <span class="small-text">To be submitted to USENIX Security, in collaboration with DEDIS, EPFL</span></p>
+            </li>
+            <li>
+                <p><span class="paper-text"><strong>HEKATON: Horizontally-Scalable zkSNARKs via Proof Aggregation</strong></span><br>
+                    <span class="small-text">To appear on CCS2024, in collaboration with Ian Miers, Pratyush Mishra, Michael Rosenberg and Tushar Mopuri</span></p>
+            </li>
+        </ul>
+    </section>
+
+    <section>
         <h2>Contact</h2>
         <p>Email: h.hafezi@nyu.edu</p>
     </section>
 
-        <!-- FOOTER -->
-        <div id="footer">
-            <!-- 
-              TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
-      
-              This should be the same across all pages.
-            -->
-            <a class="icon-link"  href="https://www.instagram.com/official_h2/">
-              <image src="./asset/icon/instagram.svg" class="footer-icon"/>
-            </a>
-            <!-- 
-              TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
-            
-              This should be the same across all pages.
-            -->
-            <a class="icon-link" href="https://twitter.com/RandomString00">
-              <image src="./asset/icon/twitter.svg" class="footer-icon"/>
-            </a>
-            <!-- 
-              TODO - Change the email after "mailto" to your contact email 
-            
-              This should be the same across all pages.
-            -->
-            <a class="icon-link" href="mailto:h.hafezi@nyu.edu">
-              <image src="./asset/icon/mail.svg" class="footer-icon"/>
-            </a>
-          </div>
-      
+    <!-- FOOTER -->
+    <div id="footer">
+        <a class="icon-link" href="https://www.instagram.com/official_h2/">
+            <image src="./asset/icon/instagram.svg" class="footer-icon"/>
+        </a>
+        <a class="icon-link" href="https://twitter.com/RandomString00">
+            <image src="./asset/icon/twitter.svg" class="footer-icon"/>
+        </a>
+        <a class="icon-link" href="mailto:h.hafezi@nyu.edu">
+            <image src="./asset/icon/mail.svg" class="footer-icon"/>
+        </a>
+    </div>
+
 </body>
 
 </html>
