@@ -210,21 +210,45 @@
 
     <section>
         <h2>About Me</h2>
-        <p>I'm a first-year PhD student at NYU, supervised by Benedikt Bunz and Joseph Bonneau. My research interests are broad, primarily focused on building secure platforms using novel cryptographic primitives, especially Succinct Non-Interactive Arguments of Knowledge (SNARKs).
-            To see my list of publications, click <a href="publication.html" style="color: rgb(0, 102, 203); font-weight: bold; text-decoration: underline;">here</a>.
+        <p class="about-text">
+            I'm a first-year PhD student at NYU, supervised by Benedikt Bunz and Joseph Bonneau. My research interests are broad, primarily focused on building secure platforms using novel cryptographic primitives, especially Succinct Non-Interactive Arguments of Knowledge (SNARKs).
+            To see my list of publications, click <a href="publication.html" class="link">here</a>.
             <br><br>
             I had the opportunity to do research internships with Ian Miers at UMD and Bryan Ford at EPFL during my undergrad.
         </p>
         <br>
         <!-- New Centered Links -->
         <div style="text-align: center; margin-top: 20px;">
-            <a href="https://www.github.com/h-hafezi/" style="text-decoration: none; color: rgb(0, 102, 203); font-weight: bold; font-size: 21px;">Github</a> /
-            <a href="https://twitter.com/RandomString00" style="text-decoration: none; color: rgb(0, 102, 203); font-weight: bold; font-size: 21px;">Twitter</a> /
-            <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=M6g06s4AAAAJ" style="text-decoration: none; color: rgb(0, 102, 203); font-weight: bold; font-size: 21px;">Google Scholar</a> /
-            <a href="mailto:h.hafezi@nyu.edu" style="text-decoration: none; color: rgb(0, 102, 203); font-weight: bold; font-size: 21px;">Email</a>
+            <a href="https://www.github.com/h-hafezi/" class="link">Github</a> /
+            <a href="https://twitter.com/RandomString00" class="link">Twitter</a> /
+            <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=M6g06s4AAAAJ" class="link">Google Scholar</a> /
+            <a href="mailto:h.hafezi@nyu.edu" class="link">Email</a>
         </div>
-    </section>
 
+        <style>
+            /* Base styles */
+            .about-text {
+                font-size: 18px; /* Default font size for the text */
+            }
+
+            .link {
+                text-decoration: none;
+                color: rgb(0, 102, 203);
+                font-weight: bold;
+                font-size: 18px; /* Default font size for links */
+            }
+
+            /* Mobile styles */
+            @media (max-width: 600px) {
+                .about-text {
+                    font-size: 20px; /* Increased font size for text on mobile */
+                }
+                .link {
+                    font-size: 16px; /* Decreased font size for links on mobile */
+                }
+            }
+        </style>
+    </section>
 </body>
 
 </html>
