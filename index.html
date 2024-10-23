@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hossein Hafezi</title>
-    <link rel="icon" href="nyu-logo.jpg">
+    <link rel="icon" href="asset/nyu-logo.jpg">
 
     <style>
     .boxed-content {
@@ -14,24 +14,12 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    .paper-box {
-        border: 2px solid #ccc;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    .footer-icon {
+        width: 30px;  /* Set the width you want */
+        height: 30px; /* Set the height you want */
+        object-fit: contain;  /* Ensures icons maintain aspect ratio */
     }
-        
-    .paper-title {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-    .authors {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-        
+
     .links a {
         display: block;
         margin-bottom: 5px;
@@ -212,7 +200,7 @@
 
     <header>
         <div class="profile-picture">
-            <img src="profile.jpg" alt="Profile Picture" style="width: 270px; height: auto;">
+            <img src="asset/profile.jpg" alt="Profile Picture" style="width: 270px; height: auto;">
         </div>
         <div class="title">
             <h1>Hossein Hafezi</h1>
@@ -222,43 +210,23 @@
 
     <section>
         <h2>About Me</h2>
-        <p>I'm a first-year PhD student at NYU, supervised by Benedikt Bunz and Joseph Bonneau. My research interests are broad, primarily focused on building secure platforms using novel cryptographic primitives, especially SNARKs.
+        <p>I'm a first-year PhD student at NYU, supervised by Benedikt Bunz and Joseph Bonneau. My research interests are broad, primarily focused on building secure platforms using novel cryptographic primitives, especially Succinct Non-Interactive Arguments of Knowledge (SNARKs).
+            To see my list of publications, click <a href="publication.html" style="color: rgb(0, 102, 203); font-weight: bold; text-decoration: underline;">here</a>.
             <br><br>
-            During my undergrad, I had the privilege of doing research internships with Prof Bryan Ford at EPFL, Prof Ian Miers at UMD, and Prof Ghassan Karame at RUB.
-            <br><br>
-            To see my list of publication, click here.
+            I had the opportunity to do research internships with Ian Miers at UMD and Bryan Ford at EPFL during my undergrad.
         </p>
-    </section>
-
-    <section>
-        <h2>Publication</h2>
-        <ul>
-            <li>
-                <p><span class="paper-text"><strong>Humanitarian Aid Token: Fostering Economic Activity in Conflict Zones with Digital Payment Tokens</strong></span><br>
-                    <span class="small-text">To be submitted to USENIX Security, in collaboration with DEDIS, EPFL</span></p>
-            </li>
-            <li>
-                <p><span class="paper-text"><strong>HEKATON: Horizontally-Scalable zkSNARKs via Proof Aggregation</strong></span><br>
-                    <span class="small-text">To appear on CCS2024, in collaboration with Ian Miers, Pratyush Mishra, Michael Rosenberg and Tushar Mopuri</span></p>
-            </li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Contact</h2>
-        <p>Email: h.hafezi@nyu.edu</p>
     </section>
 
     <!-- FOOTER -->
     <div id="footer">
-        <a class="icon-link" href="https://www.instagram.com/official_h2/">
-            <image src="./asset/icon/instagram.svg" class="footer-icon"/>
+        <a class="icon-link" href="https://www.github.com/h-hafezi/">
+            <img src="./asset/icon/github-mark.svg" class="footer-icon"/>
         </a>
         <a class="icon-link" href="https://twitter.com/RandomString00">
-            <image src="./asset/icon/twitter.svg" class="footer-icon"/>
+            <img src="./asset/icon/twitter.svg" class="footer-icon"/>
         </a>
         <a class="icon-link" href="mailto:h.hafezi@nyu.edu">
-            <image src="./asset/icon/mail.svg" class="footer-icon"/>
+            <img src="./asset/icon/mail.svg" class="footer-icon"/>
         </a>
     </div>
 

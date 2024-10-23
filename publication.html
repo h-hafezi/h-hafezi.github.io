@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hossein Hafezi</title>
+    <link rel="icon" href="asset/nyu-logo.jpg">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+            background: #FFFFFF;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .publication-list p {
+            line-height: 1.6; /* You can adjust this value as needed */
+        }
+
+        .highlighted {
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+            border: 2px solid black;
+            padding: 10px 0;
+            border-radius: 5px;
+        }
+
+        nav a {
+            margin: 0 10px;
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #FFFFFF;
+            color: black;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #FFFFFF;
+        }
+
+        .profile-picture {
+            max-width: 300px;
+            border-radius: 50%;
+            margin-right: 0;
+        }
+
+        #footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .title {
+            text-align: left;
+            color: black;
+        }
+
+        h1, p, li {
+            font-size: 18px;
+            margin-right: 20px;
+            color: black;
+            text-align: justify;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body, header, section {
+                padding: 10px;
+                margin: 0;
+                max-width: 100%;
+            }
+
+            .profile-picture img {
+                width: 90%;
+                height: auto;
+            }
+
+            header {
+                flex-direction: column;
+                margin-bottom: 30px;
+            }
+
+            .title p, section p, li, h2 {
+                font-size: 14px;
+            }
+
+            .title h1 {
+                font-size: calc(18px * 1.5);
+                margin-top: 20px;
+            }
+
+            nav a {
+                font-size: 8px;
+            }
+
+            section {
+                margin-bottom: 30px;
+            }
+        }
+
+        @media only screen and (min-width: 1024px) {
+            .title h1 {
+                font-size: 48px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <h2>Publication List (<a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=M6g06s4AAAAJ"
+                             style="color: blue; font-weight: bold;">Google Scholar</a>)</h2>
+    <div class="publication-list">
+        <p>
+            <strong>Hekaton: Horizontally-Scalable zkSNARKs via Proof Aggregation</strong>
+            (<a href="https://eprint.iacr.org/2024/1208.pdf">Eprint</a>)
+            (<a href="https://github.com/Pratyush/hekaton-system">Code</a>) <br/>
+            <a href="https://mrosenberg.pub/about/" style="color: rgb(0, 102, 203);">Michael Rosenberg</a>,
+            <a href="https://twitter.com/RandomString00" style="color: rgb(0, 102, 203);">Tushar Mopuri</a>,
+            <a href="https://www.cs.umd.edu/~imiers/" style="color: rgb(0, 102, 203);">Ian Miers</a>,
+            <a href="https://pratyushmishra.com/" style="color: rgb(0, 102, 203);">Pratyush Mishra</a> <br/>
+            <em>Proceedings of the 2024 ACM SIGSAC Conference on Computer and Communications Security</em>
+        </p>
+    </div>
+</section>
+
+</body>
+</html>
