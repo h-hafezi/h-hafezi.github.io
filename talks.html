@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hossein Hafezi</title>
+  <link rel="icon" href="asset/nyu-logo.jpg">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 40px auto; /* Increased top and bottom margin to 40px */
+      max-width: 800px;
+      padding: 20px;
+      box-sizing: border-box;
+      background: #FFFFFF;
+      border: 2px solid black;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .publication-list p {
+      line-height: 1.6;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 20px;
+      border: 2px solid black;
+      padding: 10px 0;
+      border-radius: 5px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 5px 10px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: #FFFFFF;
+      color: black;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #FFFFFF;
+    }
+
+    h1, p, li {
+      font-size: 18px;
+      margin-right: 20px;
+      color: black;
+      text-align: justify;
+    }
+
+    @media only screen and (max-width: 600px) {
+      body, header, section {
+        padding: 10px;
+        margin: 0;
+        max-width: 100%;
+      }
+
+      .profile-picture img {
+        width: 90%;
+        height: auto;
+      }
+
+      header {
+        flex-direction: column;
+        margin-bottom: 30px;
+      }
+
+      .title p, section p, li, h2 {
+        font-size: 14px;
+      }
+
+      .title h1 {
+        font-size: calc(18px * 1.5);
+        margin-top: 20px;
+      }
+
+      nav a {
+        font-size: 8px;
+      }
+
+      section {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media only screen and (min-width: 1024px) {
+      .title h1 {
+        font-size: 48px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<section>
+  <h2>Talks</h2>
+  <div class="talk-list">
+  </div>
+</section>
+
+</body>
+</html>
