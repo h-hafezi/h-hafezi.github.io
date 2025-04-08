@@ -13,9 +13,6 @@
             padding: 20px;
             box-sizing: border-box;
             background: #FFFFFF;
-            border: 2px solid black;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
         .publication-list p {
@@ -41,6 +38,23 @@
         nav a:hover {
             text-decoration: underline;
         }
+
+        section {
+            margin-bottom: 20px;
+            text-align: left;
+            background: #FFFFFF;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            color: black;
+            border: 2px solid black;
+            transition: background-color 0.3s ease; /* Smooth transition for background color change */
+        }
+
+        section:hover {
+            background-color: #f0f0f0; /* Light grey background on hover */
+        }
+
 
         header {
             display: flex;
@@ -111,8 +125,9 @@
     <div class="publication-list">
         <p>
             <strong>Hekaton: Horizontally-Scalable zkSNARKs via Proof Aggregation</strong>
+
             (<a href="https://eprint.iacr.org/2024/1208.pdf">Eprint</a>)
-            (<a href="https://github.com/Pratyush/hekaton-system">Code</a>) <br/>
+            <br/>
             <a href="https://mrosenberg.pub/about/" style="color: rgb(0, 102, 203);">Michael Rosenberg</a>,
             Tushar Mopuri,
             Hossein Hafezi,
@@ -140,6 +155,33 @@
             <a href="https://jbonneau.com/" style="color: rgb(0, 102, 203);">Joseph Bonneau</a>,<br/>
             <em style="font-size: 0.85em;">Cryptology Eprint</em>
         </p>
+    </div>
+</section>
+
+<section>
+    <h2>Talks</h2>
+    <div class="publication-list">
+        <p>
+            <strong>KZH-Fold: Accountable Voting from Sublinear Accumulation</strong> (<a href="#">Slides</a>)
+        </p>
+        <ul>
+            <li>O(1) Lab Reading Group <a href="#">(Video)</a></li>
+            <li>CMU CyLab Reading Group <a href="#">(Video)</a></li>
+            <li>Stanford Reading Group</li>
+            <li>Upenn Reading Group</li>
+            <li>EPFL Chiesa's Reading Group</li>
+        </ul>
+
+    </div>
+</section>
+
+<section>
+    <h2>Service</h2>
+    <div class="publication-list">
+        <p>
+            External reviewer and volunteer in EuroCrypt2025
+        </p>
+
     </div>
 </section>
 
