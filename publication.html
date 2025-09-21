@@ -105,6 +105,21 @@
             font-size: 18px;
         }
 
+        /* New rule for tags like (PDF) and (Code) */
+        .publication-list a[href$=".pdf"],
+        .publication-list a[href^="https://github.com"],
+        .talks-list a[href$=".pdf"],
+        .talks-list a[href*="youtu.be"],
+        .talks-list a[href*="zoom.us"] {
+            font-size: 0.85em; /* Matches the size of the conference name */
+            font-weight: normal;
+        }
+
+        /* Styles for Publication and Talk list font consistency */
+        .publication-list a, .publication-list em {
+            font-size: 0.85em; /* Making authors and conference names the same size */
+        }
+
         /* Styles for Talks and Service (reverted) */
         .talks-list li, .service-list p {
             font-size: 18px;
@@ -112,6 +127,12 @@
             color: black;
             text-align: justify;
         }
+
+        /* New rule for talk list items font consistency */
+        .talks-list li {
+            font-size: 0.85em; /* Making talk list items the same size as conference names */
+        }
+
 
         /* Mobile-first adjustments for fonts */
         @media only screen and (max-width: 600px) {
@@ -165,6 +186,15 @@
             }
             .talks-list li, .service-list p {
                 font-size: 14px; /* Talk list and service text */
+            }
+
+            /* New mobile rules */
+            .publication-list a, .talks-list a {
+                font-size: 14px;
+            }
+
+            .publication-list em, .talks-list li {
+                font-size: 14px;
             }
             /* --- End Mobile Font Sizes --- */
         }
@@ -238,7 +268,7 @@
             </li>
         </ol>
         <hr>
-        <h3>Applications and System Security</h3>
+        <h3>Applications</h3>
         <ol>
             <li>
                 <strong>
