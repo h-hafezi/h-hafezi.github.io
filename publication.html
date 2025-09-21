@@ -105,34 +105,19 @@
             font-size: 18px;
         }
 
-        /* New rule for tags like (PDF) and (Code) */
-        .publication-list a[href$=".pdf"],
-        .publication-list a[href^="https://github.com"],
-        .talks-list a[href$=".pdf"],
-        .talks-list a[href*="youtu.be"],
-        .talks-list a[href*="zoom.us"] {
-            font-size: 0.85em; /* Matches the size of the conference name */
+        /* Consolidated rule for all smaller text elements to ensure consistency */
+        .publication-list em,
+        .publication-list a,
+        .talks-list p a,
+        .talks-list li {
+            font-size: 0.85em;
             font-weight: normal;
         }
 
-        /* Styles for Publication and Talk list font consistency */
-        .publication-list a, .publication-list em {
-            font-size: 0.85em; /* Making authors and conference names the same size */
+        /* Make sure only the authors list has its specific link color */
+        .publication-list li a:not([href$=".pdf"]):not([href^="https://github.com"]) {
+            color: rgb(0, 102, 203);
         }
-
-        /* Styles for Talks and Service (reverted) */
-        .talks-list li, .service-list p {
-            font-size: 18px;
-            margin-right: 20px;
-            color: black;
-            text-align: justify;
-        }
-
-        /* New rule for talk list items font consistency */
-        .talks-list li {
-            font-size: 0.85em; /* Making talk list items the same size as conference names */
-        }
-
 
         /* Mobile-first adjustments for fonts */
         @media only screen and (max-width: 600px) {
@@ -176,25 +161,19 @@
                 font-size: 14px; /* Title and Authors now the same size */
                 font-weight: bold;
             }
-            .publication-list li a {
-                font-size: 14px; /* Author names font size */
+            /* The following rules now manage all smaller text within publications and talks */
+            .publication-list em,
+            .publication-list a,
+            .talks-list p a,
+            .talks-list li {
+                font-size: 14px;
             }
-
             /* Talks and Service */
             .talks-list p strong {
                 font-size: 14px; /* Talk titles now the same as publication titles */
             }
-            .talks-list li, .service-list p {
-                font-size: 14px; /* Talk list and service text */
-            }
-
-            /* New mobile rules */
-            .publication-list a, .talks-list a {
-                font-size: 14px;
-            }
-
-            .publication-list em, .talks-list li {
-                font-size: 14px;
+            .service-list p {
+                font-size: 14px; /* Service text */
             }
             /* --- End Mobile Font Sizes --- */
         }
@@ -221,12 +200,12 @@
                 (<a href="https://eprint.iacr.org/2024/1208.pdf">PDF</a>)
                 (<a href="https://github.com/Pratyush/hekaton-system">Code</a>)
                 <br/>
-                <a href="https://mrosenberg.pub/about/" style="color: rgb(0, 102, 203);">Michael Rosenberg</a>,
-                <a href="https://tmopuri.com/" style="color: rgb(0, 102, 203);">Tushar Mopuri</a>,
+                <a href="https://mrosenberg.pub/about/">Michael Rosenberg</a>,
+                <a href="https://tmopuri.com/">Tushar Mopuri</a>,
                 Hossein Hafezi,
-                <a href="https://www.cs.umd.edu/~imiers/" style="color: rgb(0, 102, 203);">Ian Miers</a>,
-                <a href="https://pratyushmishra.com/" style="color: rgb(0, 102, 203);">Pratyush Mishra</a> <br/>
-                <em style="font-size: 0.85em;">Proceedings of the 2024 ACM SIGSAC Conference on Computer and Communications Security</em>
+                <a href="https://www.cs.umd.edu/~imiers/">Ian Miers</a>,
+                <a href="https://pratyushmishra.com/">Pratyush Mishra</a> <br/>
+                <em>Proceedings of the 2024 ACM SIGSAC Conference on Computer and Communications Security</em>
             </li>
             <li>
                 <strong>
@@ -234,12 +213,12 @@
                 </strong>
                 (<a href="https://eprint.iacr.org/2025/144.pdf">PDF</a>)
                 (<a href="https://github.com/asn-d6/kzh_fold">Code</a>) <br/>
-                <a href="https://bue.nz/" style="color: rgb(0, 102, 203);">Benedikt Bunz</a>,
+                <a href="https://bue.nz/">Benedikt Bunz</a>,
                 Hossein Hafezi,
-                <a href="https://www.linkedin.com/in/george-k-6066991a7" style="color: rgb(0, 102, 203);">George Kadianakis</a>,
-                <a href="https://sites.google.com/view/arantxazapico" style="color: rgb(0, 102, 203);">Arantxa Zapico</a> <br/>
-                <em style="font-size: 0.85em;">Proceedings of the 2025 ACM SIGSAC Conference on Computer and Communications Security</em><br/>
-                <em style="font-size: 0.85em;">In Collaboration with
+                <a href="https://www.linkedin.com/in/george-k-6066991a7">George Kadianakis</a>,
+                <a href="https://sites.google.com/view/arantxazapico">Arantxa Zapico</a> <br/>
+                <em>Proceedings of the 2025 ACM SIGSAC Conference on Computer and Communications Security</em><br/>
+                <em>In Collaboration with
                     <span style="color: red;">Ethereum Foundation</span>
                 </em>
             </li>
@@ -247,12 +226,12 @@
                 <strong>
                     Single-Server Private Outsourcing of zk-SNARKs
                 </strong> <br/>
-                <a href="https://www.linkedin.com/in/kasraabz/" style="color: rgb(0, 102, 203);">Kasra Abbaszadeh</a>,
+                <a href="https://www.linkedin.com/in/kasraabz/">Kasra Abbaszadeh</a>,
                 Hossein Hafezi,
-                <a href="https://www.cs.umd.edu/~jkatz/" style="color: rgb(0, 102, 203);">Johnathan Katz</a>,
-                <a href="https://smeiklej.com/" style="color: rgb(0, 102, 203);">Sarah Meiklejohn</a><br/>
-                <em style="font-size: 0.85em;">Submitted to 35th USENIX Security Symposium</em><br/>
-                <em style="font-size: 0.85em;">In Collaboration with
+                <a href="https://www.cs.umd.edu/~jkatz/">Johnathan Katz</a>,
+                <a href="https://smeiklej.com/">Sarah Meiklejohn</a><br/>
+                <em>Submitted to 35th USENIX Security Symposium</em><br/>
+                <em>In Collaboration with
                     <span style="color: red;">Google Research (USA)</span>
                 </em>
             </li>
@@ -261,10 +240,10 @@
                     SoK: Lookup Table Arguments
                 </strong><br/>
                 Hossein Hafezi,
-                <a href="https://www.linkedin.com/in/gaspard-anthoine-93b48921a/" style="color: rgb(0, 102, 203);">Gaspard Anthoine</a>,
-                <a href="https://www.binarywhales.com/" style="color: rgb(0, 102, 203);">Matteo Campanelli</a>,
-                <a href="https://www.dariofiore.it/" style="color: rgb(0, 102, 203);">Dario Fiore</a>,<br/>
-                <em style="font-size: 0.85em;">Submitted to Financial Cryptography and Data Security 2026</em>
+                <a href="https://www.linkedin.com/in/gaspard-anthoine-93b48921a/">Gaspard Anthoine</a>,
+                <a href="https://www.binarywhales.com/">Matteo Campanelli</a>,
+                <a href="https://www.dariofiore.it/">Dario Fiore</a>,<br/>
+                <em>Submitted to Financial Cryptography and Data Security 2026</em>
             </li>
         </ol>
         <hr>
@@ -276,11 +255,11 @@
                 </strong>
                 (<a href="https://eprint.iacr.org/2025/1580.pdf">PDF</a>)
                 (<a href="https://github.com/alireza-shirzad/Iron-key">Code</a>) <br/>
+                <a href="https://alireza-shirzad.github.io/">Alireza Shirzad</a>,
                 Hossein Hafezi,
-                <a href="https://alireza-shirzad.github.io/" style="color: rgb(0, 102, 203);">Alireza Shirzad</a>,
-                <a href="https://bue.nz/" style="color: rgb(0, 102, 203);">Benedikt Bunz</a>,
-                <a href="https://jbonneau.com/" style="color: rgb(0, 102, 203);">Joseph Bonneau</a><br/>
-                <em style="font-size: 0.85em;">Submitted to 35th USENIX Security Symposium</em>
+                <a href="https://bue.nz/">Benedikt Bunz</a>,
+                <a href="https://jbonneau.com/">Joseph Bonneau</a><br/>
+                <em>Submitted to 35th USENIX Security Symposium</em>
             </li>
         </ol>
         <hr>
@@ -293,10 +272,10 @@
                 (<a href="https://eprint.iacr.org/2025/059.pdf">PDF</a>)
                 (<a href="https://github.com/h-hafezi/fair_schnorr_signature_exchange">Code</a>) <br/>
                 Hossein Hafezi,
-                <a href="https://aditi741997.github.io/" style="color: rgb(0, 102, 203);">Aditi Partap</a>,
-                <a href="https://sourav1547.github.io/" style="color: rgb(0, 102, 203);">Sourav Das</a>,
-                <a href="https://jbonneau.com/" style="color: rgb(0, 102, 203);">Joseph Bonneau</a>,<br/>
-                <em style="font-size: 0.85em;">Submitted to Financial Cryptography and Data Security 2026</em>
+                <a href="https://aditi741997.github.io/">Aditi Partap</a>,
+                <a href="https://sourav1547.github.io/">Sourav Das</a>,
+                <a href="https://jbonneau.com/">Joseph Bonneau</a>,<br/>
+                <em>Submitted to Financial Cryptography and Data Security 2026</em>
             </li>
         </ol>
     </div>
@@ -325,7 +304,6 @@
             <li>IMDEA Software Reading Group, June 2025</li>
             <li>NYU Crypto Reading Group, December 2025</li>
         </ul>
-
     </div>
 </section>
 
