@@ -3,229 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hossein Hafezi</title>
-    <link rel="icon" href="asset/nyu-logo.jpg">
-
+    <title>Hossein Hafezi - Academic Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-
-        .links a {
-            display: block;
-            margin-bottom: 5px;
-            text-decoration: none;
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
             color: #333;
         }
-
-        .links a:hover {
-            color: #007bff;
+        .container-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-align: center;
-            margin: 20px auto;
-            max-width: 800px;
-            padding: 20px;
-            box-sizing: border-box;
-            background: #FFFFFF;
-            border: 2px solid black;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-
-        .highlighted {
-            background-color: black; /* Background color for highlight */
-            color: white; /* Text color for highlight */
-            border-radius: 5px; /* Rounded corners for highlight */
-            padding: 5px 10px; /* Padding for highlight */
-        }
-
-        nav {
-            text-align: center;
-            margin-bottom: 20px;
-            border: 2px solid black;
-            padding: 10px 0;
-            border-radius: 5px;
-        }
-
-        nav a {
-            margin: 0 10px;
-            color: black;
-            text-decoration: none;
-            font-size: 18px; /* Default font size */
-            padding: 5px 10px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background: #FFFFFF;
-            color: black;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #FFFFFF;
-        }
-
-        .profile-picture {
-            max-width: 300px;
-            border-radius: 50%;
-            margin-right: 0;
-        }
-
-        .title {
-            text-align: left;
-            color: black;
-        }
-
-        h1, p, li {
-            font-size: 18px;
-            margin-right: 20px;
-            color: black;
-            text-align: justify;
-        }
-
-        section {
-            margin-bottom: 20px;
-            text-align: left;
-            background: #FFFFFF;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            color: black;
-            border: 2px solid black;
-            transition: background-color 0.3s ease; /* Smooth transition */
-        }
-
-        section:hover {
-            background-color: #f2f2f2; /* Slightly greyish color on hover */
-        }
-
-        h2 {
-            color: black;
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            color: black;
-        }
-
-        li {
-            font-size: 16px;
-            margin-bottom: 8px;
-            color: black;
-        }
-
-        /* Adjustments for mobile devices */
-        @media only screen and (max-width: 600px) {
-            body, header, section {
-                padding: 10px;
-                margin: 0;
-                max-width: 100%;
-            }
-
-            .profile-picture img {
-                width: 90%;
-                height: auto;
-            }
-
-            header {
-                flex-direction: column;
-                margin-bottom: 30px;
-            }
-
-            .title p, section p, li, h2 {
-                font-size: 14px;
-            }
-
-            .title h1 {
-                font-size: calc(18px * 1.5); /* Increase font size by 50% */
-                margin-top: 20px; /* Add margin between the title and the photo */
-            }
-
-            nav a {
-                font-size: 8px; /* Smaller font size for navigation links */
-            }
-
-            section {
-                margin-bottom: 30px;
-            }
-        }
-
-        /* Adjustments for laptops and larger screens */
-        @media only screen and (min-width: 1024px) {
-            .title h1 {
-                font-size: 48px; /* Increased font size for the title */
-            }
+        /* Custom style for the list to match the image spacing */
+        .papers-list li {
+            margin-bottom: 1.5rem;
         }
     </style>
 </head>
+<body class="bg-gray-100">
 
-<body>
+<div class="container mx-auto p-4 md:p-8 max-w-5xl">
+    <div class="bg-white rounded-lg container-shadow overflow-hidden">
 
-<nav>
-    <a href="" class="highlighted">Academic Life</a> <a href="personal-life.html">Personal Life</a>
-    <a href="blogs.html">Blogs</a>
-</nav>
+        <!-- Profile Header Section -->
+        <div class="flex flex-col md:flex-row items-center md:items-start p-6 bg-gray-50 border-b border-gray-200">
+            <div class="flex-1 text-center md:text-left">
+                <!-- Adjusted font sizes for mobile (text-3xl) and larger screens (md:text-4xl) -->
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-800">Joseph Bonneau</h1>
+                <!-- Adjusted font sizes for mobile (text-base) and larger screens (md:text-lg) -->
+                <p class="text-base md:text-lg text-gray-600 mt-2">
+                    Associate Professor<br>
+                    <span class="font-semibold">Crypto & Security Group</span><br>
+                    Courant Institute, New York University
+                </p>
+            </div>
+            <div class="flex-shrink-0 mt-4 md:mt-0 md:ml-8">
+                <img src="https://placehold.co/150x150/e0e0e0/ffffff?text=Profile" alt="Profile of Joseph Bonneau" class="rounded-full w-28 h-28 md:w-36 md:h-36 object-cover border-4 border-gray-200">
+            </div>
+        </div>
 
-<header>
-    <div class="profile-picture">
-        <img src="asset/profile.jpg" alt="Profile Picture" style="width: 270px; height: auto;">
+        <!-- Navigation Bar -->
+        <nav class="bg-white border-b border-gray-200">
+            <ul class="flex flex-wrap justify-center md:justify-start py-4 px-6 text-sm text-gray-600">
+                <li class="px-2 py-1 md:py-0 md:px-4 hover:text-gray-900"><a href="#" class="font-semibold">home</a></li>
+                <li class="px-2 py-1 md:py-0 md:px-4 hover:text-gray-900"><a href="#">papers</a></li>
+                <li class="px-2 py-1 md:py-0 md:px-4 hover:text-gray-900"><a href="#">affiliations</a></li>
+                <li class="px-2 py-1 md:py-0 md:px-4 hover:text-gray-900"><a href="#">cv</a></li>
+                <li class="px-2 py-1 md:py-0 md:px-4 hover:text-gray-900"><a href="#">bio</a></li>
+                <li class="px-2 py-1 md:py-0 md:px-4 hover:text-gray-900"><a href="#">contact</a></li>
+                <li class="px-2 py-1 md:py-0 md:px-4 hover:text-gray-900"><a href="#">about</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Section -->
+        <div class="p-6">
+            <!-- Introduction Text -->
+            <p class="text-gray-700 leading-relaxed mb-8">
+                I teach and research security engineering and applied cryptography. I'm currently most interested in verifiable lotteries, distributed randomness, cryptocurrencies, applications of cryptographic proofs, secure messaging protocols and HTTPS. I'm co-author of a <a href="#" class="text-blue-600 hover:underline">textbook on cryptocurrencies</a> which you can <a href="#" class="text-blue-600 hover:underline">read for free online</a>.
+            </p>
+
+            <!-- Publications Section -->
+            <div class="mt-8">
+                <!-- Adjusted font sizes for mobile (text-xl) and larger screens (md:text-2xl) -->
+                <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4 text-center border-b border-gray-300 pb-2">Selected publications</h2>
+                <ul class="papers-list text-gray-700">
+                    <li>
+                        <p class="font-medium">Merkle Mountain Ranges are Optimal: On witness update frequency for cryptographic accumulators</p>
+                        <p class="text-sm text-gray-600">J. Bonneau, J. Chen, M. Christ and I. Karantaiou. CRYPTO 2025.</p>
+                    </li>
+                    <li>
+                        <p class="font-medium">Good Things Come to Those Who Wait: Dishonest-Majority Coin-Flipping Requires Delay Functions</p>
+                        <p class="text-sm text-gray-600">J. Bonneau, B. Bunz, M. Christ and Y. Efron. Eurocrypt 2025.</p>
+                    </li>
+                    <li>
+                        <p class="font-medium">NOPE: Strengthening domain authentication with zero-knowledge proofs</p>
+                        <p class="text-sm text-gray-600">Z. DeStefano, J. J. Ma, J. Bonneau and M. Walfish. SOSP 2024.</p>
+                    </li>
+                    <li>
+                        <p class="font-medium">Atomic and Fair Data Exchange via Blockchain</p>
+                        <p class="text-sm text-gray-600">E. Nusret Tas, I. Andr s Seres, Y. Zhang, M. Melczer, M. Kelkar, J. Bonneau and V. Nikolaenko. ACM CCS 2024.</p>
+                    </li>
+                    <li>
+                        <p class="font-medium">Cornucopia: Distributed randomness beacons at scale</p>
+                        <p class="text-sm text-gray-600">M. Christ, K. Choi and J. Bonneau. AFT 2024.</p>
+                    </li>
+                    <li>
+                        <p class="font-medium">Zombie: Middleboxes that Don't Snoop</p>
+                        <p class="text-sm text-gray-600">C. Zhang, Z. DeStefano, A. Arun, J. Bonneau, P. Grubbs and M. Walfish. NSDI 2024.</p>
+                    </li>
+                    <li>
+                        <p class="font-medium">Sok: Distributed Randomness Beacons</p>
+                        <p class="text-sm text-gray-600">K. Choi, A. Manoj and J. Bonneau. IEEE Security & Privacy (Oakland) 2023.</p>
+                    </li>
+                    <li>
+                        <p class="font-medium">Bicorn: An optimistically efficient distributed randomness beacon</p>
+                        <p class="text-sm text-gray-600">K. Choi, A. Arun, N. Tyagi and J. Bonneau. FC 2023.</p>
+                    </li>
+                    <li>
+                        <p class="font-medium">Short-lived zero-knowledge proofs and signatures</p>
+                        <p class="text-sm text-gray-600">A. Arun, J. Bonneau and J. Clark. Asiacrypt 2022.</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
     </div>
-    <div class="title">
-        <h1>Hossein Hafezi</h1>
-        <p>First-Year PhD @ NYU</p>
-    </div>
-</header>
+</div>
 
-<section>
-    <h2>About Me</h2>
-    <p class="about-text">
-        I'm a first-year PhD student at NYU, supervised by <a href="https://cs.nyu.edu/~bb/" style="color: rgb(0, 102, 203);">Benedikt Bunz</a>, and <a href="https://jbonneau.com/" style="color: rgb(0, 102, 203);">Joseph Bonneau</a>. My research interests are broad, primarily focused on building secure platforms using novel cryptographic primitives, especially SNARKs.
-        Check out my list of publications, talks and services <a href="publication.html" style="color: rgb(0, 102, 203);">here</a>.
-        <br><br>
-        I worked with <a href="https://bford.info/" style="color: rgb(0, 102, 203);">Bryan Ford</a> (EPFL) and <a href="https://www.cs.umd.edu/~imiers/" style="color: rgb(0, 102, 203);">Ian Miers</a> (UMD) during my undergraduate studies, and more recently with <a href="https://www.dariofiore.it/" style="color: rgb(0, 102, 203);">Dario Fiore</a> (IMDEA Software). I have also collaborated with the <span style="color: red;">Ethereum Foundation</span> and <span style="color: red;">Google Research</span>.
-    </p>
-    <br>
-    <div style="text-align: center; margin-top: 20px;">
-        <a href="https://www.github.com/h-hafezi/" class="link">Github</a> /
-        <a href="https://twitter.com/RandomString00" class="link">Twitter</a> /
-        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=M6g06s4AAAAJ" class="link">Google Scholar</a> /
-        <a href="mailto:h.hafezi@nyu.edu" class="link">Email</a>
-    </div>
-
-    <style>
-        /* Base styles */
-        .about-text {
-            font-size: 18px; /* Default font size for the text */
-        }
-
-        .link {
-            text-decoration: none;
-            color: rgb(0, 102, 203);
-            font-weight: bold;
-            font-size: 18px; /* Default font size for links */
-        }
-
-        /* Mobile styles */
-        @media (max-width: 600px) {
-            .about-text {
-                font-size: 16px; /* Increased font size for text on mobile */
-            }
-            .link {
-                font-size: 16px; /* Decreased font size for links on mobile */
-            }
-        }
-    </style>
-</section>
 </body>
-
 </html>
