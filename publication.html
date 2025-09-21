@@ -113,6 +113,7 @@
             text-align: justify;
         }
 
+        /* Mobile-first adjustments for fonts */
         @media only screen and (max-width: 600px) {
             body, header, section {
                 padding: 10px;
@@ -138,26 +139,31 @@
                 margin-bottom: 30px;
             }
 
-            /* --- Updated Mobile Font Sizes for Publications --- */
+            /* --- Updated Mobile Font Sizes --- */
             h2 {
                 font-size: 20px; /* Smaller font for section headings */
             }
             .publication-list h3 {
                 font-size: 18px; /* Adjusted size for topic headings */
             }
+
+            /* Publication and Authors */
             .publication-list li {
                 font-size: 14px; /* Base font size for list items */
             }
             .publication-list li strong {
-                font-size: 16px; /* Slightly larger for paper titles */
+                font-size: 15px; /* Slightly larger for paper titles */
             }
-            .publication-list p strong {
-                font-size: 16px;
+            .publication-list li a {
+                font-size: 14px; /* Author names font size */
             }
 
-            /* --- Reverted Talk and Service Font Sizes for Mobile --- */
+            /* Talks and Service */
+            .talks-list p strong {
+                font-size: 16px; /* Talk titles */
+            }
             .talks-list li, .service-list p {
-                font-size: 14px;
+                font-size: 14px; /* Talk list and service text */
             }
             /* --- End Mobile Font Sizes --- */
         }
