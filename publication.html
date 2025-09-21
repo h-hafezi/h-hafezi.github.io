@@ -8,14 +8,14 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 40px auto; /* Increased top and bottom margin to 40px */
+            margin: 40px auto;
             max-width: 800px;
             padding: 20px;
             box-sizing: border-box;
             background: #FFFFFF;
         }
 
-        .publication-list p {
+        .publication-list p, .talks-list p, .service-list p {
             line-height: 1.6;
         }
 
@@ -48,13 +48,12 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             color: black;
             border: 2px solid black;
-            transition: background-color 0.3s ease; /* Smooth transition for background color change */
+            transition: background-color 0.3s ease;
         }
 
         section:hover {
-            background-color: #f0f0f0; /* Light grey background on hover */
+            background-color: #f0f0f0;
         }
-
 
         header {
             display: flex;
@@ -69,6 +68,45 @@
         }
 
         h1, p, li {
+            font-size: 18px;
+            margin-right: 20px;
+            color: black;
+            text-align: justify;
+        }
+
+        /* Styles for Publication List */
+        .publication-list hr {
+            border: 0;
+            height: 2px;
+            background: black;
+            margin: 30px 0;
+        }
+
+        .publication-list h3 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .publication-list ol {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .publication-list li {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .publication-list p strong {
+            display: block;
+            font-size: 18px;
+        }
+
+        /* Styles for Talks and Service (reverted) */
+        .talks-list li, .service-list p {
             font-size: 18px;
             margin-right: 20px;
             color: black;
@@ -120,109 +158,121 @@
 <body>
 
 <section>
-    <h2>Publication List (<a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=M6g06s4AAAAJ"
-                             style="color: blue; font-weight: bold;">Google Scholar</a>)</h2>
+    <h2>Publications by Topic (<a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=M6g06s4AAAAJ"
+                                  style="color: blue; font-weight: bold;">Google Scholar</a>)</h2>
     <div class="publication-list">
-        <p>
-            <strong style="font-size: 17px;">
-                (1) Hekaton: Horizontally-Scalable zkSNARKs via Proof Aggregation
-            </strong>
-
-            (<a href="https://eprint.iacr.org/2024/1208.pdf">PDF</a>)
-            (<a href="https://github.com/Pratyush/hekaton-system">Code</a>)
-            <br/>
-            <a href="https://mrosenberg.pub/about/" style="color: rgb(0, 102, 203);">Michael Rosenberg</a>,
-            <a href="https://tmopuri.com/" style="color: rgb(0, 102, 203);">Tushar Mopuri</a>,
-            Hossein Hafezi,
-            <a href="https://www.cs.umd.edu/~imiers/" style="color: rgb(0, 102, 203);">Ian Miers</a>,
-            <a href="https://pratyushmishra.com/" style="color: rgb(0, 102, 203);">Pratyush Mishra</a> <br/>
-            <em style="font-size: 0.85em;">Proceedings of the 2024 ACM SIGSAC Conference on Computer and Communications Security</em>
-        </p>
-        <p>
-            <strong style="font-size: 17px;">
-                (2) KZH-Fold: Accountable Voting From Sublinear Accumulation
-            </strong>
-            (<a href="https://eprint.iacr.org/2025/144.pdf">PDF</a>)
-            (<a href="https://github.com/asn-d6/kzh_fold">Code</a>) <br/>
-            <a href="https://bue.nz/" style="color: rgb(0, 102, 203);">Benedikt Bunz</a>,
-            Hossein Hafezi,
-            <a href="https://www.linkedin.com/in/george-k-6066991a7" style="color: rgb(0, 102, 203);">George Kadianakis</a>,
-            <a href="https://sites.google.com/view/arantxazapico" style="color: rgb(0, 102, 203);">Arantxa Zapico</a> <br/>
-            <em style="font-size: 0.85em;">Proceedings of the 2025 ACM SIGSAC Conference on Computer and Communications Security</em><br/>
-            <em style="font-size: 0.85em;">In Collaboration with
-                <span style="color: red;">Ethereum Foundation</span>
-            </em>
-        </p>
-        <p>
-            <strong style="font-size: 17px;">
-                (3) Fair Signature Exchange
-            </strong>
-            (<a href="https://eprint.iacr.org/2025/059.pdf">PDF</a>)
-            (<a href="https://github.com/h-hafezi/fair_schnorr_signature_exchange">Code</a>) <br/>
-            Hossein Hafezi,
-            <a href="https://aditi741997.github.io/" style="color: rgb(0, 102, 203);">Aditi Partap</a>,
-            <a href="https://sourav1547.github.io/" style="color: rgb(0, 102, 203);">Sourav Das</a>,
-            <a href="https://jbonneau.com/" style="color: rgb(0, 102, 203);">Joseph Bonneau</a>,<br/>
-            <em style="font-size: 0.85em;">Submitted to Financial Cryptography and Data Security 2026</em>
-        </p>
-        <p>
-            <strong style="font-size: 17px;">
-                (4) Transparent Dictionaries from Polynomial Commitments
-            </strong>
-            (<a href="https://eprint.iacr.org/2025/1580.pdf">PDF</a>)
-            (<a href="https://github.com/alireza-shirzad/Iron-key">Code</a>) <br/>
-            Hossein Hafezi,
-            <a href="https://alireza-shirzad.github.io/" style="color: rgb(0, 102, 203);">Alireza Shirzad</a>,
-            <a href="https://bue.nz/" style="color: rgb(0, 102, 203);">Benedikt Bunz</a>,
-            <a href="https://jbonneau.com/" style="color: rgb(0, 102, 203);">Joseph Bonneau</a><br/>
-            <em style="font-size: 0.85em;">Submitted to 35th USENIX Security Symposium</em>
-        </p>
-        <p>
-            <strong style="font-size: 17px;">
-                (5) Single-Server Private Outsourcing of zk-SNARKs
-            </strong> <br/>
-            <a href="https://www.linkedin.com/in/kasraabz/" style="color: rgb(0, 102, 203);">Kasra Abbaszadeh</a>,
-            Hossein Hafezi,
-            <a href="https://www.cs.umd.edu/~jkatz/" style="color: rgb(0, 102, 203);">Johnathan Katz</a>,
-            <a href="https://smeiklej.com/" style="color: rgb(0, 102, 203);">Sarah Meiklejohn</a><br/>
-            <em style="font-size: 0.85em;">Submitted to 35th USENIX Security Symposium</em><br/>
-            <em style="font-size: 0.85em;">In Collaboration with
-                <span style="color: red;">Google Research (USA)</span>
-            </em>
-        </p>
-        <p>
-            <strong style="font-size: 17px;">
-                (6) SoK: Lookup Table Arguments
-            </strong><br/>
-            Hossein Hafezi,
-            <a href="https://www.linkedin.com/in/gaspard-anthoine-93b48921a/" style="color: rgb(0, 102, 203);">Gaspard Anthoine</a>,
-            <a href="https://www.binarywhales.com/" style="color: rgb(0, 102, 203);">Matteo Campanelli</a>,
-            <a href="https://www.dariofiore.it/" style="color: rgb(0, 102, 203);">Dario Fiore</a>,<br/>
-            <em style="font-size: 0.85em;">Submitted to Financial Cryptography and Data Security 2026</em>
-        </p>
+        <h3>Proof Systems</h3>
+        <ol>
+            <li>
+                <strong style="font-size: 17px;">
+                    Hekaton: Horizontally-Scalable zkSNARKs via Proof Aggregation
+                </strong>
+                (<a href="https://eprint.iacr.org/2024/1208.pdf">PDF</a>)
+                (<a href="https://github.com/Pratyush/hekaton-system">Code</a>)
+                <br/>
+                <a href="https://mrosenberg.pub/about/" style="color: rgb(0, 102, 203);">Michael Rosenberg</a>,
+                <a href="https://tmopuri.com/" style="color: rgb(0, 102, 203);">Tushar Mopuri</a>,
+                Hossein Hafezi,
+                <a href="https://www.cs.umd.edu/~imiers/" style="color: rgb(0, 102, 203);">Ian Miers</a>,
+                <a href="https://pratyushmishra.com/" style="color: rgb(0, 102, 203);">Pratyush Mishra</a> <br/>
+                <em style="font-size: 0.85em;">Proceedings of the 2024 ACM SIGSAC Conference on Computer and Communications Security</em>
+            </li>
+            <li>
+                <strong style="font-size: 17px;">
+                    KZH-Fold: Accountable Voting From Sublinear Accumulation
+                </strong>
+                (<a href="https://eprint.iacr.org/2025/144.pdf">PDF</a>)
+                (<a href="https://github.com/asn-d6/kzh_fold">Code</a>) <br/>
+                <a href="https://bue.nz/" style="color: rgb(0, 102, 203);">Benedikt Bunz</a>,
+                Hossein Hafezi,
+                <a href="https://www.linkedin.com/in/george-k-6066991a7" style="color: rgb(0, 102, 203);">George Kadianakis</a>,
+                <a href="https://sites.google.com/view/arantxazapico" style="color: rgb(0, 102, 203);">Arantxa Zapico</a> <br/>
+                <em style="font-size: 0.85em;">Proceedings of the 2025 ACM SIGSAC Conference on Computer and Communications Security</em><br/>
+                <em style="font-size: 0.85em;">In Collaboration with
+                    <span style="color: red;">Ethereum Foundation</span>
+                </em>
+            </li>
+            <li>
+                <strong style="font-size: 17px;">
+                    Single-Server Private Outsourcing of zk-SNARKs
+                </strong> <br/>
+                <a href="https://www.linkedin.com/in/kasraabz/" style="color: rgb(0, 102, 203);">Kasra Abbaszadeh</a>,
+                Hossein Hafezi,
+                <a href="https://www.cs.umd.edu/~jkatz/" style="color: rgb(0, 102, 203);">Johnathan Katz</a>,
+                <a href="https://smeiklej.com/" style="color: rgb(0, 102, 203);">Sarah Meiklejohn</a><br/>
+                <em style="font-size: 0.85em;">Submitted to 35th USENIX Security Symposium</em><br/>
+                <em style="font-size: 0.85em;">In Collaboration with
+                    <span style="color: red;">Google Research (USA)</span>
+                </em>
+            </li>
+            <li>
+                <strong style="font-size: 17px;">
+                    SoK: Lookup Table Arguments
+                </strong><br/>
+                Hossein Hafezi,
+                <a href="https://www.linkedin.com/in/gaspard-anthoine-93b48921a/" style="color: rgb(0, 102, 203);">Gaspard Anthoine</a>,
+                <a href="https://www.binarywhales.com/" style="color: rgb(0, 102, 203);">Matteo Campanelli</a>,
+                <a href="https://www.dariofiore.it/" style="color: rgb(0, 102, 203);">Dario Fiore</a>,<br/>
+                <em style="font-size: 0.85em;">Submitted to Financial Cryptography and Data Security 2026</em>
+            </li>
+        </ol>
+        <hr>
+        <h3>Applications and System Security</h3>
+        <ol>
+            <li>
+                <strong style="font-size: 17px;">
+                    Transparent Dictionaries from Polynomial Commitments
+                </strong>
+                (<a href="https://eprint.iacr.org/2025/1580.pdf">PDF</a>)
+                (<a href="https://github.com/alireza-shirzad/Iron-key">Code</a>) <br/>
+                Hossein Hafezi,
+                <a href="https://alireza-shirzad.github.io/" style="color: rgb(0, 102, 203);">Alireza Shirzad</a>,
+                <a href="https://bue.nz/" style="color: rgb(0, 102, 203);">Benedikt Bunz</a>,
+                <a href="https://jbonneau.com/" style="color: rgb(0, 102, 203);">Joseph Bonneau</a><br/>
+                <em style="font-size: 0.85em;">Submitted to 35th USENIX Security Symposium</em>
+            </li>
+        </ol>
+        <hr>
+        <h3>Blockchain</h3>
+        <ol>
+            <li>
+                <strong style="font-size: 17px;">
+                    Fair Signature Exchange
+                </strong>
+                (<a href="https://eprint.iacr.org/2025/059.pdf">PDF</a>)
+                (<a href="https://github.com/h-hafezi/fair_schnorr_signature_exchange">Code</a>) <br/>
+                Hossein Hafezi,
+                <a href="https://aditi741997.github.io/" style="color: rgb(0, 102, 203);">Aditi Partap</a>,
+                <a href="https://sourav1547.github.io/" style="color: rgb(0, 102, 203);">Sourav Das</a>,
+                <a href="https://jbonneau.com/" style="color: rgb(0, 102, 203);">Joseph Bonneau</a>,<br/>
+                <em style="font-size: 0.85em;">Submitted to Financial Cryptography and Data Security 2026</em>
+            </li>
+        </ol>
     </div>
 </section>
 
 <section>
     <h2>Talks</h2>
-    <div class="publication-list">
+    <div class="talks-list">
         <p>
             <strong>KZH-Fold: Accountable Voting from Sublinear Accumulation</strong> (<a href="/asset/KZH_Slides.pdf">Slides</a>)
         </p>
         <ul>
-            <li>Stanford Reading Group <a href="https://stanford.zoom.us/rec/play/54F2llPXrJDTPpfkYp68Btbd9opydLPNJXZ6WPE6F71c50rtKsiA-zWMpm92jByKDZezG_iDp1O8pSHt.YwZmnJu1DmDZkwRa?accessLevel=&canPlayFromShare=true&from=share_recording_detail&startTime=1743703506000&componentName=rec-play&originRequestUrl=https%3A%2F%2Fstanford.zoom.us%2Frec%2Fshare%2FU55ktl7glfkxySVUmf5SmILU1SnvRRQCZB8u9mLWdkMAy5Fb0UmtP4slBccYtje5.MH1HyvDK_Z9B2mgD%3FstartTime%3D1743703506000">(Video)</a></li>
-            <li>O(1) Lab Reading Group <a href="https://youtu.be/vnz05W3ten0?si=uASvQCXClNI3bEMA">(Video)</a></li>
-            <li>UMD Crypto Reading Group</li>
-            <li>Upenn Reading Group</li>
-            <li>EPFL Chiesa's Reading Group</li>
+            <li>Stanford Reading Group, April 2025 <a href="https://stanford.zoom.us/rec/play/54F2llPXrJDTPpfkYp68Btbd9opydLPNJXZ6WPE6F71c50rtKsiA-zWMpm92jByKDZezG_iDp1O8pSHt.YwZmnJu1DmDZkwRa?accessLevel=&canPlayFromShare=true&from=share_recording_detail&startTime=1743703506000&componentName=rec-play&originRequestUrl=https%3A%2F%2Fstanford.zoom.us%2Frec%2Fshare%2FU55ktl7glfkxySVUmf5SmILU1SnvRRQCZB8u9mLWdkMAy5Fb0UmtP4slBccYtje5.MH1HyvDK_Z9B2mgD%3FstartTime%3D1743703506000">(Video)</a></li>
+            <li>O(1) Lab Reading Group, May 2025 <a href="https://youtu.be/vnz05W3ten0?si=uASvQCXClNI3bEMA">(Video)</a></li>
+            <li>UMD Crypto Reading Group, April 2025</li>
+            <li>Upenn Reading Group, March 2025</li>
+            <li>EPFL Chiesa's Reading Group, April 2025</li>
         </ul>
         <p>
             <strong>IronDict: Transparent Dictionaries from Polynomial Commitments</strong> (<a href="/asset/IronDict.pdf">Slides</a>)
         </p>
         <ul>
-            <li>Google Research, Private Computation Seminar <a href="https://youtu.be/h2VLVcz3d7U?si=PbwoTHGuieFVs5Bc">(Video)</a></li>
-            <li>Cloudflare Research Group, Invited Talk</li>
-            <li>IMDEA Software Reading Group</li>
+            <li>Google Research, Private Computation Seminar, July 2025 <a href="https://youtu.be/h2VLVcz3d7U?si=PbwoTHGuieFVs5Bc">(Video)</a></li>
+            <li>Cloudflare Research Group, Invited Talk, August 2025</li>
+            <li>Microsoft Crypto Group Redmond, October 2025</li>
+            <li>IMDEA Software Reading Group, June 2025</li>
+            <li>NYU Crypto Reading Group, December 2025</li>
         </ul>
 
     </div>
@@ -230,13 +280,12 @@
 
 <section>
     <h2>Service</h2>
-    <div class="publication-list">
+    <div class="service-list">
         <p>
             External reviewer in Eurocrypt2025 and CCS2025
             <br>
             Volunteer staff in Eurocrypt2025 (Madrid)
         </p>
-
     </div>
 </section>
 
