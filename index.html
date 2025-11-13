@@ -3,229 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hossein Hafezi</title>
-    <link rel="icon" href="asset/nyu-logo.jpg">
-
+    <title>Joseph Bonneau - Homepage</title>
     <style>
-
-        .links a {
-            display: block;
-            margin-bottom: 5px;
-            text-decoration: none;
-            color: #333;
-        }
-
-        .links a:hover {
-            color: #007bff;
-        }
-
+        /* --- Global Styles --- */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-align: center;
-            margin: 20px auto;
-            max-width: 800px;
-            padding: 20px;
-            box-sizing: border-box;
-            background: #FFFFFF;
-            border: 2px solid black;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #fff;
+            color: #333;
+            margin: 0;
+            padding: 0;
         }
 
-        .highlighted {
-            background-color: black; /* Background color for highlight */
-            color: white; /* Text color for highlight */
-            border-radius: 5px; /* Rounded corners for highlight */
-            padding: 5px 10px; /* Padding for highlight */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
 
-        nav {
-            text-align: center;
-            margin-bottom: 20px;
-            border: 2px solid black;
-            padding: 10px 0;
-            border-radius: 5px;
-        }
-
-        nav a {
-            margin: 0 10px;
-            color: black;
+        a {
+            color: #0056b3; /* A standard link blue */
             text-decoration: none;
-            font-size: 18px; /* Default font size */
-            padding: 5px 10px;
         }
 
-        nav a:hover {
+        a:hover {
             text-decoration: underline;
         }
 
-        header {
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* --- Header --- */
+        .site-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
-            background: #FFFFFF;
-            color: black;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #FFFFFF;
+            padding: 20px 0;
+            gap: 20px;
+            border-bottom: 1px solid #eee;
         }
 
-        .profile-picture {
-            max-width: 300px;
-            border-radius: 50%;
-            margin-right: 0;
+        .header-image-left {
+            flex: 1; /* Assign a flexible base size */
+            max-width: 200px; /* Max width for the image */
         }
 
-        .title {
-            text-align: left;
-            color: black;
+        .header-image-left img {
+            border-radius: 6px; /* Slightly rounded corners */
         }
 
-        h1, p, li {
-            font-size: 18px;
-            margin-right: 20px;
-            color: black;
-            text-align: justify;
+        .header-title {
+            flex: 2; /* Allow title to take more space */
+            text-align: center;
         }
 
-        section {
-            margin-bottom: 20px;
-            text-align: left;
-            background: #FFFFFF;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            color: black;
-            border: 2px solid black;
-            transition: background-color 0.3s ease; /* Smooth transition */
+        .header-title h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #222;
         }
 
-        section:hover {
-            background-color: #f2f2f2; /* Slightly greyish color on hover */
+        .header-title p {
+            margin: 5px 0 0;
+            font-size: 1.1rem;
+            color: #555;
         }
 
-        h2 {
-            color: black;
-            font-size: 24px;
-            margin-bottom: 10px;
+        .header-profile-pic {
+            flex: 1; /* Assign a flexible base size */
+            max-width: 200px; /* Match the other image */
+            display: flex;
+            justify-content: flex-end; /* Align pic to the right */
         }
 
-        ul {
-            list-style-type: none;
+        .header-profile-pic img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Makes the image a circle */
+            object-fit: cover; /* Ensures image fills the circle */
+        }
+
+        /* --- Navigation --- */
+        .main-nav {
+            padding: 15px 0;
+        }
+
+        .main-nav ul {
+            list-style: none;
             padding: 0;
             margin: 0;
-            color: black;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Allows links to wrap on small screens */
+            gap: 20px;
         }
 
-        li {
-            font-size: 16px;
-            margin-bottom: 8px;
-            color: black;
+        .main-nav li {
+            font-size: 1.1rem;
         }
 
-        /* Adjustments for mobile devices */
-        @media only screen and (max-width: 600px) {
-            body, header, section {
-                padding: 10px;
-                margin: 0;
-                max-width: 100%;
-            }
+        .main-nav a {
+            color: #333;
+            font-weight: 500;
+        }
 
-            .profile-picture img {
-                width: 90%;
-                height: auto;
-            }
+        /* --- Main Content --- */
+        .main-content {
+            padding: 20px 0;
+        }
 
-            header {
+        .intro-text {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .publications-header {
+            background-color: #f4f4f4;
+            padding: 10px 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .publications-list {
+            list-style: circle;
+            padding-left: 20px;
+            margin-top: 20px;
+        }
+
+        .publications-list li {
+            margin-bottom: 15px;
+        }
+
+        /* --- Footer --- */
+        .site-footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        /*
+        =========================================
+        === MOBILE RESPONSIVE STYLES ===
+        =========================================
+        */
+        @media (max-width: 768px) {
+            .site-header {
+                /* This is the key: stack elements vertically */
                 flex-direction: column;
-                margin-bottom: 30px;
             }
 
-            .title p, section p, li, h2 {
-                font-size: 14px;
+            .header-image-left {
+                /* Hide the decorative side image on mobile */
+                display: none;
             }
 
-            .title h1 {
-                font-size: calc(18px * 1.5); /* Increase font size by 50% */
-                margin-top: 20px; /* Add margin between the title and the photo */
+            .header-profile-pic {
+                justify-content: center; /* Center the profile pic */
+                margin-bottom: 20px;
             }
 
-            nav a {
-                font-size: 8px; /* Smaller font size for navigation links */
+            .header-title {
+                /* Order ensures title text is below profile pic */
+                order: 2;
             }
 
-            section {
-                margin-bottom: 30px;
+            .header-profile-pic {
+                order: 1;
+            }
+
+            .header-title h1 {
+                font-size: 2rem;
+            }
+
+            .main-nav ul {
+                flex-direction: column; /* Stack nav links */
+                align-items: center;
+                gap: 10px;
             }
         }
 
-        /* Adjustments for laptops and larger screens */
-        @media only screen and (min-width: 1024px) {
-            .title h1 {
-                font-size: 48px; /* Increased font size for the title */
-            }
-        }
     </style>
 </head>
-
 <body>
 
-<nav>
-    <a href="" class="highlighted">Academic Life</a> <a href="personal-life.html">Personal Life</a>
-    <a href="blogs.html">Blogs</a>
-</nav>
+<div class="container">
 
-<header>
-    <div class="profile-picture">
-        <img src="asset/profile.jpg" alt="Profile Picture" style="width: 270px; height: auto;">
-    </div>
-    <div class="title">
-        <h1>Hossein Hafezi</h1>
-        <p>First-Year PhD @ NYU</p>
-    </div>
-</header>
+    <header class="site-header">
+        <div class="header-image-left">
+            <img src="https://via.placeholder.com/200x133" alt="Decorative image of a climber">
+        </div>
 
-<section>
-    <h2>About Me</h2>
-    <p class="about-text">
-        I'm a first-year PhD student at NYU, supervised by <a href="https://cs.nyu.edu/~bb/" style="color: rgb(0, 102, 203);">Benedikt Bunz</a>, and <a href="https://jbonneau.com/" style="color: rgb(0, 102, 203);">Joseph Bonneau</a>. My research interests are broad, primarily focused on building secure platforms using novel cryptographic primitives, especially SNARKs.
-        Check out my list of publications, talks and services <a href="publication.html" style="color: rgb(0, 102, 203);">here</a>.
-        <br><br>
-        I worked with <a href="https://bford.info/" style="color: rgb(0, 102, 203);">Bryan Ford</a> (EPFL) and <a href="https://www.cs.umd.edu/~imiers/" style="color: rgb(0, 102, 203);">Ian Miers</a> (UMD) during my undergraduate studies, and more recently with <a href="https://www.dariofiore.it/" style="color: rgb(0, 102, 203);">Dario Fiore</a> (IMDEA Software). I have also collaborated with the <span style="color: red;">Ethereum Foundation</span> and <span style="color: red;">Google Research</span>.
-    </p>
-    <br>
-    <div style="text-align: center; margin-top: 20px;">
-        <a href="https://www.github.com/h-hafezi/" class="link">Github</a> /
-        <a href="https://twitter.com/RandomString00" class="link">Twitter</a> /
-        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=M6g06s4AAAAJ" class="link">Google Scholar</a> /
-        <a href="mailto:h.hafezi@nyu.edu" class="link">Email</a>
-    </div>
+        <div class="header-title">
+            <h1>Joseph Bonneau</h1>
+            <p>Associate Professor</p>
+            <p>Crypto & Security Group</p>
+            <p>Courant Institute, New York University</p>
+        </div>
 
-    <style>
-        /* Base styles */
-        .about-text {
-            font-size: 18px; /* Default font size for the text */
-        }
+        <div class="header-profile-pic">
+            <img src="https://via.placeholder.com/150" alt="Headshot of Joseph Bonneau">
+        </div>
+    </header>
 
-        .link {
-            text-decoration: none;
-            color: rgb(0, 102, 203);
-            font-weight: bold;
-            font-size: 18px; /* Default font size for links */
-        }
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">papers</a></li>
+            <li><a href="#">affiliations</a></li>
+            <li><a href="#">cv</a></li>
+            <li><a href="#">bio</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">about</a></li>
+        </ul>
+    </nav>
 
-        /* Mobile styles */
-        @media (max-width: 600px) {
-            .about-text {
-                font-size: 16px; /* Increased font size for text on mobile */
-            }
-            .link {
-                font-size: 16px; /* Decreased font size for links on mobile */
-            }
-        }
-    </style>
-</section>
-</body>
+    <main class="main-content">
 
+        <section class="intro-text">
+            <p>
+                I teach and research security engineering and applied cryptography. I'm currently most interested in verifiable lotteries,
+                distributed randomness, cryptocurrencies, applications of cryptographic proofs, secure messaging protocols and
+                HTTPS. I'm co-author of a <a href="#">textbook</a> on cryptocurrencies which you can <a href="#">read for free online</a>.
+            </p>
+        </section>
+
+        <section class="publications">
+            <div class="publications-header">
+                Selected publications
+            </div>
+
+            <ul class="publications-list">
+                <li>
+                    <b>Merkle Mountain Ranges are Optimal:</b> On witness update frequency for cryptographic accumulators
+                    <u>J. Bonneau</u>, I. Chen, M. Christ and I. KarantFaidou. <i>CRYPTO 2025</i>.
+                </li>
+                <li>
+                    <b>Good Things Come to Those Who Wait:</b> Dishonest-Majority Coin-Flipping Requires Delay Functions
+                    <u>J. Bonneau</u>, B. Bünz, M. Christ and Y. Efron. <i>Eurocrypt 2025</i>.
+                </li>
+                <li>
+                    <b>NOPE:</b> Strengthening domain authentication with zero-knowledge proofs
+                    Z. DeStefano, I. J. Ma, <u>J. Bonneau</u> and M. Walfish. <i>SOSP 2024</i>.
+                </li>
+                <li>
+                    <b>Atomic and Fair Data Exchange via Blockchain</b>
+                    E. Nusret Tas, I. András Seres, Y. Zhang, M. Melczer, M. Kelkar, <u>J. Bonneau</u> and V. Nikolaenko. <i>ACM CCS 2024</i>.
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Joseph Bonneau</p>
+    </footer>
+
+</div> </body>
 </html>
