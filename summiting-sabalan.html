@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=800">
     <title>Hossein Hafezi</title>
     <link rel="icon" href="asset/nyu-logo.jpg">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* FIX 2: Changed the font to a serif stack (Georgia)
+            */
+            font-family: Georgia, 'Times New Roman', Times, serif;
             margin: 20px auto;
             max-width: 800px;
             padding: 20px;
@@ -35,7 +37,10 @@
         }
 
         .content {
-            padding: 40px;
+            /* FIX 3: Reduced padding (from 40px) to fix the gap
+              (Now 10px top/bottom, 40px left/right)
+            */
+            padding: 10px 40px;
         }
 
         a.custom-link {
@@ -86,54 +91,26 @@
             font-size: 18px;
             margin-right: 20px;
             color: black;
-            text-align: justify;
+            /* FIX 4: Changed "justify" to "left" to fix weird spacing
+            */
+            text-align: left;
         }
 
-        @media only screen and (max-width: 600px) {
-            body, header, section {
-                padding: 10px;
-                margin: 0;
-                max-width: 100%;
-            }
-
-            .profile-picture img {
-                width: 90%;
-                height: auto;
-            }
-
-            header {
-                flex-direction: column;
-                margin-bottom: 30px;
-            }
-
-            .title p, section p, li, h2 {
-                font-size: 14px;
-            }
-
-            .title h1 {
-                font-size: calc(18px * 1.5);
-                margin-top: 20px;
-            }
-
-            nav a {
-                font-size: 8px;
-            }
-
-            section {
-                margin-bottom: 30px;
-            }
+        /* FIX 5: Added this rule to center the "header" (the H2 title)
+        */
+        h2 {
+            text-align: center;
         }
 
-        @media only screen and (min-width: 1024px) {
-            .title h1 {
-                font-size: 48px;
-            }
-        }
+
+        /*
+          FIX 6: Removed all "@media" blocks (mobile view)
+        */
+
     </style>
 </head>
 <body>
 
-<!-- Navigation Bar -->
 <nav>
     <a href="index.html">Academic Life</a>
     <a href="personal-life.html">Personal Life</a>

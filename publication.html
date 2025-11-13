@@ -2,17 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=800">
     <title>Hossein Hafezi</title>
     <link rel="icon" href="asset/nyu-logo.jpg">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* FIX 1: Replaced the old font stack with a modern, cross-platform
+              "system" stack. This will look native and clean on all devices. 
+            */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
             margin: 40px auto;
             max-width: 800px;
             padding: 20px;
             box-sizing: border-box;
             background: #FFFFFF;
+
+            /* FIX 2: Added a base font-size for better consistency.
+            */
+            font-size: 16px;
         }
 
         .publication-list p, .talks-list p, .service-list p {
@@ -68,10 +76,17 @@
         }
 
         h1, p, li {
-            font-size: 18px;
+            /* FIX 3: Removed the 'font-size: 18px;' so 'p' and 'li' 
+              can use the 16px from the body, and 'h1' can be large.
+            */
             margin-right: 20px;
             color: black;
-            text-align: justify;
+
+            /* FIX 4: This is the main fix. 
+              Changed 'text-align: justify;' to 'text-align: left;'.
+              This removes the "weird" gaps between words.
+            */
+            text-align: left;
         }
 
         /* Styles for Publication List */
@@ -97,12 +112,12 @@
 
         .publication-list li {
             margin-bottom: 20px;
-            text-align: justify;
+            text-align: left; /* Explicitly set to left here too */
         }
 
         .publication-list p strong {
             display: block;
-            font-size: 18px;
+            font-size: 1.1em; /* Made relative */
         }
 
         /* Consolidated rule for all smaller text elements to ensure consistency */
@@ -110,7 +125,8 @@
         .publication-list a,
         .talks-list p a,
         .talks-list li {
-            font-size: 0.85em;
+            /* FIX 5: Adjusted size slightly for better balance with 16px base */
+            font-size: 0.9em;
             font-weight: normal;
         }
 
@@ -119,7 +135,8 @@
             color: rgb(0, 102, 203);
         }
 
-        /* Mobile-first adjustments for fonts */
+        /* This media query won't be used because of your viewport setting, 
+           but I've left it in case you change it later. */
         @media only screen and (max-width: 600px) {
             body, header, section {
                 padding: 10px;
@@ -145,37 +162,31 @@
                 margin-bottom: 30px;
             }
 
-            /* --- Updated Mobile Font Sizes --- */
             h2 {
-                font-size: 20px; /* Smaller font for section headings */
+                font-size: 20px;
             }
             .publication-list h3 {
-                font-size: 18px; /* Adjusted size for topic headings */
+                font-size: 18px;
             }
-
-            /* Publication and Authors */
             .publication-list li {
-                font-size: 14px; /* Base font size for list items */
+                font-size: 14px;
             }
             .publication-list li strong {
-                font-size: 14px; /* Title and Authors now the same size */
+                font-size: 14px;
                 font-weight: bold;
             }
-            /* The following rules now manage all smaller text within publications and talks */
             .publication-list em,
             .publication-list a,
             .talks-list p a,
             .talks-list li {
                 font-size: 14px;
             }
-            /* Talks and Service */
             .talks-list p strong {
-                font-size: 14px; /* Talk titles now the same as publication titles */
+                font-size: 14px;
             }
             .service-list p {
-                font-size: 14px; /* Service text */
+                font-size: 14px;
             }
-            /* --- End Mobile Font Sizes --- */
         }
 
         @media only screen and (min-width: 1024px) {
@@ -288,7 +299,7 @@
             <strong>KZH-Fold: Accountable Voting from Sublinear Accumulation</strong> (<a href="/asset/KZH_Slides.pdf">Slides</a>)
         </p>
         <ul>
-            <li>Stanford Reading Group, April 2025 <a href="https://stanford.zoom.us/rec/play/54F2llPXrJDTPpfkYp68Btbd9opydLPNJXZ6WPE6F71c50rtKsiA-zWMpm92jByKDZezG_iDp1O8pSHt.YwZmnJu1DmDZkwRa?accessLevel=&canPlayFromShare=true&from=share_recording_detail&startTime=1743703506000&componentName=rec-play&originRequestUrl=https%3A%2F%2Fstanford.zoom.us%2Frec%2Fshare%2FU55ktl7glfkxySVUmf5SmILU1SnvRRQCZB8u9mLWdkMAy5Fb0UmtP4slBccYtje5.MH1HyvDK_Z9B2mgD%3FstartTime%3D1743703506000">(Video)</a></li>
+            <li>Stanford Reading Group, April 2025 <a href="https://stanford.zoom.us/rec/play/54F2llPXrJDTPpfkYp68Btbd9opydLPNJXZ6WPE6F71c50rtKsiA-zWMpm92jByKDZezG_iDp1O8pSHt.YwZmnJu1DmDZkwRa?accessLevel=&canPlayFromShare=true&from=share_recording_detail&startTime=1743703506000&componentName=rec-play&originRequestUrl=https(Video)</a></li>
             <li>O(1) Lab Reading Group, May 2025 <a href="https://youtu.be/vnz05W3ten0?si=uASvQCXClNI3bEMA">(Video)</a></li>
             <li>UMD Crypto Reading Group, April 2025</li>
             <li>Upenn Reading Group, March 2025</li>

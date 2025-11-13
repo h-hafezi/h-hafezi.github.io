@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=800">
     <title>Hossein Hafezi</title>
     <link rel="icon" href="nyu-logo.jpg">
 
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* FIX 1: Updated font-family to a cleaner system stack */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             text-align: center;
             margin: 20px auto;
             max-width: 800px;
@@ -68,7 +69,8 @@
             font-size: 18px;
             margin-right: 20px;
             color: black;
-            text-align: justify;
+            /* FIX 2: Changed from "justify" to "left" to fix spacing */
+            text-align: left;
         }
 
         section {
@@ -102,48 +104,13 @@
             color: black;
         }
 
-        /* Adjustments for mobile devices */
-        @media only screen and (max-width: 600px) {
-            body, header, section {
-                padding: 10px;
-                margin: 0;
-                max-width: 100%;
-            }
+        /* REMOVED:
+          I deleted the "@media only screen and (max-width: 600px)" block.
+        */
 
-            .profile-picture img {
-                width: 90%;
-                height: auto;
-            }
-
-            header {
-                flex-direction: column;
-                margin-bottom: 30px;
-            }
-
-            .title p, section p, ul, h2 {
-                font-size: 17px;
-            }
-
-            .title h1 {
-                font-size: calc(18px * 1.5); /* Increase font size by 50% */
-                margin-top: 20px; /* Add margin between the title and the photo */
-            }
-
-            nav a {
-                font-size: 8px; /* Smaller font size for navigation links */
-            }
-
-            section {
-                margin-bottom: 30px;
-            }
-        }
-
-        /* Adjustments for laptops and larger screens */
-        @media only screen and (min-width: 1024px) {
-            .title h1 {
-                font-size: 48px; /* Increased font size for the title */
-            }
-        }
+        /* REMOVED:
+          I also deleted the "@media only screen and (min-width: 1024px)" block.
+        */
 
         /* New CSS for Sabalan Peak */
         .sabalan-link {
@@ -158,19 +125,18 @@
 
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="index.html">Academic Life</a>
-        <a href="personal-life.html">Personal Life</a>
-        <a href="blogs.html" class="highlighted">Blogs</a>
-    </nav>
+<nav>
+    <a href="index.html">Academic Life</a>
+    <a href="personal-life.html">Personal Life</a>
+    <a href="blogs.html" class="highlighted">Blogs</a>
+</nav>
 
-    <section>
-        <h2>Blogs</h2>
-        <ul>
-            <li><a href="summiting-sabalan.html" class="sabalan-link">Sabalan Peak</a></li>
-        </ul>
-    </section>
+<section>
+    <h2>Blogs</h2>
+    <ul>
+        <li><a href="summiting-sabalan.html" class="sabalan-link">Sabalan Peak</a></li>
+    </ul>
+</section>
 
 </body>
 
