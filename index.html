@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=800">
     <title>Hossein Hafezi</title>
     <link rel="icon" href="asset/nyu-logo.jpg">
 
@@ -124,7 +124,10 @@
             color: black;
         }
 
-        /* Adjustments for mobile devices */
+        /* NOTE: Because of the viewport change above, this mobile
+          style block will likely NOT be used on phones,
+          as the viewport will be 800px (which is not < 600px).
+        */
         @media only screen and (max-width: 600px) {
             body, header, section {
                 padding: 10px;
