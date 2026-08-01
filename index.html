@@ -5,58 +5,20 @@
     <meta name="viewport" content="width=800">
     <title>Hossein Hafezi</title>
     <link rel="icon" href="asset/cambridge%20logo.jpeg">
+    <link rel="stylesheet" href="asset/style.css">
 
     <style>
-
-        .links a {
-            display: block;
-            margin-bottom: 5px;
-            text-decoration: none;
-            color: #333;
-        }
-
-        .links a:hover {
-            color: #007bff;
-        }
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
-            margin: 20px auto;
-            max-width: 800px;
-            padding: 20px;
-            box-sizing: border-box;
-            background: #FFFFFF;
-            border: 2px solid black;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
-        .highlighted {
-            background-color: black; /* Background color for highlight */
-            color: white; /* Text color for highlight */
-            border-radius: 5px; /* Rounded corners for highlight */
-            padding: 5px 10px; /* Padding for highlight */
+        h1, p, li {
+            text-align: justify;
         }
 
-        nav {
-            text-align: center;
-            margin-bottom: 20px;
-            border: 2px solid black;
-            padding: 10px 0;
-            border-radius: 5px;
-        }
-
-        nav a {
-            margin: 0 10px;
-            color: black;
-            text-decoration: none;
-            font-size: 18px; /* Default font size */
-            padding: 5px 10px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
+        section:hover {
+            background-color: #f2f2f2;
         }
 
         header {
@@ -64,17 +26,20 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px;
+            margin-bottom: 20px;
             background: #FFFFFF;
             color: black;
             border-radius: 10px;
-            margin-bottom: 20px;
             border-bottom: 2px solid #FFFFFF;
         }
 
         .profile-picture {
             max-width: 300px;
-            border-radius: 50%;
-            margin-right: 0;
+        }
+
+        .profile-picture img {
+            width: 270px;
+            height: auto;
         }
 
         .title {
@@ -82,52 +47,16 @@
             color: black;
         }
 
-        h1, p, li {
+        .about-text a, .link {
+            color: rgb(0, 102, 203);
+        }
+
+        .link {
             font-size: 18px;
-            margin-right: 20px;
-            color: black;
-            text-align: justify;
+            font-weight: bold;
+            text-decoration: none;
         }
 
-        section {
-            margin-bottom: 20px;
-            text-align: left;
-            background: #FFFFFF;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            color: black;
-            border: 2px solid black;
-            transition: background-color 0.3s ease; /* Smooth transition */
-        }
-
-        section:hover {
-            background-color: #f2f2f2; /* Slightly greyish color on hover */
-        }
-
-        h2 {
-            color: black;
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            color: black;
-        }
-
-        li {
-            font-size: 16px;
-            margin-bottom: 8px;
-            color: black;
-        }
-
-        /* NOTE: Because of the viewport change above, this mobile
-          style block will likely NOT be used on phones,
-          as the viewport will be 800px (which is not < 600px).
-        */
         @media only screen and (max-width: 600px) {
             body, header, section {
                 padding: 10px;
@@ -150,23 +79,26 @@
             }
 
             .title h1 {
-                font-size: calc(18px * 1.5); /* Increase font size by 50% */
-                margin-top: 20px; /* Add margin between the title and the photo */
+                font-size: calc(18px * 1.5);
+                margin-top: 20px;
             }
 
             nav a {
-                font-size: 8px; /* Smaller font size for navigation links */
+                font-size: 8px;
             }
 
             section {
                 margin-bottom: 30px;
             }
+
+            .about-text, .link {
+                font-size: 16px;
+            }
         }
 
-        /* Adjustments for laptops and larger screens */
         @media only screen and (min-width: 1024px) {
             .title h1 {
-                font-size: 48px; /* Increased font size for the title */
+                font-size: 48px;
             }
         }
     </style>
@@ -175,13 +107,14 @@
 <body>
 
 <nav>
-    <a href="" class="highlighted">Academic Life</a> <a href="personal-life.html">Personal Life</a>
+    <a href="index.html" class="highlighted">Academic Life</a>
+    <a href="personal-life.html">Personal Life</a>
     <a href="blogs.html">Blogs</a>
 </nav>
 
 <header>
     <div class="profile-picture">
-        <img src="asset/profile.jpg" alt="Profile Picture" style="width: 270px; height: auto;">
+        <img src="asset/profile.jpg" alt="Hossein Hafezi">
     </div>
     <div class="title">
         <h1>Hossein Hafezi</h1>
@@ -193,27 +126,27 @@
     <h2>About Me</h2>
     <p class="about-text">
         I am an incoming PhD student at the University of Cambridge, starting in Autumn 2026, where I will be advised by
-        <a href="https://martin.kleppmann.com/" style="color: rgb(0, 102, 203);">Martin Kleppmann</a>.
+        <a href="https://martin.kleppmann.com/">Martin Kleppmann</a>.
 
         Prior to this, I spent two years as a PhD student at NYU, advised by
-        <a href="https://cs.nyu.edu/~bb/" style="color: rgb(0, 102, 203);">Benedikt Bünz</a> and
-        <a href="https://jbonneau.com/" style="color: rgb(0, 102, 203);">Joseph Bonneau</a>.
+        <a href="https://cs.nyu.edu/~bb/">Benedikt Bünz</a> and
+        <a href="https://jbonneau.com/">Joseph Bonneau</a>.
         I was unable to continue due to immigration-related constraints
-        (<a href="https://www.whitehouse.gov/presidential-actions/2025/06/restricting-the-entry-of-foreign-nationals-to-protect-the-united-states-from-foreign-terrorists-and-other-national-security-and-public-safety-threats/" style="color: rgb(0, 102, 203);">details</a>).
+        (<a href="https://www.whitehouse.gov/presidential-actions/2025/06/restricting-the-entry-of-foreign-nationals-to-protect-the-united-states-from-foreign-terrorists-and-other-national-security-and-public-safety-threats/">details</a>).
 
         <br><br>
         My research broadly focuses on building secure systems using modern cryptographic techniques,
         with a particular emphasis on SNARKs. More recently, I have developed a strong interest in
         secure messaging and key transparency. You can find a list of my publications, talks, and service
-        <a href="publication.html" style="color: rgb(0, 102, 203);">here</a>.
+        <a href="publication.html">here</a>.
         <br><br>
 
         During my undergrad, I worked with
-        <a href="https://bford.info/" style="color: rgb(0, 102, 203);">Bryan Ford</a> (EPFL) and
-        <a href="https://www.cs.umd.edu/~imiers/" style="color: rgb(0, 102, 203);">Ian Miers</a> (UMD).
+        <a href="https://bford.info/">Bryan Ford</a> (EPFL) and
+        <a href="https://www.cs.umd.edu/~imiers/">Ian Miers</a> (UMD).
         More recently, I have been a visiting researcher with
-        <a href="https://www.dariofiore.it/" style="color: rgb(0, 102, 203);">Dario Fiore</a> (IMDEA Software) and
-        <a href="https://homes.esat.kuleuven.be/~preneel/" style="color: rgb(0, 102, 203);">Bart Preneel</a> (KU Leuven).
+        <a href="https://www.dariofiore.it/">Dario Fiore</a> (IMDEA Software) and
+        <a href="https://homes.esat.kuleuven.be/~preneel/">Bart Preneel</a> (KU Leuven).
     </p>
     <br>
     <div style="text-align: center; margin-top: 20px;">
@@ -222,30 +155,6 @@
         <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=M6g06s4AAAAJ" class="link">Google Scholar</a> /
         <a href="mailto:h.hafezi@nyu.edu" class="link">Email</a>
     </div>
-
-    <style>
-        /* Base styles */
-        .about-text {
-            font-size: 18px; /* Default font size for the text */
-        }
-
-        .link {
-            text-decoration: none;
-            color: rgb(0, 102, 203);
-            font-weight: bold;
-            font-size: 18px; /* Default font size for links */
-        }
-
-        /* Mobile styles */
-        @media (max-width: 600px) {
-            .about-text {
-                font-size: 16px; /* Increased font size for text on mobile */
-            }
-            .link {
-                font-size: 16px; /* Decreased font size for links on mobile */
-            }
-        }
-    </style>
 </section>
 
 <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=8WOvqsYGUxLOSF1Gu2u5o66cUqMuDB-pn-jw8R8Q8eE&cl=ffffff&w=a"></script>

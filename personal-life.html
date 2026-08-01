@@ -5,261 +5,182 @@
     <meta name="viewport" content="width=800">
     <title>Hossein Hafezi</title>
     <link rel="icon" href="asset/nyu-logo.jpg">
+    <link rel="stylesheet" href="asset/style.css">
 
     <style>
         body {
-            /* I also updated the font to a cleaner, more modern default */
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             text-align: center;
-            margin: 20px auto;
-            max-width: 800px;
-            padding: 20px;
-            box-sizing: border-box;
-            background: #FFFFFF;
-            border: 2px solid black;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
-        /* Centering the image container */
+        h1, p {
+            font-size: 15px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            font-size: 16px;
+            margin-bottom: 8px;
+            margin-left: 20px;
+        }
+
+        section:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* A pair of photos side by side. */
+        .row {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .column {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .column img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* A single photo, centred and boxed to a fixed size. */
         .image-container {
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        /* Specifying the size of the image */
         .centered-image {
-            width: 300px; /* Your specific width */
-            height: 200px; /* Your specific height */
-            object-fit: contain; /* This ensures the image maintains its aspect ratio */
-            margin-bottom: 20px;
+            width: 300px;
+            height: 200px;
+            object-fit: contain;
             margin-top: 20px;
-        }
-
-        .row {
-            display: flex;
-            justify-content: space-around; /* Adjusts the spacing between the images */
-            align-items: center; /* Aligns items vertically */
-        }
-
-        .column {
-            flex: 1; /* Ensures each column takes equal width */
-            padding: 10px; /* Optional: adds some space around the images */
-        }
-
-        .column img {
-            width: 100%; /* Makes the image fill the column width */
-            height: auto; /* Keeps the image aspect ratio */
-        }
-
-        .highlighted {
-            background-color: black; /* Background color for highlight */
-            color: white; /* Text color for highlight */
-            border-radius: 5px; /* Rounded corners for highlight */
-            padding: 5px 10px; /* Padding for highlight */
-        }
-
-        nav {
-            text-align: center;
             margin-bottom: 20px;
-            border: 2px solid black;
-            padding: 10px 0;
-            border-radius: 5px;
         }
-
-        nav a {
-            margin: 0 10px;
-            color: black;
-            text-decoration: none;
-            font-size: 18px; /* Default font size */
-            padding: 5px 10px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background: #FFFFFF;
-            color: black;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #FFFFFF;
-        }
-
-        .profile-picture {
-            max-width: 300px;
-            border-radius: 50%;
-            margin-right: 0;
-        }
-
-        .title {
-            text-align: left;
-            color: black;
-        }
-
-        h1, p, li {
-            font-size: 15px;
-            margin-right: 20px;
-            color: black;
-            /* HERE IS THE OTHER FIX:
-              I changed "justify" to "left" to remove the weird gaps in the text.
-            */
-            text-align: left;
-        }
-
-        section {
-            margin-bottom: 20px;
-            text-align: left;
-            background: #FFFFFF;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            color: black;
-            border: 2px solid black;
-            transition: background-color 0.3s ease; /* Smooth transition for background color change */
-        }
-
-        section:hover {
-            background-color: #f0f0f0; /* Light grey background on hover */
-        }
-
-        h2 {
-            color: black;
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            color: black;
-        }
-
-        li {
-            font-size: 16px;
-            margin-bottom: 8px;
-            color: black;
-        }
-
     </style>
 </head>
 
 <body>
 
 <nav>
-    <a href="index.html" >Academic Life</a> <a href="personal-life.html" class="highlighted">Personal Life</a>
+    <a href="index.html">Academic Life</a>
+    <a href="personal-life.html" class="highlighted">Personal Life</a>
     <a href="blogs.html">Blogs</a>
 </nav>
 
 <section>
     <h2>Places I've Called Home</h2>
     <p>I'm glad you asked. I've been lucky enough to live in a few different countries.</p>
-    <ul style="list-style-type: disc; margin-left: 0;">
-        <li style="margin-left: 20px;"><b>Iran</b> – So, I grew up in Mashhad, this city in the eastern part of Iran, and hung out there for like 14 years. I also spent a year and a half in Tehran, the capital, and another six years in Shahroud, which is this really charming small town.</li>
-        <div class="row">
-            <div class="column">
-                <img src="photos/iran/ir1.jpg" alt="Description of Image 4">
-            </div>
-            <div class="column">
-                <img src="photos/iran/ir2.jpg" alt="Description of Image 3">
-            </div>
-        </div>
 
-        <li style="margin-left: 20px;"><b>Japan</b> – I was in Sendai, Japan for about 9 months when I was little, tagging along with my family. I have some adorable pics of me dressed up in Japanese outfits!</li>
+    <ul>
+        <li><b>Iran</b> – So, I grew up in Mashhad, this city in the eastern part of Iran, and hung out there for like 14 years. I also spent a year and a half in Tehran, the capital, and another six years in Shahroud, which is this really charming small town.</li>
     </ul>
     <div class="row">
         <div class="column">
-            <img src="photos/japan/japan1.PNG" alt="Description of Image 1">
+            <img src="photos/iran/ir1.jpg" alt="Iran">
         </div>
         <div class="column">
-            <img src="photos/japan/japan2.PNG" alt="Description of Image 2">
-        </div>
-    </div>
-    <ul style="list-style-type: disc; margin-left: 0;">
-        <li style="margin-left: 20px;"><b>Australia</b> – Australia might just top my list of faves for its awesome vibes, cool people, and culture! I spent 6 months there in year 10, went to Kingswood Highschool in Penrith, a suburb of Sydney. Totally picked up the Australian accent while I was there, though it's pretty much gone now. Hit up Brisbane, Melbourne, Canberra, and did loads of sightseeing in Sydney too.</li>
-    </ul>
-    <div class="row">
-        <div class="column">
-            <img src="photos/australia/au2.jpg" alt="Description of Image 5">
-        </div>
-        <div class="column">
-            <img src="photos/australia/au1.jpg" alt="Description of Image 6">
-        </div>
-    </div>
-    <ul style="list-style-type: disc; margin-left: 0;">
-        <li style="margin-left: 20px;"><b>Switzerland</b> – Spent four awesome months in Lausanne from July to October in 2022. Ended up making friends from over 20 different countries! Did a bunch of hiking and checked out loads of gorgeous Swiss cities like Geneva, Zermatt, Kinderstagen, Zurich, Neuchâtel, etc. Also went around Europe a bit e.g. Austria, Italy and Germany. Totally would choose Switzerland for my honeymoon, no doubt about it.</li>
-    </ul>
-    <div class="row">
-        <div class="column">
-            <img src="photos/swiss/swiss1.JPEG" alt="Description of Image 1">
-        </div>
-        <div class="column">
-            <img src="photos/swiss/swiss4.jpg" alt="Description of Image 3">
-        </div>
-    </div>
-    <ul style="list-style-type: disc; margin-left: 0;">
-        <li style="margin-left: 20px;"><b>Germany</b> – I lived in Bochum for 6 months from July to December 2023. It was a pretty chill time, mostly sticking to indoor stuff like hitting the gym and swimming. Totally obsessed with Unifit back then – that place was my paradise. Also took some trips to Paris, Munich, and Switzerland (again), plus hit up nearby cities like Dortmund, Düsseldorf, and Cologne while I was there.</li>
-    </ul>
-    <div class="row">
-        <div class="column">
-            <img src="photos/germany/de1.jpg" alt="Description of Image 1">
-        </div>
-        <div class="column">
-            <img src="photos/germany/de2.jpg" alt="Description of Image 2">
-        </div>
-    </div>
-    <div class="row">
-        <div class="column">
-            <img src="photos/germany/de4.jpg" alt="Description of Image 4">
-        </div>
-        <div class="column">
-            <img src="photos/germany/de3.jpg" alt="Description of Image 3">
-        </div>
-    </div>
-    <ul style="list-style-type: disc; margin-left: 0;">
-        <li style="margin-left: 20px;"><b>Spain</b> – From February 2025 until August 2025, I was living in Madrid, Spain. I honestly think Spain is the best country in the world. My student life here has been nothing short of amazing. I met tons of incredible people, including the three legends in the photo below—Oliwia, Panulouis, and Alessandera—whom I randomly bumped into at a hilariously lame Carnival. I also had two French roommates (aka ma vies) who made my time at the residence unforgettable. Madrid helped me level up my salsa moves and, let’s be real, my “coolness” game too. The only downside? My Spanish is still embarrassingly basic.</li>
-    </ul>
-    <div class="row">
-        <div class="column">
-            <img src="photos/spain/spain2.jpg" alt="Description of Image 4">
-        </div>
-        <div class="column">
-            <img src="photos/spain/sp2.jpg" alt="Description ofImage 3">
+            <img src="photos/iran/ir2.jpg" alt="Iran">
         </div>
     </div>
 
-    <ul style="list-style-type: disc; margin-left: 0;">
-        <li style="margin-left: 20px;"><b>Belgium</b> –  For a three-month academic visit, I lived in Leuven, Belgium — a charming student city with a unique and lively atmosphere. Met some amazing souls there including Kangxin, Diego and Miha. My time there was truly memorable, especially with my bike — you can literally get anywhere by cycling.
-        </li>
+    <ul>
+        <li><b>Japan</b> – I was in Sendai, Japan for about 9 months when I was little, tagging along with my family. I have some adorable pics of me dressed up in Japanese outfits!</li>
     </ul>
     <div class="row">
         <div class="column">
-            <img src="photos/belgium /beligum1.jpeg" alt="Description of Image 4">
+            <img src="photos/japan/japan1.PNG" alt="Japan">
         </div>
         <div class="column">
-            <img src="photos/belgium /beligum 2.jpg" alt="Description ofImage 3">
-        </div>
-    </div>
-    <ul style="list-style-type: disc; margin-left: 0;">
-        <li style="margin-left: 20px;"><b>UK</b> –  From January to March 2026, I spent time in Cambridge for an academic visit, and I absolutely loved the university atmosphere. By sheer luck, I was placed in postgraduate accommodation at Christ’s College, where I ended up with the most incredible roommates (Team 6 Petersfield — the legends in the photo). I’m really looking forward to returning to Cambridge next year to begin my PhD.
-        </li>
-    </ul>
-    <div class="row">
-        <div class="column">
-            <img src="photos/uk/uk1.jpg" alt="Description of Image 4">
-        </div>
-        <div class="column">
-            <img src="photos/uk/uk.jpg" alt="Description ofImage 3">
+            <img src="photos/japan/japan2.PNG" alt="Japan">
         </div>
     </div>
 
+    <ul>
+        <li><b>Australia</b> – Australia might just top my list of faves for its awesome vibes, cool people, and culture! I spent 6 months there in year 10, went to Kingswood Highschool in Penrith, a suburb of Sydney. Totally picked up the Australian accent while I was there, though it's pretty much gone now. Hit up Brisbane, Melbourne, Canberra, and did loads of sightseeing in Sydney too.</li>
+    </ul>
+    <div class="row">
+        <div class="column">
+            <img src="photos/australia/au2.jpg" alt="Australia">
+        </div>
+        <div class="column">
+            <img src="photos/australia/au1.jpg" alt="Australia">
+        </div>
+    </div>
+
+    <ul>
+        <li><b>Switzerland</b> – Spent four awesome months in Lausanne from July to October in 2022. Ended up making friends from over 20 different countries! Did a bunch of hiking and checked out loads of gorgeous Swiss cities like Geneva, Zermatt, Kinderstagen, Zurich, Neuchâtel, etc. Also went around Europe a bit e.g. Austria, Italy and Germany. Totally would choose Switzerland for my honeymoon, no doubt about it.</li>
+    </ul>
+    <div class="row">
+        <div class="column">
+            <img src="photos/swiss/swiss1.JPEG" alt="Switzerland">
+        </div>
+        <div class="column">
+            <img src="photos/swiss/swiss4.jpg" alt="Switzerland">
+        </div>
+    </div>
+
+    <ul>
+        <li><b>Germany</b> – I lived in Bochum for 6 months from July to December 2023. It was a pretty chill time, mostly sticking to indoor stuff like hitting the gym and swimming. Totally obsessed with Unifit back then – that place was my paradise. Also took some trips to Paris, Munich, and Switzerland (again), plus hit up nearby cities like Dortmund, Düsseldorf, and Cologne while I was there.</li>
+    </ul>
+    <div class="row">
+        <div class="column">
+            <img src="photos/germany/de1.jpg" alt="Germany">
+        </div>
+        <div class="column">
+            <img src="photos/germany/de2.jpg" alt="Germany">
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="photos/germany/de4.jpg" alt="Germany">
+        </div>
+        <div class="column">
+            <img src="photos/germany/de3.jpg" alt="Germany">
+        </div>
+    </div>
+
+    <ul>
+        <li><b>Spain</b> – From February 2025 until August 2025, I was living in Madrid, Spain. I honestly think Spain is the best country in the world. My student life here has been nothing short of amazing. I met tons of incredible people, including the three legends in the photo below—Oliwia, Panulouis, and Alessandera—whom I randomly bumped into at a hilariously lame Carnival. I also had two French roommates (aka ma vies) who made my time at the residence unforgettable. Madrid helped me level up my salsa moves and, let’s be real, my “coolness” game too. The only downside? My Spanish is still embarrassingly basic.</li>
+    </ul>
+    <div class="row">
+        <div class="column">
+            <img src="photos/spain/spain2.jpg" alt="Spain">
+        </div>
+        <div class="column">
+            <img src="photos/spain/sp2.jpg" alt="Spain">
+        </div>
+    </div>
+
+    <ul>
+        <li><b>Belgium</b> –  For a three-month academic visit, I lived in Leuven, Belgium — a charming student city with a unique and lively atmosphere. Met some amazing souls there including Kangxin, Diego and Miha. My time there was truly memorable, especially with my bike — you can literally get anywhere by cycling.</li>
+    </ul>
+    <div class="row">
+        <div class="column">
+            <img src="photos/belgium/belgium1.jpeg" alt="Belgium">
+        </div>
+        <div class="column">
+            <img src="photos/belgium/belgium2.jpg" alt="Belgium">
+        </div>
+    </div>
+
+    <ul>
+        <li><b>UK</b> –  From January to March 2026, I spent time in Cambridge for an academic visit, and I absolutely loved the university atmosphere. By sheer luck, I was placed in postgraduate accommodation at Christ’s College, where I ended up with the most incredible roommates (Team 6 Petersfield — the legends in the photo). I’m really looking forward to returning to Cambridge next year to begin my PhD.</li>
+    </ul>
+    <div class="row">
+        <div class="column">
+            <img src="photos/uk/uk1.jpg" alt="Cambridge, UK">
+        </div>
+        <div class="column">
+            <img src="photos/uk/uk.jpg" alt="Cambridge, UK">
+        </div>
+    </div>
 
 </section>
 
@@ -275,28 +196,42 @@
     <p>
         Picking favorites is tough 'cause there's just so much good stuff.
     </p>
-    <ul style="list-style-type: disc; margin-left: 0;">
-        <li style="margin-left: 20px;"><b>24</b> – Caught this when I was just 12, and it's all about Jack Bauer being a total hero for his country.</li>
-        <div class="image-container">
-            <img src="photos/movie/24.jpg" alt="Descriptive text of the image" class="centered-image">
-        </div>
-        <li style="margin-left: 20px;"><b>Modern Family</b> – This show's humour has its unique and distinct flavour.</li>
-        <div class="image-container">
-            <img src="photos/movie/modern family.webp" alt="Descriptive text of the image" class="centered-image">
-        </div>
-        <li style="margin-left: 20px;"><b>Peaky Blinders</b> – I had to include it, BY THE ORDER OF THE PEAKY FUCKING BLINDERS.</li>
-        <div class="image-container">
-            <img src="photos/movie/ada_y_tommy.jpg_835420363.webp" alt="Descriptive text of the image" class="centered-image">
-        </div>
-        <li style="margin-left: 20px;"><b>How I Met Your Mother</b> – Well Barney Stinson is not something I wanna miss.</li>
-        <div class="image-container">
-            <img src="photos/movie/himym.jpg" alt="Descriptive text of the image" class="centered-image">
-        </div>
-        <li style="margin-left: 20px;"><b>Gilmore Girls</b> – Never got to live through the '90s and '00s, but something about those times feels just right. Watching this show kinda takes me back, and it's hard to put into words how awesome that feels.</li>
+
+    <ul>
+        <li><b>24</b> – Caught this when I was just 12, and it's all about Jack Bauer being a total hero for his country.</li>
     </ul>
     <div class="image-container">
-        <img src="photos/movie/gilmore.jpg" alt="Descriptive text of the image" class="centered-image">
+        <img src="photos/movie/24.jpg" alt="24" class="centered-image">
+    </div>
+
+    <ul>
+        <li><b>Modern Family</b> – This show's humour has its unique and distinct flavour.</li>
+    </ul>
+    <div class="image-container">
+        <img src="photos/movie/modern family.webp" alt="Modern Family" class="centered-image">
+    </div>
+
+    <ul>
+        <li><b>Peaky Blinders</b> – I had to include it, BY THE ORDER OF THE PEAKY FUCKING BLINDERS.</li>
+    </ul>
+    <div class="image-container">
+        <img src="photos/movie/ada_y_tommy.jpg_835420363.webp" alt="Peaky Blinders" class="centered-image">
+    </div>
+
+    <ul>
+        <li><b>How I Met Your Mother</b> – Well Barney Stinson is not something I wanna miss.</li>
+    </ul>
+    <div class="image-container">
+        <img src="photos/movie/himym.jpg" alt="How I Met Your Mother" class="centered-image">
+    </div>
+
+    <ul>
+        <li><b>Gilmore Girls</b> – Never got to live through the '90s and '00s, but something about those times feels just right. Watching this show kinda takes me back, and it's hard to put into words how awesome that feels.</li>
+    </ul>
+    <div class="image-container">
+        <img src="photos/movie/gilmore.jpg" alt="Gilmore Girls" class="centered-image">
     </div>
 </section>
+
 </body>
 </html>

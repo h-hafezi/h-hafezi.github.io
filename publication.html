@@ -5,104 +5,27 @@
     <meta name="viewport" content="width=800">
     <title>Hossein Hafezi</title>
     <link rel="icon" href="asset/nyu-logo.jpg">
+    <link rel="stylesheet" href="asset/style.css">
+
     <style>
         body {
-            /* FIX 1: Replaced the old font stack with a modern, cross-platform
-              "system" stack. This will look native and clean on all devices. 
-            */
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-
             margin: 40px auto;
-            max-width: 800px;
-            padding: 20px;
-            box-sizing: border-box;
-            background: #FFFFFF;
-
-            /* FIX 2: Added a base font-size for better consistency.
-            */
             font-size: 16px;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
         }
 
-        .publication-list p, .talks-list p, .service-list p {
-            line-height: 1.6;
-        }
-
-        nav {
-            text-align: center;
-            margin-bottom: 20px;
-            border: 2px solid black;
-            padding: 10px 0;
-            border-radius: 5px;
-        }
-
-        nav a {
-            margin: 0 10px;
-            color: black;
-            text-decoration: none;
-            font-size: 18px;
-            padding: 5px 10px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            margin-bottom: 20px;
-            text-align: left;
-            background: #FFFFFF;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            color: black;
-            border: 2px solid black;
-            transition: background-color 0.3s ease;
+        p, li {
+            font-size: 16px;
         }
 
         section:hover {
             background-color: #f0f0f0;
         }
 
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background: #FFFFFF;
-            color: black;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #FFFFFF;
-        }
-
-        h1, p, li {
-            /* FIX 3: Removed the 'font-size: 18px;' so 'p' and 'li' 
-              can use the 16px from the body, and 'h1' can be large.
-            */
-            margin-right: 20px;
-            color: black;
-
-            /* FIX 4: This is the main fix. 
-              Changed 'text-align: justify;' to 'text-align: left;'.
-              This removes the "weird" gaps between words.
-            */
-            text-align: left;
-        }
-
-        /* Styles for Publication List */
-        .publication-list hr {
-            border: 0;
-            height: 2px;
-            background: black;
-            margin: 30px 0;
-        }
-
-        .publication-list h3 {
-            font-size: 20px;
-            font-weight: bold;
-            color: #333;
-            margin-top: 30px;
-            margin-bottom: 15px;
+        .publication-list p, .talks-list p, .service-list p {
+            line-height: 1.6;
         }
 
         .publication-list ol {
@@ -112,50 +35,36 @@
 
         .publication-list li {
             margin-bottom: 20px;
-            text-align: left; /* Explicitly set to left here too */
         }
 
-        .publication-list p strong {
-            display: block;
-            font-size: 1.1em; /* Made relative */
-        }
-
-        /* Consolidated rule for all smaller text elements to ensure consistency */
+        /* Author lists, and the smaller print around each entry. */
+        .authors,
         .publication-list em,
         .publication-list a,
         .talks-list p a,
         .talks-list li {
-            /* FIX 5: Adjusted size slightly for better balance with 16px base */
             font-size: 0.9em;
             font-weight: normal;
         }
 
-        /* Make sure only the authors list has its specific link color */
+        /* Colour the co-author links, but leave the PDF/Code links alone. */
         .publication-list li a:not([href$=".pdf"]):not([href^="https://github.com"]) {
             color: rgb(0, 102, 203);
         }
 
-        /* This media query won't be used because of your viewport setting, 
-           but I've left it in case you change it later. */
+        .venue {
+            color: green;
+        }
+
+        .collaborator {
+            color: red;
+        }
+
         @media only screen and (max-width: 600px) {
-            body, header, section {
+            body, section {
                 padding: 10px;
                 margin: 0;
                 max-width: 100%;
-            }
-
-            .profile-picture img {
-                width: 90%;
-                height: auto;
-            }
-
-            header {
-                flex-direction: column;
-                margin-bottom: 30px;
-            }
-
-            nav a {
-                font-size: 8px;
             }
 
             section {
@@ -165,33 +74,16 @@
             h2 {
                 font-size: 20px;
             }
-            .publication-list h3 {
-                font-size: 18px;
-            }
-            .publication-list li {
-                font-size: 14px;
-            }
-            .publication-list li strong {
-                font-size: 14px;
-                font-weight: bold;
-            }
+
+            .publication-list li,
+            .publication-list li strong,
             .publication-list em,
             .publication-list a,
             .talks-list p a,
-            .talks-list li {
-                font-size: 14px;
-            }
-            .talks-list p strong {
-                font-size: 14px;
-            }
+            .talks-list p strong,
+            .talks-list li,
             .service-list p {
                 font-size: 14px;
-            }
-        }
-
-        @media only screen and (min-width: 1024px) {
-            .title h1 {
-                font-size: 48px;
             }
         }
     </style>
@@ -200,149 +92,133 @@
 
 <section>
     <h2>Publications (<a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=M6g06s4AAAAJ"
-                                  style="color: blue; font-weight: bold;">Google Scholar</a>)</h2>
+                        style="color: blue; font-weight: bold;">Google Scholar</a>)</h2>
     <div class="publication-list">
         <ol>
             <li>
-                <strong>
-                    Hekaton: Horizontally-Scalable zkSNARKs via Proof Aggregation
-                </strong>
+                <strong>Hekaton: Horizontally-Scalable zkSNARKs via Proof Aggregation</strong>
                 (<a href="https://eprint.iacr.org/2024/1208.pdf">PDF</a>)
                 (<a href="https://github.com/Pratyush/hekaton-system">Code</a>)
-                <br/>
-                <span style="font-size: 0.9em;">
-                <a href="https://mrosenberg.pub/about/">Michael Rosenberg</a>,
-                <a href="https://tmopuri.com/">Tushar Mopuri</a>,
-                Hossein Hafezi,
-                <a href="https://www.cs.umd.edu/~imiers/">Ian Miers</a>,
-                <a href="https://pratyushmishra.com/">Pratyush Mishra</a> <br/>
+                <br>
+                <span class="authors">
+                    <a href="https://mrosenberg.pub/about/">Michael Rosenberg</a>,
+                    <a href="https://tmopuri.com/">Tushar Mopuri</a>,
+                    Hossein Hafezi,
+                    <a href="https://www.cs.umd.edu/~imiers/">Ian Miers</a>,
+                    <a href="https://pratyushmishra.com/">Pratyush Mishra</a>
                 </span>
+                <br>
                 <em>Proceedings of the 2024 ACM SIGSAC Conference on Computer and Communications Security</em>
             </li>
+
             <li>
-                <strong>
-                    KZH-Fold: Accountable Voting From Sublinear Accumulation
-                </strong>
+                <strong>KZH-Fold: Accountable Voting From Sublinear Accumulation</strong>
                 (<a href="https://eprint.iacr.org/2025/144.pdf">PDF</a>)
-                (<a href="https://github.com/asn-d6/kzh_fold">Code</a>) <br/>
-                <span style="font-size: 0.9em;">
-                <a href="https://bue.nz/">Benedikt Bünz</a>,
-                Hossein Hafezi,
-                <a href="https://www.linkedin.com/in/george-k-6066991a7">George Kadianakis</a>,
-                <a href="https://sites.google.com/view/arantxazapico">Arantxa Zapico</a> <br/>
+                (<a href="https://github.com/asn-d6/kzh_fold">Code</a>)
+                <br>
+                <span class="authors">
+                    <a href="https://bue.nz/">Benedikt Bünz</a>,
+                    Hossein Hafezi,
+                    <a href="https://www.linkedin.com/in/george-k-6066991a7">George Kadianakis</a>,
+                    <a href="https://sites.google.com/view/arantxazapico">Arantxa Zapico</a>
                 </span>
-                <em>Proceedings of the 2025 ACM SIGSAC Conference on Computer and Communications Security</em><br/>
-                <em>Accepted Contributed Talk in
-                    <span style="color: GREEN;">ZKProof 8</span>
-                </em><br/>
-                <em>In Collaboration with
-                    <span style="color: red;">Ethereum Foundation</span>
-                </em>
+                <br>
+                <em>Proceedings of the 2025 ACM SIGSAC Conference on Computer and Communications Security</em><br>
+                <em>Accepted Contributed Talk in <span class="venue">ZKProof 8</span></em><br>
+                <em>In Collaboration with <span class="collaborator">Ethereum Foundation</span></em>
             </li>
+
             <li>
-                <strong>
-                    IronDict: Transparent Dictionaries from Polynomial Commitments
-                </strong>
+                <strong>IronDict: Transparent Dictionaries from Polynomial Commitments</strong>
                 (<a href="https://eprint.iacr.org/2025/1580.pdf">PDF</a>)
-                (<a href="https://github.com/alireza-shirzad/Iron-key">Code</a>) <br/>
-                <span style="font-size: 0.9em;">
-                Hossein Hafezi,
-                <a href="https://alireza-shirzad.github.io/">Alireza Shirzad</a>,
-                <a href="https://bue.nz/">Benedikt Bünz</a>,
-                <a href="https://jbonneau.com/">Joseph Bonneau</a><br/>
+                (<a href="https://github.com/alireza-shirzad/Iron-key">Code</a>)
+                <br>
+                <span class="authors">
+                    Hossein Hafezi,
+                    <a href="https://alireza-shirzad.github.io/">Alireza Shirzad</a>,
+                    <a href="https://bue.nz/">Benedikt Bünz</a>,
+                    <a href="https://jbonneau.com/">Joseph Bonneau</a>
                 </span>
-                <em>Proceeding of 35th USENIX Security Symposium</em> <br/>
-                <em>Accepted Contributed Talk in
-                    <span style="color: GREEN;">Real World Crypto 2026 (RWC2026)</span>
-                </em>
+                <br>
+                <em>Proceeding of 35th USENIX Security Symposium</em><br>
+                <em>Accepted Contributed Talk in <span class="venue">Real World Crypto 2026 (RWC2026)</span></em>
             </li>
+
             <li>
-                <strong>
-                    SoK: Lookup Table Arguments
-                </strong>
+                <strong>SoK: Lookup Table Arguments</strong>
                 (<a href="https://eprint.iacr.org/2025/1876.pdf">PDF</a>)
-                <br/>
-                <span style="font-size: 0.9em;">
-                Hossein Hafezi,
-                <a href="https://www.linkedin.com/in/gaspard-anthoine-93b48921a/">Gaspard Anthoine</a>,
-                <a href="https://www.binarywhales.com/">Matteo Campanelli</a>,
-                <a href="https://www.dariofiore.it/">Dario Fiore</a>,<br/>
+                <br>
+                <span class="authors">
+                    Hossein Hafezi,
+                    <a href="https://www.linkedin.com/in/gaspard-anthoine-93b48921a/">Gaspard Anthoine</a>,
+                    <a href="https://www.binarywhales.com/">Matteo Campanelli</a>,
+                    <a href="https://www.dariofiore.it/">Dario Fiore</a>,
                 </span>
+                <br>
                 <em>Proceeding of Financial Cryptography and Data Security 2026</em>
             </li>
 
             <li>
-                <strong>
-                    Single-Server Private Outsourcing of zk-SNARKs
-                </strong>
+                <strong>Single-Server Private Outsourcing of zk-SNARKs</strong>
                 (<a href="https://eprint.iacr.org/2025/2113.pdf">PDF</a>)
-                <br/>
-                <span style="font-size: 0.9em;">
-                <a href="https://www.linkedin.com/in/kasraabz/">Kasra Abbaszadeh</a>,
-                Hossein Hafezi,
-                <a href="https://www.cs.umd.edu/~jkatz/">Johnathan Katz</a>,
-                <a href="https://smeiklej.com/">Sarah Meiklejohn</a><br/>
-                        </span>
-                <em>Proceeding of IEEE Symposium on Security and Privacy 2026</em><br/>
-                <em>Accepted Contributed Talk in
-                    <span style="color: GREEN;">ZKProof 8</span>
-                </em><br/>
-                <em>In Collaboration with
-                    <span style="color: red;">Google Research (USA)</span>
-                </em>
-            </li>
-            <li>
-                <strong>
-                    WillowFold: Secure Aggregation with a Lightweight Committee
-                </strong>
-                (<a href="https://eprint.iacr.org/2026/264.pdf">PDF</a>)
-                <br/>
-                <span style="font-size: 0.9em;">
-        Hossein Hafezi,
-        <a href="https://www.linkedin.com/in/kasraabz/">Kasra Abbaszadeh</a>,
-        <a href="https://www.linkedin.com/in/adri%C3%A0-gasc%C3%B3n-09069229/">Adrià Gascón</a>,
-        <a href="https://research.google/people/phillippschoppmann/">Phillipp Schoppmann</a>,
-        <a href="https://research.google/people/108498/">Mariana Raykova</a>,
-        <a href="https://bue.nz/">Benedikt Bünz</a>
-    </span>
-                <br/>
-                <em>Under submission</em><br/>
-                <em>In Collaboration with
-                    <span style="color: red;">Google Research (USA)</span>
-                </em>
-            </li>
-
-            <li>
-                <strong>
-                    Aegon: Scalable and Self-Auditable Key Transparency
-                </strong>
-                <br/>
-                <span style="font-size: 0.9em;">
-                Hossein Hafezi,
-                <a href="https://alireza-shirzad.github.io/">Alireza Shirzad</a>,
-                <a href="https://bue.nz/">Benedikt Bünz</a>,
-                <a href="https://scholar.google.com/citations?user=NRa0_kEAAAAJ&hl=en">Kevin Lewi</a>,
-                <a href="https://www.linkedin.com/in/dillongeorge03/?skipRedirect=true">Dillon George</a>,
-                <a href="https://jbonneau.com/">Joseph Bonneau</a><br/>
+                <br>
+                <span class="authors">
+                    <a href="https://www.linkedin.com/in/kasraabz/">Kasra Abbaszadeh</a>,
+                    Hossein Hafezi,
+                    <a href="https://www.cs.umd.edu/~jkatz/">Johnathan Katz</a>,
+                    <a href="https://smeiklej.com/">Sarah Meiklejohn</a>
                 </span>
-                <em>Under submission</em><br/>
-                <em>In Collaboration with
-                    <span style="color: red;">Meta Research (USA)</span>
-                </em>
+                <br>
+                <em>Proceeding of IEEE Symposium on Security and Privacy 2026</em><br>
+                <em>Accepted Contributed Talk in <span class="venue">ZKProof 8</span></em><br>
+                <em>In Collaboration with <span class="collaborator">Google Research (USA)</span></em>
             </li>
 
             <li>
-                <strong>
-                    Fair Signature Exchange
-                </strong>
+                <strong>WillowFold: Secure Aggregation with a Lightweight Committee</strong>
+                (<a href="https://eprint.iacr.org/2026/264.pdf">PDF</a>)
+                <br>
+                <span class="authors">
+                    Hossein Hafezi,
+                    <a href="https://www.linkedin.com/in/kasraabz/">Kasra Abbaszadeh</a>,
+                    <a href="https://www.linkedin.com/in/adri%C3%A0-gasc%C3%B3n-09069229/">Adrià Gascón</a>,
+                    <a href="https://research.google/people/phillippschoppmann/">Phillipp Schoppmann</a>,
+                    <a href="https://research.google/people/108498/">Mariana Raykova</a>,
+                    <a href="https://bue.nz/">Benedikt Bünz</a>
+                </span>
+                <br>
+                <em>Under submission</em><br>
+                <em>In Collaboration with <span class="collaborator">Google Research (USA)</span></em>
+            </li>
+
+            <li>
+                <strong>Aegon: Scalable and Self-Auditable Key Transparency</strong>
+                <br>
+                <span class="authors">
+                    Hossein Hafezi,
+                    <a href="https://alireza-shirzad.github.io/">Alireza Shirzad</a>,
+                    <a href="https://bue.nz/">Benedikt Bünz</a>,
+                    <a href="https://scholar.google.com/citations?user=NRa0_kEAAAAJ&hl=en">Kevin Lewi</a>,
+                    <a href="https://www.linkedin.com/in/dillongeorge03/?skipRedirect=true">Dillon George</a>,
+                    <a href="https://jbonneau.com/">Joseph Bonneau</a>
+                </span>
+                <br>
+                <em>Under submission</em><br>
+                <em>In Collaboration with <span class="collaborator">Meta Research (USA)</span></em>
+            </li>
+
+            <li>
+                <strong>Fair Signature Exchange</strong>
                 (<a href="https://eprint.iacr.org/2025/059.pdf">PDF</a>)
-                (<a href="https://github.com/h-hafezi/fair_schnorr_signature_exchange">Code</a>) <br/>
-                <span style="font-size: 0.9em;">
-                Hossein Hafezi,
-                <a href="https://aditi741997.github.io/">Aditi Partap</a>,
-                <a href="https://sourav1547.github.io/">Sourav Das</a>,
-                <a href="https://jbonneau.com/">Joseph Bonneau</a>,<br/>
-                                    </span>
+                (<a href="https://github.com/h-hafezi/fair_schnorr_signature_exchange">Code</a>)
+                <br>
+                <span class="authors">
+                    Hossein Hafezi,
+                    <a href="https://aditi741997.github.io/">Aditi Partap</a>,
+                    <a href="https://sourav1547.github.io/">Sourav Das</a>,
+                    <a href="https://jbonneau.com/">Joseph Bonneau</a>,
+                </span>
+                <br>
                 <em>Cryptology Eprint</em>
             </li>
         </ol>
@@ -360,7 +236,6 @@
                 Stanford Crypto Reading Group, April 2025
                 <a href="https://stanford.zoom.us/rec/play/54F2llPXrJDTPpfkYp68Btbd9opydLPNJXZ6WPE6F71c50rtKsiA-zWMpm92jByKDZezG_iDp1O8pSHt.YwZmnJu1DmDZkwRa?accessLevel=&canPlayFromShare=true&from=share_recording_detail&startTime=1743703506000&componentName=rec-play&originRequestUrl=https">(Video)</a>
             </li>
-
             <li>
                 O(1) Lab Reading Group, May 2025
                 <a href="https://youtu.be/vnz05W3ten0?si=uASvQCXClNI3bEMA">(Video)</a>
@@ -378,8 +253,8 @@
                 <a href="/asset/zkproof8%20(KZH).pdf">(Slides)</a>
                 <a href="https://www.youtube.com/watch?v=1QFJ7goyCms&t=581s">(Video)</a>
             </li>
-
         </ul>
+
         <p>
             <strong>IronDict: Transparent Dictionaries from Polynomial Commitments</strong> (<a href="/asset/IronDict.pdf">Slides</a>)
         </p>
@@ -396,7 +271,7 @@
             <strong>Self-Auditable Key Transparency</strong> (<a href="/asset/RWC%20Talk.pdf">Slides</a>)
         </p>
         <ul>
-            <li>Real World Crypto 2026, March 2026 <a href="https://www.youtube.com/watch?v=3gg9PpA7yHM&list=PLeeS-3Ml-rpo3zh9xaf0CzKHNOkNjqOH2&index=44">(Video)</a> </li>
+            <li>Real World Crypto 2026, March 2026 <a href="https://www.youtube.com/watch?v=3gg9PpA7yHM&list=PLeeS-3Ml-rpo3zh9xaf0CzKHNOkNjqOH2&index=44">(Video)</a></li>
             <li>Cedracrypt 2026, July 2026</li>
             <li>Cambridge Security Seminar, March 2026 <a href="https://www.youtube.com/watch?v=9-tWoiS-GOM">(Video)</a></li>
         </ul>
@@ -405,16 +280,10 @@
             <strong>Single-Server Private Outsourcing of zk-SNARKs</strong> (<a href="/asset/Server-aided%20(ZKProofs8).pdf">Slides</a>)
         </p>
         <ul>
-            <li>
-                ZKProof8 (Rome), May 2026  <a href="https://www.youtube.com/watch?v=dkzZR3wiw5s&t=102s">(Video)</a>
-            </li>
+            <li>ZKProof8 (Rome), May 2026 <a href="https://www.youtube.com/watch?v=dkzZR3wiw5s&t=102s">(Video)</a></li>
         </ul>
-
-
     </div>
 </section>
-
-
 
 <section>
     <h2>Service</h2>

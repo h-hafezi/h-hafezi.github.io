@@ -1,0 +1,67 @@
+/* Styles shared by every page. Page-specific rules live in each page's <style> block. */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1, p, li {
+    font-size: 18px;
+    margin-right: 20px;
+    color: black;
+    text-align: left;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+nav a {
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Marks the current page in the nav bar. */
+.highlighted {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: left;
+    background: #FFFFFF;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
