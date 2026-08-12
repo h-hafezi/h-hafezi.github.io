@@ -2,236 +2,261 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=800">
-    <title>Hossein Hafezi</title>
-    <link rel="icon" href="asset/nyu-logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hossein Hafezi — Personal</title>
+    <link rel="icon" href="asset/cambridge-logo.jpeg">
     <link rel="stylesheet" href="asset/style.css">
 
     <style>
-        body {
-            text-align: center;
+        .page-title { padding: 40px 0 8px; }
+        .page-title p { color: var(--muted); margin: 0; }
+
+        .place { padding: 22px 0; border-top: 1px solid var(--rule); }
+        .place:first-of-type { border-top: 0; padding-top: 0; }
+
+        .place h3 {
+            margin: 0 0 6px;
+            font-size: 18px;
+            font-weight: 620;
         }
 
-        h1, p {
-            font-size: 15px;
+        .place p { margin: 0; color: var(--muted); }
+
+        /* Photo pairs, cropped to a common ratio so rows line up. */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 16px;
         }
 
-        ul {
-            list-style-type: disc;
-            padding: 0;
-            margin: 0;
-        }
-
-        li {
-            font-size: 16px;
-            margin-bottom: 8px;
-            margin-left: 20px;
-        }
-
-        section:hover {
-            background-color: #f0f0f0;
-        }
-
-        /* A pair of photos side by side. */
-        .row {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .column {
-            flex: 1;
-            padding: 10px;
-        }
-
-        .column img {
+        .grid img {
+            display: block;
             width: 100%;
-            height: auto;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            border-radius: 10px;
         }
 
-        /* A single photo, centred and boxed to a fixed size. */
-        .image-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        /* Shows: small poster beside the blurb. */
+        .show {
+            display: grid;
+            grid-template-columns: 88px 1fr;
+            gap: 18px;
+            align-items: start;
+            padding: 18px 0;
+            border-top: 1px solid var(--rule);
         }
 
-        .centered-image {
-            width: 300px;
-            height: 200px;
-            object-fit: contain;
-            margin-top: 20px;
-            margin-bottom: 20px;
+        .show:first-of-type { border-top: 0; padding-top: 0; }
+
+        .show img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 2 / 3;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .show h3 {
+            margin: 0 0 4px;
+            font-size: 17px;
+            font-weight: 620;
+        }
+
+        .show p { margin: 0; font-size: 15px; color: var(--muted); }
+
+        @media (max-width: 640px) {
+            .grid { grid-template-columns: 1fr; }
+            .show { grid-template-columns: 70px 1fr; gap: 14px; }
         }
     </style>
 </head>
-
 <body>
 
-<nav>
-    <a href="index.html">Academic Life</a>
-    <a href="personal-life.html" class="highlighted">Personal Life</a>
-    <a href="blogs.html">Blogs</a>
-</nav>
+<header class="site-header">
+    <div class="wrap">
+        <a class="brand" href="index.html">Hossein Hafezi</a>
+        <nav class="site-nav">
+            <a href="index.html">About</a>
+            <a href="publication.html">Research</a>
+            <a href="blogs.html">Blog</a>
+            <a href="personal-life.html" class="current">Personal</a>
+        </nav>
+    </div>
+</header>
 
-<section>
-    <h2>Places I've Called Home</h2>
-    <p>I'm glad you asked. I've been lucky enough to live in a few different countries.</p>
+<main class="wrap">
 
-    <ul>
-        <li><b>Iran</b> – So, I grew up in Mashhad, this city in the eastern part of Iran, and hung out there for like 14 years. I also spent a year and a half in Tehran, the capital, and another six years in Shahroud, which is this really charming small town.</li>
-    </ul>
-    <div class="row">
-        <div class="column">
-            <img src="photos/iran/ir1.jpg" alt="Iran">
-        </div>
-        <div class="column">
-            <img src="photos/iran/ir2.jpg" alt="Iran">
-        </div>
+    <div class="page-title">
+        <h1>Personal</h1>
+        <p>Places I've called home, and a few things I like.</p>
     </div>
 
-    <ul>
-        <li><b>Japan</b> – I was in Sendai, Japan for about 9 months when I was little, tagging along with my family. I have some adorable pics of me dressed up in Japanese outfits!</li>
-    </ul>
-    <div class="row">
-        <div class="column">
-            <img src="photos/japan/japan1.PNG" alt="Japan">
-        </div>
-        <div class="column">
-            <img src="photos/japan/japan2.PNG" alt="Japan">
-        </div>
-    </div>
+    <section>
+        <h2>Places I've Called Home</h2>
 
-    <ul>
-        <li><b>Australia</b> – Australia might just top my list of faves for its awesome vibes, cool people, and culture! I spent 6 months there in year 10, went to Kingswood Highschool in Penrith, a suburb of Sydney. Totally picked up the Australian accent while I was there, though it's pretty much gone now. Hit up Brisbane, Melbourne, Canberra, and did loads of sightseeing in Sydney too.</li>
-    </ul>
-    <div class="row">
-        <div class="column">
-            <img src="photos/australia/au2.jpg" alt="Australia">
+        <div class="place">
+            <h3>Iran</h3>
+            <p>I grew up in Mashhad, in the eastern part of Iran, and hung out there for like 14 years. I also spent
+                a year and a half in Tehran, the capital, and another six years in Shahroud, which is a really
+                charming small town.</p>
+            <div class="grid">
+                <img loading="lazy" src="photos/iran/ir1.jpg" alt="Iran">
+                <img loading="lazy" src="photos/iran/ir2.jpg" alt="Iran">
+            </div>
         </div>
-        <div class="column">
-            <img src="photos/australia/au1.jpg" alt="Australia">
-        </div>
-    </div>
 
-    <ul>
-        <li><b>Switzerland</b> – Spent four awesome months in Lausanne from July to October in 2022. Ended up making friends from over 20 different countries! Did a bunch of hiking and checked out loads of gorgeous Swiss cities like Geneva, Zermatt, Kinderstagen, Zurich, Neuchâtel, etc. Also went around Europe a bit e.g. Austria, Italy and Germany. Totally would choose Switzerland for my honeymoon, no doubt about it.</li>
-    </ul>
-    <div class="row">
-        <div class="column">
-            <img src="photos/swiss/swiss1.JPEG" alt="Switzerland">
+        <div class="place">
+            <h3>Japan</h3>
+            <p>I was in Sendai for about 9 months when I was little, tagging along with my family. I have some
+                adorable pics of me dressed up in Japanese outfits!</p>
+            <div class="grid">
+                <img loading="lazy" src="photos/japan/japan1.PNG" alt="Japan">
+                <img loading="lazy" src="photos/japan/japan2.PNG" alt="Japan">
+            </div>
         </div>
-        <div class="column">
-            <img src="photos/swiss/swiss4.jpg" alt="Switzerland">
+
+        <div class="place">
+            <h3>Australia</h3>
+            <p>Australia might just top my list of faves for its awesome vibes, cool people, and culture! I spent 6
+                months there in year 10, at Kingswood High School in Penrith, a suburb of Sydney. Totally picked up
+                the Australian accent while I was there, though it's pretty much gone now. Hit up Brisbane,
+                Melbourne, Canberra, and did loads of sightseeing in Sydney too.</p>
+            <div class="grid">
+                <img loading="lazy" src="photos/australia/au2.jpg" alt="Australia">
+                <img loading="lazy" src="photos/australia/au1.jpg" alt="Australia">
+            </div>
         </div>
-    </div>
 
-    <ul>
-        <li><b>Germany</b> – I lived in Bochum for 6 months from July to December 2023. It was a pretty chill time, mostly sticking to indoor stuff like hitting the gym and swimming. Totally obsessed with Unifit back then – that place was my paradise. Also took some trips to Paris, Munich, and Switzerland (again), plus hit up nearby cities like Dortmund, Düsseldorf, and Cologne while I was there.</li>
-    </ul>
-    <div class="row">
-        <div class="column">
-            <img src="photos/germany/de1.jpg" alt="Germany">
+        <div class="place">
+            <h3>Switzerland</h3>
+            <p>Spent four awesome months in Lausanne from July to October 2022. Ended up making friends from over 20
+                different countries! Did a bunch of hiking and checked out loads of gorgeous Swiss cities like
+                Geneva, Zermatt, Kinderstagen, Zurich and Neuchâtel. Also went around Europe a bit — Austria, Italy
+                and Germany. Totally would choose Switzerland for my honeymoon, no doubt about it.</p>
+            <div class="grid">
+                <img loading="lazy" src="photos/swiss/swiss1.JPEG" alt="Switzerland">
+                <img loading="lazy" src="photos/swiss/swiss4.jpg" alt="Switzerland">
+            </div>
         </div>
-        <div class="column">
-            <img src="photos/germany/de2.jpg" alt="Germany">
+
+        <div class="place">
+            <h3>Germany</h3>
+            <p>I lived in Bochum for 6 months from July to December 2023. It was a pretty chill time, mostly
+                sticking to indoor stuff like hitting the gym and swimming. Totally obsessed with Unifit back then —
+                that place was my paradise. Also took some trips to Paris, Munich, and Switzerland (again), plus hit
+                up nearby cities like Dortmund, Düsseldorf and Cologne while I was there.</p>
+            <div class="grid">
+                <img loading="lazy" src="photos/germany/de1.jpg" alt="Germany">
+                <img loading="lazy" src="photos/germany/de2.jpg" alt="Germany">
+                <img loading="lazy" src="photos/germany/de4.jpg" alt="Germany">
+                <img loading="lazy" src="photos/germany/de3.jpg" alt="Germany">
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="column">
-            <img src="photos/germany/de4.jpg" alt="Germany">
+
+        <div class="place">
+            <h3>Spain</h3>
+            <p>From February 2025 until August 2025, I was living in Madrid. I honestly think Spain is the best
+                country in the world. My student life there was nothing short of amazing. I met tons of incredible
+                people, including the three legends in the photo below — Oliwia, Panulouis and Alessandera — whom I
+                randomly bumped into at a hilariously lame Carnival. I also had two French roommates (aka ma vies)
+                who made my time at the residence unforgettable. Madrid helped me level up my salsa moves and, let's
+                be real, my "coolness" game too. The only downside? My Spanish is still embarrassingly basic.</p>
+            <div class="grid">
+                <img loading="lazy" src="photos/spain/spain2.jpg" alt="Spain">
+                <img loading="lazy" src="photos/spain/sp2.jpg" alt="Spain">
+            </div>
         </div>
-        <div class="column">
-            <img src="photos/germany/de3.jpg" alt="Germany">
+
+        <div class="place">
+            <h3>Belgium</h3>
+            <p>For a three-month academic visit, I lived in Leuven — a charming student city with a unique and
+                lively atmosphere. Met some amazing souls there including Kangxin, Diego and Miha. My time there was
+                truly memorable, especially with my bike — you can literally get anywhere by cycling.</p>
+            <div class="grid">
+                <img loading="lazy" src="photos/belgium/belgium1.jpeg" alt="Belgium">
+                <img loading="lazy" src="photos/belgium/belgium2.jpg" alt="Belgium">
+            </div>
         </div>
-    </div>
 
-    <ul>
-        <li><b>Spain</b> – From February 2025 until August 2025, I was living in Madrid, Spain. I honestly think Spain is the best country in the world. My student life here has been nothing short of amazing. I met tons of incredible people, including the three legends in the photo below—Oliwia, Panulouis, and Alessandera—whom I randomly bumped into at a hilariously lame Carnival. I also had two French roommates (aka ma vies) who made my time at the residence unforgettable. Madrid helped me level up my salsa moves and, let’s be real, my “coolness” game too. The only downside? My Spanish is still embarrassingly basic.</li>
-    </ul>
-    <div class="row">
-        <div class="column">
-            <img src="photos/spain/spain2.jpg" alt="Spain">
+        <div class="place">
+            <h3>UK</h3>
+            <p>From January to March 2026, I spent time in Cambridge for an academic visit, and I absolutely loved
+                the university atmosphere. By sheer luck, I was placed in postgraduate accommodation at Christ's
+                College, where I ended up with the most incredible roommates (Team 6 Petersfield — the legends in
+                the photo). I'm really looking forward to returning to Cambridge to begin my PhD.</p>
+            <div class="grid">
+                <img loading="lazy" src="photos/uk/uk1.jpg" alt="Cambridge, UK">
+                <img loading="lazy" src="photos/uk/uk.jpg" alt="Cambridge, UK">
+            </div>
         </div>
-        <div class="column">
-            <img src="photos/spain/sp2.jpg" alt="Spain">
+    </section>
+
+    <section>
+        <h2>Hobbies</h2>
+        <p>
+            Apart from enjoying some downtime, a big part of my life involves sports. I used to swim competitively,
+            specializing in the butterfly stroke, and I still dream about swimming the 100m butterfly in under 60
+            seconds. Occasionally I do bouldering and ice skating. I'm a big fan of ballroom and dancing events.
+            Salsa dancing, which I started as a joke with a friend, has become a favourite of mine, even though I'm
+            still learning.
+        </p>
+    </section>
+
+    <section>
+        <h2>Favourite Shows</h2>
+
+        <div class="show">
+            <img loading="lazy" src="photos/movie/24.jpg" alt="24">
+            <div>
+                <h3>24</h3>
+                <p>Caught this when I was just 12, and it's all about Jack Bauer being a total hero for his
+                    country.</p>
+            </div>
         </div>
-    </div>
 
-    <ul>
-        <li><b>Belgium</b> –  For a three-month academic visit, I lived in Leuven, Belgium — a charming student city with a unique and lively atmosphere. Met some amazing souls there including Kangxin, Diego and Miha. My time there was truly memorable, especially with my bike — you can literally get anywhere by cycling.</li>
-    </ul>
-    <div class="row">
-        <div class="column">
-            <img src="photos/belgium/belgium1.jpeg" alt="Belgium">
+        <div class="show">
+            <img loading="lazy" src="photos/movie/modern family.webp" alt="Modern Family">
+            <div>
+                <h3>Modern Family</h3>
+                <p>This show's humour has its own unique and distinct flavour.</p>
+            </div>
         </div>
-        <div class="column">
-            <img src="photos/belgium/belgium2.jpg" alt="Belgium">
+
+        <div class="show">
+            <img loading="lazy" src="photos/movie/ada_y_tommy.jpg_835420363.webp" alt="Peaky Blinders">
+            <div>
+                <h3>Peaky Blinders</h3>
+                <p>I had to include it, BY THE ORDER OF THE PEAKY FUCKING BLINDERS.</p>
+            </div>
         </div>
-    </div>
 
-    <ul>
-        <li><b>UK</b> –  From January to March 2026, I spent time in Cambridge for an academic visit, and I absolutely loved the university atmosphere. By sheer luck, I was placed in postgraduate accommodation at Christ’s College, where I ended up with the most incredible roommates (Team 6 Petersfield — the legends in the photo). I’m really looking forward to returning to Cambridge next year to begin my PhD.</li>
-    </ul>
-    <div class="row">
-        <div class="column">
-            <img src="photos/uk/uk1.jpg" alt="Cambridge, UK">
+        <div class="show">
+            <img loading="lazy" src="photos/movie/himym.jpg" alt="How I Met Your Mother">
+            <div>
+                <h3>How I Met Your Mother</h3>
+                <p>Well, Barney Stinson is not something I wanna miss.</p>
+            </div>
         </div>
-        <div class="column">
-            <img src="photos/uk/uk.jpg" alt="Cambridge, UK">
+
+        <div class="show">
+            <img loading="lazy" src="photos/movie/gilmore.jpg" alt="Gilmore Girls">
+            <div>
+                <h3>Gilmore Girls</h3>
+                <p>Never got to live through the '90s and '00s, but something about those times feels just right.
+                    Watching this show kinda takes me back, and it's hard to put into words how awesome that
+                    feels.</p>
+            </div>
         </div>
-    </div>
+    </section>
 
-</section>
+</main>
 
-<section>
-    <h2>My Hobbies</h2>
-    <p>
-        Talking about my hobbies, apart from enjoying some downtime, a big part of my life involves sports. I used to swim competitively, specializing in the butterfly stroke, and I still dream about swimming the 100m butterfly in under 60 seconds. Occasionally, I do bouldering and ice skating. I’m a big fan of ballroom and dancing events. Salsa dancing, which I started as a joke with a friend, has become a favorite of mine, even though I’m still learning.
-    </p>
-</section>
-
-<section>
-    <h2>Favourite Shows</h2>
-    <p>
-        Picking favorites is tough 'cause there's just so much good stuff.
-    </p>
-
-    <ul>
-        <li><b>24</b> – Caught this when I was just 12, and it's all about Jack Bauer being a total hero for his country.</li>
-    </ul>
-    <div class="image-container">
-        <img src="photos/movie/24.jpg" alt="24" class="centered-image">
-    </div>
-
-    <ul>
-        <li><b>Modern Family</b> – This show's humour has its unique and distinct flavour.</li>
-    </ul>
-    <div class="image-container">
-        <img src="photos/movie/modern family.webp" alt="Modern Family" class="centered-image">
-    </div>
-
-    <ul>
-        <li><b>Peaky Blinders</b> – I had to include it, BY THE ORDER OF THE PEAKY FUCKING BLINDERS.</li>
-    </ul>
-    <div class="image-container">
-        <img src="photos/movie/ada_y_tommy.jpg_835420363.webp" alt="Peaky Blinders" class="centered-image">
-    </div>
-
-    <ul>
-        <li><b>How I Met Your Mother</b> – Well Barney Stinson is not something I wanna miss.</li>
-    </ul>
-    <div class="image-container">
-        <img src="photos/movie/himym.jpg" alt="How I Met Your Mother" class="centered-image">
-    </div>
-
-    <ul>
-        <li><b>Gilmore Girls</b> – Never got to live through the '90s and '00s, but something about those times feels just right. Watching this show kinda takes me back, and it's hard to put into words how awesome that feels.</li>
-    </ul>
-    <div class="image-container">
-        <img src="photos/movie/gilmore.jpg" alt="Gilmore Girls" class="centered-image">
-    </div>
-</section>
+<footer class="wrap">
+    <a href="index.html">About</a> · <a href="publication.html">Research</a> ·
+    <a href="blogs.html">Blog</a>
+</footer>
 
 </body>
 </html>

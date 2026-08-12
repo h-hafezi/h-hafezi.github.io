@@ -2,49 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=800">
-    <title>Hossein Hafezi</title>
-    <link rel="icon" href="asset/nyu-logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hossein Hafezi — Blog</title>
+    <link rel="icon" href="asset/cambridge-logo.jpeg">
     <link rel="stylesheet" href="asset/style.css">
 
     <style>
-        body {
-            text-align: center;
+        .page-title { padding: 40px 0 8px; }
+
+        .post-list { margin: 0; padding: 0; list-style: none; }
+
+        .post-list li {
+            padding: 16px 0;
+            border-top: 1px solid var(--rule);
         }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
+        .post-list li:first-child { border-top: 0; padding-top: 0; }
+
+        .post-list a {
+            font-size: 18px;
+            font-weight: 620;
+            color: var(--ink);
         }
 
-        li {
-            font-size: 16px;
-            margin-bottom: 8px;
-        }
+        .post-list a:hover { color: var(--accent); text-decoration: none; }
 
-        .blog-link {
-            font-size: 20px;
+        .post-list p {
+            margin: 2px 0 0;
+            font-size: 15px;
+            color: var(--muted);
         }
     </style>
 </head>
-
 <body>
 
-<nav>
-    <a href="index.html">Academic Life</a>
-    <a href="personal-life.html">Personal Life</a>
-    <a href="blogs.html" class="highlighted">Blogs</a>
-</nav>
+<header class="site-header">
+    <div class="wrap">
+        <a class="brand" href="index.html">Hossein Hafezi</a>
+        <nav class="site-nav">
+            <a href="index.html">About</a>
+            <a href="publication.html">Research</a>
+            <a href="blogs.html" class="current">Blog</a>
+            <a href="personal-life.html">Personal</a>
+        </nav>
+    </div>
+</header>
 
-<section>
-    <h2>Blogs</h2>
-    <ul>
-        <li><a href="summiting-sabalan.html" class="blog-link">Sabalan Peak</a></li>
-        <li><a href="alam.html" class="blog-link">AlamKuh Peak</a></li>
-    </ul>
-</section>
+<main class="wrap">
+
+    <div class="page-title">
+        <h1>Blog</h1>
+    </div>
+
+    <section>
+        <ul class="post-list">
+            <li>
+                <a href="summiting-sabalan.html">Summiting Sabalan</a>
+                <p>An amateur hiker's journey up Iran's third-highest peak, at 4,811 m.</p>
+            </li>
+            <li>
+                <a href="alam.html">Alam Kuh</a>
+                <p>Two days on Iran's second-highest mountain, at 4,850 m.</p>
+            </li>
+        </ul>
+    </section>
+
+</main>
+
+<footer class="wrap">
+    <a href="index.html">About</a> · <a href="publication.html">Research</a> ·
+    <a href="personal-life.html">Personal</a>
+</footer>
 
 </body>
-
 </html>

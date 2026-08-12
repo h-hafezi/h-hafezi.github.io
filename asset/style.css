@@ -1,67 +1,297 @@
-/* Styles shared by every page. Page-specific rules live in each page's <style> block. */
+/* ==========================================================================
+   Shared design system. Page-specific rules live in each page's <style> block.
+   ========================================================================== */
+
+:root {
+    --bg: #ffffff;
+    --ink: #16181d;
+    --muted: #5f6672;
+    --faint: #8b929e;
+    --rule: #e4e7ec;
+    --accent: #0b57d0;
+    --chip: #f2f4f7;
+    --measure: 680px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #14161a;
+        --ink: #e8eaed;
+        --muted: #a2a9b4;
+        --faint: #7d848f;
+        --rule: #2a2e35;
+        --accent: #8ab4f8;
+        --chip: #22262d;
+    }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
 
 body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    box-sizing: border-box;
-    background: #FFFFFF;
-    color: black;
-    border: 2px solid black;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
 }
 
-h1, p, li {
-    font-size: 18px;
-    margin-right: 20px;
-    color: black;
-    text-align: left;
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+img { max-width: 100%; }
+
+.wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: black;
+/* ---------- sticky site header ---------- */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--bg);
+    border-bottom: 1px solid var(--rule);
 }
 
-nav {
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 10px 0;
-    border: 2px solid black;
-    border-radius: 5px;
+@supports (backdrop-filter: blur(12px)) {
+    .site-header {
+        background: color-mix(in srgb, var(--bg) 85%, transparent);
+        backdrop-filter: saturate(180%) blur(12px);
+    }
 }
 
-nav a {
-    margin: 0 10px;
-    padding: 5px 10px;
-    font-size: 18px;
-    color: black;
+.site-header .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    height: 56px;
+}
+
+.brand {
+    font-weight: 650;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+}
+
+.brand { flex: none; }
+
+.site-nav {
+    display: flex;
+    gap: 2px;
+    min-width: 0; /* let it shrink instead of widening the page */
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.site-nav::-webkit-scrollbar { display: none; }
+
+.site-nav a {
+    color: var(--muted);
+    font-size: 15px;
+    padding: 6px 10px;
+    border-radius: 7px;
+    white-space: nowrap;
+}
+
+.site-nav a:hover {
+    color: var(--ink);
+    background: var(--chip);
     text-decoration: none;
 }
 
-nav a:hover {
-    text-decoration: underline;
+/* Marks the current page. */
+.site-nav a.current {
+    color: var(--ink);
+    font-weight: 600;
 }
 
-/* Marks the current page in the nav bar. */
-.highlighted {
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    padding: 5px 10px;
-}
+/* ---------- sections ---------- */
 
 section {
-    margin-bottom: 20px;
-    padding: 20px;
-    text-align: left;
-    background: #FFFFFF;
-    color: black;
-    border: 2px solid black;
+    padding: 34px 0;
+    border-top: 1px solid var(--rule);
+}
+
+section:first-of-type { border-top: 0; }
+
+h1 {
+    margin: 0 0 6px;
+    font-size: clamp(30px, 5vw, 40px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+/* Small caps section label. */
+h2 {
+    margin: 0 0 20px;
+    font-size: 13px;
+    font-weight: 650;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--faint);
+}
+
+p { margin: 0 0 16px; }
+p:last-child { margin-bottom: 0; }
+
+/* ---------- two-column list rows (publications, positions) ---------- */
+
+.row-list > .row {
+    display: grid;
+    grid-template-columns: 132px 1fr;
+    gap: 20px;
+    padding: 16px 0;
+    border-top: 1px solid var(--rule);
+}
+
+.row-list > .row:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.gutter {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--muted);
+    line-height: 1.45;
+    padding-top: 3px;
+}
+
+.gutter .sub {
+    display: block;
+    font-weight: 450;
+    color: var(--faint);
+}
+
+.row h3 {
+    margin: 0 0 4px;
+    font-size: 17px;
+    font-weight: 620;
+    line-height: 1.35;
+}
+
+.authors {
+    margin: 0 0 6px;
+    font-size: 15px;
+    color: var(--muted);
+}
+
+.authors a {
+    color: var(--muted);
+    text-decoration: underline;
+    text-decoration-color: var(--rule);
+}
+
+.authors a:hover { color: var(--accent); }
+
+.authors .me { color: var(--ink); font-weight: 600; }
+
+.notes { margin: 0; font-size: 14px; color: var(--faint); }
+.notes .hl { color: var(--muted); }
+
+.links { margin: 8px 0 0; display: flex; gap: 6px; flex-wrap: wrap; }
+
+.links a {
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding: 3px 9px;
+    border-radius: 6px;
+    background: var(--chip);
+    color: var(--muted);
+}
+
+.links a:hover { color: var(--accent); text-decoration: none; }
+
+/* ---------- footer ---------- */
+
+footer {
+    border-top: 1px solid var(--rule);
+    margin-top: 34px;
+    padding: 24px 0 56px;
+    font-size: 14px;
+    color: var(--faint);
+}
+
+footer a { color: var(--muted); }
+
+/* ---------- phone ---------- */
+
+@media (max-width: 640px) {
+    body { font-size: 16px; }
+
+    section { padding: 28px 0; }
+
+    .row-list > .row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .gutter { padding-top: 0; }
+    .gutter .sub { display: inline; }
+    .gutter .sub::before { content: " · "; }
+}
+
+/* Phone: the nav alone identifies the site, so drop the wordmark and give the
+   links the full width rather than letting them scroll out of reach. */
+@media (max-width: 520px) {
+    .site-header .wrap { height: 52px; }
+
+    .brand { display: none; }
+
+    .site-nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .site-nav a { padding: 6px 4px; }
+}
+
+/* ---------- long-form posts ---------- */
+
+.post { padding: 40px 0 0; }
+
+.post h1 { margin-bottom: 10px; }
+
+.post .meta {
+    margin: 0 0 30px;
+    font-size: 14px;
+    color: var(--faint);
+}
+
+.post-body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+.post-body p { margin: 0 0 22px; }
+
+.post-body figure { margin: 30px 0; }
+
+.post-body img {
+    display: block;
+    width: 100%;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s ease;
+}
+
+.back {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+@media (max-width: 640px) {
+    .post { padding: 28px 0 0; }
+    .post-body { font-size: 17px; }
+    .post-body figure { margin: 24px 0; }
 }

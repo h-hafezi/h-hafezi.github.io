@@ -2,164 +2,196 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=800">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hossein Hafezi</title>
-    <link rel="icon" href="asset/cambridge%20logo.jpeg">
+    <link rel="icon" href="asset/cambridge-logo.jpeg">
     <link rel="stylesheet" href="asset/style.css">
 
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-align: center;
-        }
-
-        h1, p, li {
-            text-align: justify;
-        }
-
-        section:hover {
-            background-color: #f2f2f2;
-        }
-
-        header {
+        .hero {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            padding: 20px;
-            margin-bottom: 20px;
-            background: #FFFFFF;
-            color: black;
-            border-radius: 10px;
-            border-bottom: 2px solid #FFFFFF;
+            gap: 28px;
+            padding: 56px 0 40px;
         }
 
-        .profile-picture {
-            max-width: 300px;
+        .hero img {
+            width: 168px;
+            height: 168px;
+            object-fit: cover;
+            object-position: 50% 22%;
+            border-radius: 14px;
+            flex: none;
         }
 
-        .profile-picture img {
-            width: 270px;
-            height: auto;
+        .role {
+            margin: 0 0 14px;
+            color: var(--muted);
         }
 
-        .title {
-            text-align: left;
-            color: black;
+        .social {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
         }
 
-        .about-text a, .link {
-            color: rgb(0, 102, 203);
+        .social a {
+            font-size: 14px;
+            font-weight: 550;
+            padding: 5px 11px;
+            border: 1px solid var(--rule);
+            border-radius: 999px;
+            color: var(--ink);
         }
 
-        .link {
-            font-size: 18px;
-            font-weight: bold;
+        .social a:hover {
+            background: var(--chip);
             text-decoration: none;
         }
 
-        @media only screen and (max-width: 600px) {
-            body, header, section {
-                padding: 10px;
-                margin: 0;
-                max-width: 100%;
-            }
-
-            .profile-picture img {
-                width: 90%;
-                height: auto;
-            }
-
-            header {
-                flex-direction: column;
-                margin-bottom: 30px;
-            }
-
-            .title p, section p, li, h2 {
-                font-size: 14px;
-            }
-
-            .title h1 {
-                font-size: calc(18px * 1.5);
-                margin-top: 20px;
-            }
-
-            nav a {
-                font-size: 8px;
-            }
-
-            section {
-                margin-bottom: 30px;
-            }
-
-            .about-text, .link {
-                font-size: 16px;
-            }
+        .role-title {
+            color: var(--ink);
         }
 
-        @media only screen and (min-width: 1024px) {
-            .title h1 {
-                font-size: 48px;
+        .where {
+            margin: 0;
+            font-size: 15px;
+            color: var(--muted);
+        }
+
+        .where a {
+            color: var(--muted);
+            text-decoration: underline;
+            text-decoration-color: var(--rule);
+        }
+
+        .where a:hover { color: var(--accent); }
+
+        @media (max-width: 640px) {
+            .hero {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 18px;
+                padding: 32px 0 24px;
             }
+
+            .hero img { width: 128px; height: 128px; }
         }
     </style>
 </head>
-
 <body>
 
-<nav>
-    <a href="index.html" class="highlighted">Academic Life</a>
-    <a href="personal-life.html">Personal Life</a>
-    <a href="blogs.html">Blogs</a>
-</nav>
-
-<header>
-    <div class="profile-picture">
-        <img src="asset/profile.jpg" alt="Hossein Hafezi">
-    </div>
-    <div class="title">
-        <h1>Hossein Hafezi</h1>
-        <p>Incoming PhD @ University of Cambridge</p>
+<header class="site-header">
+    <div class="wrap">
+        <a class="brand" href="index.html">Hossein Hafezi</a>
+        <nav class="site-nav">
+            <a href="index.html" class="current">About</a>
+            <a href="publication.html">Research</a>
+            <a href="blogs.html">Blog</a>
+            <a href="personal-life.html">Personal</a>
+        </nav>
     </div>
 </header>
 
-<section>
-    <h2>About Me</h2>
-    <p class="about-text">
-        I am an incoming PhD student at the University of Cambridge, starting in Autumn 2026, where I will be advised by
-        <a href="https://martin.kleppmann.com/">Martin Kleppmann</a>.
+<main class="wrap">
 
-        Prior to this, I spent two years as a PhD student at NYU, advised by
-        <a href="https://cs.nyu.edu/~bb/">Benedikt Bünz</a> and
-        <a href="https://jbonneau.com/">Joseph Bonneau</a>.
-        I was unable to continue due to immigration-related constraints
-        (<a href="https://www.whitehouse.gov/presidential-actions/2025/06/restricting-the-entry-of-foreign-nationals-to-protect-the-united-states-from-foreign-terrorists-and-other-national-security-and-public-safety-threats/">details</a>).
-
-        <br><br>
-        My research broadly focuses on building secure systems using modern cryptographic techniques,
-        with a particular emphasis on SNARKs. More recently, I have developed a strong interest in
-        secure messaging and key transparency. You can find a list of my publications, talks, and service
-        <a href="publication.html">here</a>.
-        <br><br>
-
-        During my undergrad, I worked with
-        <a href="https://bford.info/">Bryan Ford</a> (EPFL) and
-        <a href="https://www.cs.umd.edu/~imiers/">Ian Miers</a> (UMD).
-        More recently, I have been a visiting researcher with
-        <a href="https://www.dariofiore.it/">Dario Fiore</a> (IMDEA Software) and
-        <a href="https://homes.esat.kuleuven.be/~preneel/">Bart Preneel</a> (KU Leuven).
-        I also interned at Symbolic Software with
-        <a href="https://nadim.computer/">Nadim Kobeissi</a>, where I contributed to Soundcalc Lean.
-    </p>
-    <br>
-    <div style="text-align: center; margin-top: 20px;">
-        <a href="https://www.github.com/h-hafezi/" class="link">Github</a> /
-        <a href="https://twitter.com/RandomString00" class="link">Twitter</a> /
-        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=M6g06s4AAAAJ" class="link">Google Scholar</a> /
-        <a href="mailto:h.hafezi2000@gmail.com" class="link">Email</a>
+    <div class="hero">
+        <img src="asset/profile.jpg" alt="Hossein Hafezi">
+        <div>
+            <h1>Hossein Hafezi</h1>
+            <p class="role">Incoming PhD, University of Cambridge</p>
+            <div class="social">
+                <a href="https://www.github.com/h-hafezi/">GitHub</a>
+                <a href="https://twitter.com/RandomString00">Twitter</a>
+                <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=M6g06s4AAAAJ">Scholar</a>
+                <a href="mailto:h.hafezi2000@gmail.com">Email</a>
+            </div>
+        </div>
     </div>
-</section>
+
+    <section>
+        <h2>About</h2>
+        <p>
+            I am an incoming PhD student at the University of Cambridge, starting in Autumn 2026, where I will be
+            advised by <a href="https://martin.kleppmann.com/">Martin Kleppmann</a>.
+            My research broadly focuses on building secure systems using modern cryptographic techniques, with a
+            particular emphasis on SNARKs. You can find my publications, talks and service on the
+            <a href="publication.html">research page</a>.
+        </p>
+    </section>
+
+    <section>
+        <h2>Positions &amp; Visits</h2>
+        <div class="row-list">
+
+            <div class="row">
+                <div class="gutter">Oct 2026<span class="sub">Oct 2029</span></div>
+                <div>
+                    <h3 class="role-title">PhD student · University of Cambridge</h3>
+                    <p class="where">with <a href="https://martin.kleppmann.com/">Martin Kleppmann</a></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="gutter">Jun 2024<span class="sub">Sep 2026</span></div>
+                <div>
+                    <h3 class="role-title">Research assistant · New York University</h3>
+                    <p class="where">with <a href="https://jbonneau.com/">Joseph Bonneau</a> and
+                        <a href="https://cs.nyu.edu/~bb/">Benedikt Bünz</a></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="gutter">May 2026<span class="sub">Jul 2026</span></div>
+                <div>
+                    <h3 class="role-title">Research intern · Symbolic Software</h3>
+                    <p class="where">with <a href="https://nadim.computer/">Nadim Kobeissi</a> — contributed to
+                        Soundcalc Lean</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="gutter">Oct – Dec 2025<span class="sub">Jul – Aug 2026</span></div>
+                <div>
+                    <h3 class="role-title">Research visitor · KU Leuven</h3>
+                    <p class="where">with <a href="https://homes.esat.kuleuven.be/~preneel/">Bart Preneel</a></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="gutter">Feb 2025<span class="sub">Aug 2025</span></div>
+                <div>
+                    <h3 class="role-title">Visiting researcher · IMDEA Software</h3>
+                    <p class="where">with <a href="https://www.dariofiore.it/">Dario Fiore</a></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="gutter">Feb 2023<span class="sub">Apr 2023</span></div>
+                <div>
+                    <h3 class="role-title">Research assistant · University of Maryland</h3>
+                    <p class="where">with <a href="https://www.cs.umd.edu/~imiers/">Ian Miers</a></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="gutter">Jul 2022<span class="sub">Oct 2022</span></div>
+                <div>
+                    <h3 class="role-title">Research intern · EPFL</h3>
+                    <p class="where">with <a href="https://bford.info/">Bryan Ford</a></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="wrap">
+    <a href="publication.html">Research</a> · <a href="blogs.html">Blog</a> ·
+    <a href="personal-life.html">Personal</a>
+</footer>
 
 <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=8WOvqsYGUxLOSF1Gu2u5o66cUqMuDB-pn-jw8R8Q8eE&cl=ffffff&w=a"></script>
 </body>
-
 </html>
