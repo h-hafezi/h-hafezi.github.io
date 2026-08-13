@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page not found — Hossein Hafezi</title>
+    <link rel="icon" href="asset/cambridge-logo.jpeg">
+    <meta name="description" content="That page doesn't exist.">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="/asset/style.css?v=3">
+
+    <style>
+        .notfound { padding: 80px 0 40px; }
+
+        .notfound p { color: var(--muted); }
+
+        .elsewhere {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 24px;
+        }
+
+        .elsewhere a {
+            font-size: 15px;
+            font-weight: 550;
+            padding: 6px 13px;
+            border: 1px solid var(--rule);
+            border-radius: 999px;
+            color: var(--ink);
+        }
+
+        .elsewhere a:hover {
+            background: var(--chip);
+            text-decoration: none;
+        }
+
+        @media (max-width: 640px) {
+            .notfound { padding: 48px 0 32px; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="wrap">
+        <a class="brand" href="/">Hossein Hafezi</a>
+        <nav class="site-nav">
+            <a href="/">About</a>
+            <a href="/publication.html">Research</a>
+            <a href="/blogs.html">Blog</a>
+            <a href="/personal-life.html">Personal</a>
+        </nav>
+    </div>
+</header>
+
+<main class="wrap">
+    <div class="notfound">
+        <h1>Page not found</h1>
+        <p>That link is broken, or the page has moved. Try one of these instead.</p>
+        <div class="elsewhere">
+            <a href="/">About</a>
+            <a href="/publication.html">Research</a>
+            <a href="/blogs.html">Blog</a>
+            <a href="/personal-life.html">Personal</a>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
