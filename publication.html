@@ -42,16 +42,35 @@
 
         .talk-group li a { font-size: 13px; }
 
-        /* Slightly smaller titles, and a narrower date gutter to widen the
-           column, so long paper names stay on one line. Scoped above the phone
-           breakpoint so the single-column mobile layout still wins. */
-        @media (min-width: 641px) {
-            .row-list > .row { grid-template-columns: 120px 1fr; }
+        /* Publications: one stacked block per paper — title, authors, venue,
+           notes, links — rather than a two-column table. */
+        .pub-list { margin: 0; padding: 0; list-style: none; }
+
+        .pub {
+            padding: 18px 0;
+            border-top: 1px solid var(--rule);
         }
 
-        .gutter { font-size: 12.5px; }
+        .pub:first-child { border-top: 0; padding-top: 0; }
 
-        .row h3 { font-size: 15.5px; }
+        .pub h3 {
+            margin: 0 0 4px;
+            font-size: 16.5px;
+            font-weight: 620;
+            line-height: 1.4;
+        }
+
+        .pub .authors { margin: 0 0 2px; }
+
+        .pub .venue {
+            margin: 0;
+            font-size: 15px;
+            color: var(--muted);
+        }
+
+        .pub .abbr { color: var(--faint); }
+
+        .pub .notes { margin: 2px 0 0; }
 
         /* Industry collaborators. */
         .collab { color: #c0392b; font-weight: 600; }
@@ -85,113 +104,101 @@
         <h2>Publications
             (<a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=M6g06s4AAAAJ">Google Scholar</a>)
         </h2>
-        <ol class="row-list">
+        <ol class="pub-list">
 
-            <li class="row">
-                <div class="gutter">In submission</div>
-                <div>
-                    <h3>Arguments of Knowledge with Distributed Verification</h3>
-                    <p class="authors"><a href="https://cs.nyu.edu/~bb/">Benedikt Bünz</a>,
-                        <span class="me">Hossein Hafezi</span>, <a href="https://priv.pub/">William Wang</a></p>
-                </div>
+            <li class="pub">
+                <h3>Arguments of Knowledge with Distributed Verification</h3>
+                <p class="authors"><a href="https://cs.nyu.edu/~bb/">Benedikt Bünz</a>,
+                    <span class="me">Hossein Hafezi</span>, <a href="https://priv.pub/">William Wang</a></p>
+                <p class="venue">Under submission</p>
             </li>
 
-            <li class="row">
-                <div class="gutter">In submission</div>
-                <div>
-                    <h3>Aegon: Self-Auditable Key Transparency</h3>
-                    <p class="authors"><span class="me">Hossein Hafezi</span>,
-                        <a href="https://alireza-shirzad.github.io/">Alireza Shirzad</a>,
-                        <a href="https://cs.nyu.edu/~bb/">Benedikt Bünz</a>,
-                        <a href="https://scholar.google.com/citations?user=NRa0_kEAAAAJ&hl=en">Kevin Lewi</a>,
-                        <a href="https://www.linkedin.com/in/dillongeorge03/?skipRedirect=true">Dillon George</a>,
-                        <a href="https://jbonneau.com/">Joseph Bonneau</a></p>
-                    <p class="notes">with <span class="collab">Meta Research</span></p>
-                    <p class="links"><a href="https://eprint.iacr.org/2026/1681.pdf">PDF</a><a
-                            href="https://github.com/alireza-shirzad/aegon">Code</a></p>
-                </div>
+            <li class="pub">
+                <h3>Aegon: Self-Auditable Key Transparency</h3>
+                <p class="authors"><span class="me">Hossein Hafezi</span>,
+                    <a href="https://alireza-shirzad.github.io/">Alireza Shirzad</a>,
+                    <a href="https://cs.nyu.edu/~bb/">Benedikt Bünz</a>,
+                    <a href="https://scholar.google.com/citations?user=NRa0_kEAAAAJ&hl=en">Kevin Lewi</a>,
+                    <a href="https://www.linkedin.com/in/dillongeorge03/?skipRedirect=true">Dillon George</a>,
+                    <a href="https://jbonneau.com/">Joseph Bonneau</a></p>
+                <p class="venue">Under submission</p>
+                <p class="notes">In collaboration with <span class="collab">Meta Research</span></p>
+                <p class="links"><a href="https://eprint.iacr.org/2026/1681.pdf">PDF</a><a
+                        href="https://github.com/alireza-shirzad/aegon">Code</a></p>
             </li>
 
-            <li class="row">
-                <div class="gutter">In submission</div>
-                <div>
-                    <h3>WillowFold: Secure Aggregation with a Lightweight Committee</h3>
-                    <p class="authors"><span class="me">Hossein Hafezi</span>,
-                        <a href="https://www.linkedin.com/in/kasraabz/">Kasra Abbaszadeh</a>,
-                        <a href="https://www.linkedin.com/in/adri%C3%A0-gasc%C3%B3n-09069229/">Adrià Gascón</a>,
-                        <a href="https://research.google/people/phillippschoppmann/">Phillipp Schoppmann</a>,
-                        <a href="https://research.google/people/108498/">Mariana Raykova</a>,
-                        <a href="https://cs.nyu.edu/~bb/">Benedikt Bünz</a></p>
-                    <p class="notes">with <span class="collab">Google Research</span></p>
-                    <p class="links"><a href="https://eprint.iacr.org/2026/264.pdf">PDF</a></p>
-                </div>
+            <li class="pub">
+                <h3>WillowFold: Secure Aggregation with a Lightweight Committee</h3>
+                <p class="authors"><span class="me">Hossein Hafezi</span>,
+                    <a href="https://www.linkedin.com/in/kasraabz/">Kasra Abbaszadeh</a>,
+                    <a href="https://www.linkedin.com/in/adri%C3%A0-gasc%C3%B3n-09069229/">Adrià Gascón</a>,
+                    <a href="https://research.google/people/phillippschoppmann/">Phillipp Schoppmann</a>,
+                    <a href="https://research.google/people/108498/">Mariana Raykova</a>,
+                    <a href="https://cs.nyu.edu/~bb/">Benedikt Bünz</a></p>
+                <p class="venue">Under submission</p>
+                <p class="notes">In collaboration with <span class="collab">Google Research</span></p>
+                <p class="links"><a href="https://eprint.iacr.org/2026/264.pdf">PDF</a></p>
             </li>
 
-            <li class="row">
-                <div class="gutter">IEEE S&amp;P 2026</div>
-                <div>
-                    <h3>Single-Server Private Outsourcing of zk-SNARKs</h3>
-                    <p class="authors"><a href="https://www.linkedin.com/in/kasraabz/">Kasra Abbaszadeh</a>,
-                        <span class="me">Hossein Hafezi</span>,
-                        <a href="https://www.cs.umd.edu/~jkatz/">Johnathan Katz</a>,
-                        <a href="https://smeiklej.com/">Sarah Meiklejohn</a></p>
-                    <p class="notes">Contributed talk, <span class="hl">ZKProof 8</span> · with <span class="collab">Google Research</span></p>
-                    <p class="links"><a href="https://eprint.iacr.org/2025/2113.pdf">PDF</a></p>
-                </div>
+            <li class="pub">
+                <h3>Single-Server Private Outsourcing of zk-SNARKs</h3>
+                <p class="authors"><a href="https://www.linkedin.com/in/kasraabz/">Kasra Abbaszadeh</a>,
+                    <span class="me">Hossein Hafezi</span>,
+                    <a href="https://www.cs.umd.edu/~jkatz/">Johnathan Katz</a>,
+                    <a href="https://smeiklej.com/">Sarah Meiklejohn</a></p>
+                <p class="venue">IEEE Symposium on Security and Privacy <span class="abbr">(S&amp;P)</span> 2026</p>
+                <p class="notes">Contributed talk, <span class="hl">ZKProof 8</span> · in collaboration with
+                    <span class="collab">Google Research</span></p>
+                <p class="links"><a href="https://eprint.iacr.org/2025/2113.pdf">PDF</a></p>
             </li>
 
-            <li class="row">
-                <div class="gutter">FC 2026</div>
-                <div>
-                    <h3>SoK: Lookup Table Arguments</h3>
-                    <p class="authors"><span class="me">Hossein Hafezi</span>,
-                        <a href="https://www.gaspard.at/">Gaspard Anthoine</a>,
-                        <a href="https://www.binarywhales.com/">Matteo Campanelli</a>,
-                        <a href="https://www.dariofiore.it/">Dario Fiore</a></p>
-                    <p class="links"><a href="https://eprint.iacr.org/2025/1876.pdf">PDF</a></p>
-                </div>
+            <li class="pub">
+                <h3>SoK: Lookup Table Arguments</h3>
+                <p class="authors"><span class="me">Hossein Hafezi</span>,
+                    <a href="https://www.gaspard.at/">Gaspard Anthoine</a>,
+                    <a href="https://www.binarywhales.com/">Matteo Campanelli</a>,
+                    <a href="https://www.dariofiore.it/">Dario Fiore</a></p>
+                <p class="venue">Financial Cryptography and Data Security <span class="abbr">(FC)</span> 2026</p>
+                <p class="links"><a href="https://eprint.iacr.org/2025/1876.pdf">PDF</a></p>
             </li>
 
-            <li class="row">
-                <div class="gutter">USENIX Sec 2026</div>
-                <div>
-                    <h3>IronDict: Transparent Dictionaries from Polynomial Commitments</h3>
-                    <p class="authors"><span class="me">Hossein Hafezi</span>,
-                        <a href="https://alireza-shirzad.github.io/">Alireza Shirzad</a>,
-                        <a href="https://cs.nyu.edu/~bb/">Benedikt Bünz</a>,
-                        <a href="https://jbonneau.com/">Joseph Bonneau</a></p>
-                    <p class="notes">Contributed talk, <span class="hl">Real World Crypto 2026</span></p>
-                    <p class="links"><a href="https://eprint.iacr.org/2025/1580.pdf">PDF</a><a
-                            href="https://github.com/alireza-shirzad/Iron-key">Code</a></p>
-                </div>
+            <li class="pub">
+                <h3>IronDict: Transparent Dictionaries from Polynomial Commitments</h3>
+                <p class="authors"><span class="me">Hossein Hafezi</span>,
+                    <a href="https://alireza-shirzad.github.io/">Alireza Shirzad</a>,
+                    <a href="https://cs.nyu.edu/~bb/">Benedikt Bünz</a>,
+                    <a href="https://jbonneau.com/">Joseph Bonneau</a></p>
+                <p class="venue">35th USENIX Security Symposium <span class="abbr">(USENIX Security)</span> 2026</p>
+                <p class="notes">Contributed talk, <span class="hl">Real World Crypto 2026</span></p>
+                <p class="links"><a href="https://eprint.iacr.org/2025/1580.pdf">PDF</a><a
+                        href="https://github.com/alireza-shirzad/Iron-key">Code</a></p>
             </li>
 
-            <li class="row">
-                <div class="gutter">ACM CCS 2025</div>
-                <div>
-                    <h3>KZH-Fold: Accountable Voting From Sublinear Accumulation</h3>
-                    <p class="authors"><a href="https://cs.nyu.edu/~bb/">Benedikt Bünz</a>,
-                        <span class="me">Hossein Hafezi</span>,
-                        <a href="https://www.linkedin.com/in/george-k-6066991a7">George Kadianakis</a>,
-                        <a href="https://sites.google.com/view/arantxazapico">Arantxa Zapico</a></p>
-                    <p class="notes">Contributed talk, <span class="hl">ZKProof 8</span> · with <span class="collab">Ethereum Foundation</span></p>
-                    <p class="links"><a href="https://eprint.iacr.org/2025/144.pdf">PDF</a><a
-                            href="https://github.com/asn-d6/kzh_fold">Code</a></p>
-                </div>
+            <li class="pub">
+                <h3>KZH-Fold: Accountable Voting From Sublinear Accumulation</h3>
+                <p class="authors"><a href="https://cs.nyu.edu/~bb/">Benedikt Bünz</a>,
+                    <span class="me">Hossein Hafezi</span>,
+                    <a href="https://www.linkedin.com/in/george-k-6066991a7">George Kadianakis</a>,
+                    <a href="https://sites.google.com/view/arantxazapico">Arantxa Zapico</a></p>
+                <p class="venue">ACM Conference on Computer and Communications Security
+                    <span class="abbr">(CCS)</span> 2025</p>
+                <p class="notes">Contributed talk, <span class="hl">ZKProof 8</span> · in collaboration with
+                    <span class="collab">Ethereum Foundation</span></p>
+                <p class="links"><a href="https://eprint.iacr.org/2025/144.pdf">PDF</a><a
+                        href="https://github.com/asn-d6/kzh_fold">Code</a></p>
             </li>
 
-            <li class="row">
-                <div class="gutter">ACM CCS 2024</div>
-                <div>
-                    <h3>Hekaton: Horizontally-Scalable zkSNARKs via Proof Aggregation</h3>
-                    <p class="authors"><a href="https://mrosenberg.pub/about/">Michael Rosenberg</a>,
-                        <a href="https://tmopuri.com/">Tushar Mopuri</a>,
-                        <span class="me">Hossein Hafezi</span>,
-                        <a href="https://www.cs.umd.edu/~imiers/">Ian Miers</a>,
-                        <a href="https://pratyushmishra.com/">Pratyush Mishra</a></p>
-                    <p class="links"><a href="https://eprint.iacr.org/2024/1208.pdf">PDF</a><a
-                            href="https://github.com/Pratyush/hekaton-system">Code</a></p>
-                </div>
+            <li class="pub">
+                <h3>Hekaton: Horizontally-Scalable zkSNARKs via Proof Aggregation</h3>
+                <p class="authors"><a href="https://mrosenberg.pub/about/">Michael Rosenberg</a>,
+                    <a href="https://tmopuri.com/">Tushar Mopuri</a>,
+                    <span class="me">Hossein Hafezi</span>,
+                    <a href="https://www.cs.umd.edu/~imiers/">Ian Miers</a>,
+                    <a href="https://pratyushmishra.com/">Pratyush Mishra</a></p>
+                <p class="venue">ACM Conference on Computer and Communications Security
+                    <span class="abbr">(CCS)</span> 2024</p>
+                <p class="links"><a href="https://eprint.iacr.org/2024/1208.pdf">PDF</a><a
+                        href="https://github.com/Pratyush/hekaton-system">Code</a></p>
             </li>
 
         </ol>
