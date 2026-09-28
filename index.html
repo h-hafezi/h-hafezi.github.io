@@ -92,6 +92,26 @@
             color: var(--ink);
         }
 
+        .position-org {
+            display: grid;
+            grid-template-columns: 32px minmax(0, 1fr);
+            gap: 12px;
+            align-items: start;
+            min-width: 0;
+        }
+
+        .position-logo {
+            display: block;
+            width: 32px;
+            height: 32px;
+            margin-top: 1px;
+            padding: 3px;
+            object-fit: contain;
+            background: #fff;
+            border: 1px solid #e4e7ec;
+            border-radius: 6px;
+        }
+
         .where {
             margin: 0;
             font-size: 15px;
@@ -167,59 +187,80 @@
 
             <li class="row">
                 <div class="gutter">Oct 2026<span class="sub">Oct 2029</span></div>
-                <div>
-                    <h3 class="role-title">PhD student · University of Cambridge</h3>
-                    <p class="where">with <a href="https://martin.kleppmann.com/">Martin Kleppmann</a></p>
+                <div class="position-org">
+                    <img class="position-logo" src="asset/organizations/cambridge.svg" alt="" width="32" height="32" loading="lazy" decoding="async">
+                    <div>
+                        <h3 class="role-title">PhD student · University of Cambridge</h3>
+                        <p class="where">with <a href="https://martin.kleppmann.com/">Martin Kleppmann</a></p>
+                    </div>
                 </div>
             </li>
 
             <li class="row">
                 <div class="gutter">Jun 2024<span class="sub">Sep 2026</span></div>
-                <div>
-                    <h3 class="role-title">Research assistant · New York University</h3>
-                    <p class="where">with <a href="https://jbonneau.com/">Joseph Bonneau</a> and
-                        <a href="https://cs.nyu.edu/~bb/">Benedikt Bünz</a></p>
+                <div class="position-org">
+                    <img class="position-logo" src="asset/organizations/nyu.svg" alt="" width="32" height="32" loading="lazy" decoding="async">
+                    <div>
+                        <h3 class="role-title">PhD student · New York University</h3>
+                        <p class="where">with <a href="https://jbonneau.com/">Joseph Bonneau</a> and
+                            <a href="https://cs.nyu.edu/~bb/">Benedikt Bünz</a></p>
+                    </div>
                 </div>
             </li>
 
             <li class="row">
                 <div class="gutter">May 2026<span class="sub">Jul 2026</span></div>
-                <div>
-                    <h3 class="role-title">Research intern · Symbolic Software</h3>
-                    <p class="where">with <a href="https://nadim.computer/">Nadim Kobeissi</a> — contributed to
-                        <a href="https://github.com/symbolicsoft/soundcalc-lean">Soundcalc Lean</a></p>
+                <div class="position-org">
+                    <img class="position-logo" src="asset/organizations/symbolic-software.svg" alt="" width="32" height="32" loading="lazy" decoding="async">
+                    <div>
+                        <h3 class="role-title">Research intern · Symbolic Software</h3>
+                        <p class="where">with <a href="https://nadim.computer/">Nadim Kobeissi</a> — contributed to
+                            <a href="https://github.com/symbolicsoft/soundcalc-lean">Soundcalc Lean</a></p>
+                    </div>
                 </div>
             </li>
 
             <li class="row">
                 <div class="gutter">Oct – Dec 2025<span class="sub">Jul – Aug 2026</span></div>
-                <div>
-                    <h3 class="role-title">Visiting researcher · KU Leuven</h3>
-                    <p class="where">with <a href="https://homes.esat.kuleuven.be/~preneel/">Bart Preneel</a></p>
+                <div class="position-org">
+                    <img class="position-logo" src="asset/organizations/ku-leuven.png" alt="" width="32" height="32" loading="lazy" decoding="async">
+                    <div>
+                        <h3 class="role-title">Visiting researcher · KU Leuven</h3>
+                        <p class="where">with <a href="https://homes.esat.kuleuven.be/~preneel/">Bart Preneel</a></p>
+                    </div>
                 </div>
             </li>
 
             <li class="row">
                 <div class="gutter">Feb 2025<span class="sub">Aug 2025</span></div>
-                <div>
-                    <h3 class="role-title">Visiting researcher · IMDEA Software</h3>
-                    <p class="where">with <a href="https://www.dariofiore.it/">Dario Fiore</a></p>
+                <div class="position-org">
+                    <img class="position-logo" src="asset/organizations/imdea-software.png" alt="" width="32" height="32" loading="lazy" decoding="async">
+                    <div>
+                        <h3 class="role-title">Visiting researcher · IMDEA Software</h3>
+                        <p class="where">with <a href="https://www.dariofiore.it/">Dario Fiore</a></p>
+                    </div>
                 </div>
             </li>
 
             <li class="row">
                 <div class="gutter">Feb 2023<span class="sub">Apr 2023</span></div>
-                <div>
-                    <h3 class="role-title">Research assistant · University of Maryland</h3>
-                    <p class="where">with <a href="https://www.cs.umd.edu/~imiers/">Ian Miers</a></p>
+                <div class="position-org">
+                    <img class="position-logo" src="asset/organizations/maryland.png" alt="" width="32" height="32" loading="lazy" decoding="async">
+                    <div>
+                        <h3 class="role-title">Research assistant · University of Maryland</h3>
+                        <p class="where">with <a href="https://www.cs.umd.edu/~imiers/">Ian Miers</a></p>
+                    </div>
                 </div>
             </li>
 
             <li class="row">
                 <div class="gutter">Jul 2022<span class="sub">Oct 2022</span></div>
-                <div>
-                    <h3 class="role-title">Research intern · EPFL</h3>
-                    <p class="where">with <a href="https://bford.info/">Bryan Ford</a></p>
+                <div class="position-org">
+                    <img class="position-logo" src="asset/organizations/epfl.png" alt="" width="32" height="32" loading="lazy" decoding="async">
+                    <div>
+                        <h3 class="role-title">Research intern · EPFL</h3>
+                        <p class="where">with <a href="https://bford.info/">Bryan Ford</a></p>
+                    </div>
                 </div>
             </li>
 
