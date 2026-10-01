@@ -37,18 +37,28 @@
 
         .post-list a:hover { color: var(--accent); text-decoration: none; }
 
-        .post-list p {
-            margin: 2px 0 0;
-            font-size: 15px;
-            color: var(--muted);
-        }
-
         .post-list time {
             display: block;
             margin-bottom: 2px;
             font-size: 13px;
             color: var(--faint);
         }
+        .post-list .post-photo {
+            display: block;
+            margin-top: 14px;
+        }
+
+        .post-photo img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .photo-credits { margin: 24px 0 0; color: var(--faint); font-size: 11px; line-height: 1.8; }
+        .photo-credits a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
     </style>
 </head>
 <body>
@@ -76,14 +86,25 @@
             <li>
                 <time datetime="2025-11-14">November 2025</time>
                 <a href="alam.html">Alam Kuh</a>
-                <p>Two days on Iran's second-highest mountain, at 4,850 m.</p>
+                <a class="post-photo" href="alam.html" aria-label="Read Alam Kuh">
+                    <img src="photos/blog/alam-kuh.jpg" width="1920" height="1457"
+                         fetchpriority="high" alt="Alam Kuh's rocky north face above snowfields and a turquoise glacial lake">
+                </a>
             </li>
             <li>
                 <time datetime="2024-07-12">July 2024</time>
                 <a href="summiting-sabalan.html">Summiting Sabalan</a>
-                <p>An amateur hiker's journey up Iran's third-highest peak, at 4,811 m.</p>
+                <a class="post-photo" href="summiting-sabalan.html" aria-label="Read Summiting Sabalan">
+                    <img src="photos/blog/sabalan-lake.jpg" width="1920" height="1338"
+                         loading="lazy" decoding="async" alt="The Milky Way above Sabalan's snowy crater lake, with a glowing tent on the shore">
+                </a>
             </li>
         </ul>
+        <p class="photo-credits">Cover photos via Wikimedia Commons:
+            <a href="https://commons.wikimedia.org/wiki/File:Glacial_lake_in_Alam_Kuh_by_Hadi_Karimi.jpg">Alam Kuh — Hadi Karimi</a>
+            (<a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>);
+            <a href="https://commons.wikimedia.org/wiki/File:%D8%AF%D8%B1%DB%8C%D8%A7%DA%86%D9%87_%D8%B3%D8%A8%D9%84%D8%A7%D9%86.jpg">Sabalan — Saeid.parchini</a>
+            (<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>). Resized and cropped to fit.</p>
     </section>
 
 </main>
