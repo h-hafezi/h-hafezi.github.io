@@ -1,0 +1,1759 @@
+{
+  "title": "Academic genealogy of Hossein Hafezi",
+  "researched_on": "2026-10-20",
+  "status": "Research and diagrams implemented in the static genealogy.html webpage.",
+  "direction": "advisor to student",
+  "scope": "All 36 people and their branches in Joseph Bonneau’s supplied image, with Hossein, Martin Kleppmann, Alastair Beresford and Frank Stajano added. Andy Hopper is excluded at Hossein’s explicit request.",
+  "notes": [
+    "Historical links include mathematical tutors, research teachers and a medical apprenticeship. They must not all be called doctoral supervision.",
+    "Degree years omitted because the source diagram has several dates that do not consistently represent doctorates.",
+    "Main labels use supervisor for Beresford → Kleppmann, per Hossein’s clarification.",
+    "The original diagram’s side branches are retained. Stajano’s 2025 article chooses a route through Maxwell, who is not in the supplied image, so Maxwell is not silently substituted.",
+    "Do not add the Andy Hopper branch: explicitly excluded by Hossein.",
+    "An older Anderson homepage skips Wheeler in describing Needham’s supervision. The supplied diagram, Stajano’s genealogy, the individual biographies, and Cambridge oral-history evidence support Wilkes → Wheeler → Needham; that fuller chain is retained.",
+    "Portrait index and credits distinguish research-reference images from images whose reuse license is verified. Needham and Ratcliffe’s Wikipedia lead images are fair-use references; modern Cambridge/Bonneau portraits have no image-specific reuse license stated on their profile pages."
+  ],
+  "nodes": [
+    {
+      "id": "tartaglia",
+      "name": "Niccolò Fontana Tartaglia",
+      "label": "Niccolò Fontana Tartaglia",
+      "wikipedia_title": "Niccolò_Fontana_Tartaglia",
+      "profile_url": "https://en.wikipedia.org/wiki/Niccol%C3%B2_Fontana_Tartaglia",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/tartaglia.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/Niccol%C3%B2_Fontana_Tartaglia",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Portret_van_Niccolo_Tartaglia_Nicolavs_Tartaglia_Brixianvs_%28titel_op_object%29_Portretten_van_beroemde_Europese_geleerden_%28serietitel%29_Virorum_doctorum_de_Disciplinis_benemerentium_effigies_%28serietitel%29%2C_RP-P-1909-4459.jpg/330px-thumbnail.jpg",
+        "dimensions": [
+          330,
+          497
+        ],
+        "credit": "Rijksmuseum",
+        "license": "CC0",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:Portret_van_Niccolo_Tartaglia_Nicolavs_Tartaglia_Brixianvs_(titel_op_object)_Portretten_van_beroemde_Europese_geleerden_(serietitel)_Virorum_doctorum_de_Disciplinis_benemerentium_effigies_(serietitel),_RP-P-1909-4459.jpg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:Portret_van_Niccolo_Tartaglia_Nicolavs_Tartaglia_Brixianvs_(titel_op_object)_Portretten_van_beroemde_Europese_geleerden_(serietitel)_Virorum_doctorum_de_Disciplinis_benemerentium_effigies_(serietitel),_RP-P-1909-4459.jpg",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "True",
+        "usage_terms": "Creative Commons Zero, Public Domain Dedication"
+      }
+    },
+    {
+      "id": "ricci",
+      "name": "Ostilio Ricci",
+      "label": "Ostilio Ricci",
+      "wikipedia_title": "Ostilio_Ricci",
+      "profile_url": "https://en.wikipedia.org/wiki/Ostilio_Ricci",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/ricci.gif",
+        "source_page": "https://en.wikipedia.org/wiki/Ostilio_Ricci",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Ostilio_Ricci.gif/330px-Ostilio_Ricci.gif",
+        "dimensions": [
+          330,
+          374
+        ],
+        "credit": "Unknown author Unknown author",
+        "license": "Public domain",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:Ostilio_Ricci.gif",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:Ostilio_Ricci.gif",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "False",
+        "usage_terms": "Public domain"
+      }
+    },
+    {
+      "id": "galileo",
+      "name": "Galileo Galilei",
+      "label": "Galileo Galilei",
+      "wikipedia_title": "Galileo_Galilei",
+      "profile_url": "https://en.wikipedia.org/wiki/Galileo_Galilei",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/galileo.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/Galileo_Galilei",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff/lossy-page1-330px-Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff.jpg",
+        "dimensions": [
+          330,
+          419
+        ],
+        "credit": "Justus Sustermans",
+        "license": "Public domain",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:Galileo_Galilei_(1564-1642)_RMG_BHC2700.tiff",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:Galileo_Galilei_(1564-1642)_RMG_BHC2700.tiff",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "False",
+        "usage_terms": "Public domain"
+      }
+    },
+    {
+      "id": "castelli",
+      "name": "Benedetto Castelli",
+      "label": "Benedetto Castelli",
+      "wikipedia_title": "Benedetto_Castelli",
+      "profile_url": "https://en.wikipedia.org/wiki/Benedetto_Castelli",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/castelli.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/Benedetto_Castelli",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Benedetto_Castelli.jpg",
+        "dimensions": [
+          300,
+          299
+        ],
+        "credit": "Original uploader was Deep also it at it.wikipedia",
+        "license": "Public domain",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:Benedetto_Castelli.jpg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:Benedetto_Castelli.jpg",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "False",
+        "usage_terms": "Public domain"
+      }
+    },
+    {
+      "id": "torricelli",
+      "name": "Evangelista Torricelli",
+      "label": "Evangelista Torricelli",
+      "wikipedia_title": "Evangelista_Torricelli",
+      "profile_url": "https://en.wikipedia.org/wiki/Evangelista_Torricelli",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/torricelli.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/Evangelista_Torricelli",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Evangelista_Torricelli_by_Lorenzo_Lippi_%28circa_1647%2C_Galleria_Silvano_Lodi_%26_Due%29.jpg/330px-Evangelista_Torricelli_by_Lorenzo_Lippi_%28circa_1647%2C_Galleria_Silvano_Lodi_%26_Due%29.jpg",
+        "dimensions": [
+          330,
+          443
+        ],
+        "credit": "Lorenzo Lippi",
+        "license": "Public domain",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:Evangelista_Torricelli_by_Lorenzo_Lippi_(circa_1647,_Galleria_Silvano_Lodi_&_Due).jpg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:Evangelista_Torricelli_by_Lorenzo_Lippi_(circa_1647,_Galleria_Silvano_Lodi_%26_Due).jpg",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "False",
+        "usage_terms": "Public domain"
+      }
+    },
+    {
+      "id": "viviani",
+      "name": "Vincenzo Viviani",
+      "label": "Vincenzo Viviani",
+      "wikipedia_title": "Vincenzo_Viviani",
+      "profile_url": "https://en.wikipedia.org/wiki/Vincenzo_Viviani",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/viviani.jpeg",
+        "source_page": "https://en.wikipedia.org/wiki/Vincenzo_Viviani",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Vincenzo_Viviani.jpeg/330px-Vincenzo_Viviani.jpeg",
+        "dimensions": [
+          330,
+          447
+        ],
+        "credit": "Domenico Tempesti",
+        "license": "Public domain",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:Vincenzo_Viviani.jpeg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:Vincenzo_Viviani.jpeg",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "False",
+        "usage_terms": "Public domain"
+      }
+    },
+    {
+      "id": "mersenne",
+      "name": "Marin Mersenne",
+      "label": "Marin Mersenne",
+      "wikipedia_title": "Marin_Mersenne",
+      "profile_url": "https://en.wikipedia.org/wiki/Marin_Mersenne",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/mersenne.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/Marin_Mersenne",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/MarinMersenneDuflos.jpg/330px-MarinMersenneDuflos.jpg",
+        "dimensions": [
+          330,
+          425
+        ],
+        "credit": "Claude Duflos",
+        "license": "Public domain",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:MarinMersenneDuflos.jpg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:MarinMersenneDuflos.jpg",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "False",
+        "usage_terms": "Public domain"
+      }
+    },
+    {
+      "id": "roberval",
+      "name": "Gilles Personne de Roberval",
+      "label": "Gilles de Roberval",
+      "wikipedia_title": "Gilles_de_Roberval",
+      "profile_url": "https://en.wikipedia.org/wiki/Gilles_de_Roberval",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/roberval.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/Gilles_de_Roberval",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Gilles_personne_de_roberval.jpg/330px-Gilles_personne_de_roberval.jpg",
+        "dimensions": [
+          330,
+          433
+        ],
+        "credit": "TESTELIN Henri",
+        "license": "Public domain",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:Gilles_personne_de_roberval.jpg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:Gilles_personne_de_roberval.jpg",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "False",
+        "usage_terms": "Public domain",
+        "depiction": "Historical painted depiction from a group scene; Roberval is shown beside the globe. Not a standalone photographic headshot."
+      }
+    },
+    {
+      "id": "barrow",
+      "name": "Isaac Barrow",
+      "label": "Isaac Barrow",
+      "wikipedia_title": "Isaac_Barrow",
+      "profile_url": "https://en.wikipedia.org/wiki/Isaac_Barrow",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/barrow.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/Isaac_Barrow",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Isaac_Barrow_by_Mary_Beale.jpg/330px-Isaac_Barrow_by_Mary_Beale.jpg",
+        "dimensions": [
+          330,
+          430
+        ],
+        "credit": "Mary Beale",
+        "license": "Public domain",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:Isaac_Barrow_by_Mary_Beale.jpg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:Isaac_Barrow_by_Mary_Beale.jpg",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "False",
+        "usage_terms": "Public domain"
+      }
+    },
+    {
+      "id": "pulleyn",
+      "name": "Benjamin Pulleyn",
+      "label": "Benjamin Pulleyn",
+      "wikipedia_title": "Benjamin_Pulleyn",
+      "profile_url": "https://en.wikipedia.org/wiki/Benjamin_Pulleyn",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "not_found",
+        "note": "No verified portrait located in Wikipedia, Cambridge, Commons or Art UK during this research. Initials placeholder is intentional."
+      }
+    },
+    {
+      "id": "newton",
+      "name": "Isaac Newton",
+      "label": "Isaac Newton",
+      "wikipedia_title": "Isaac_Newton",
+      "profile_url": "https://en.wikipedia.org/wiki/Isaac_Newton",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/newton.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/Isaac_Newton",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg/330px-Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg",
+        "dimensions": [
+          330,
+          397
+        ],
+        "credit": "Godfrey Kneller",
+        "license": "Public domain",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:Portrait_of_Sir_Isaac_Newton,_1689_(brightened).jpg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:Portrait_of_Sir_Isaac_Newton,_1689_(brightened).jpg",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "False",
+        "usage_terms": "Public domain"
+      }
+    },
+    {
+      "id": "cotes",
+      "name": "Roger Cotes",
+      "label": "Roger Cotes",
+      "wikipedia_title": "Roger_Cotes",
+      "profile_url": "https://en.wikipedia.org/wiki/Roger_Cotes",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/cotes.png",
+        "source_page": "https://en.wikipedia.org/wiki/Roger_Cotes",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Roger_Cotes.png",
+        "dimensions": [
+          164,
+          200
+        ],
+        "credit": "Unknown author Unknown author",
+        "license": "Public domain",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:Roger_Cotes.png",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:Roger_Cotes.png",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "False",
+        "usage_terms": "Public domain",
+        "depiction": "Posthumous portrait bust by Peter Scheemakers, 1758; a sculpture, not a lifetime photograph."
+      }
+    },
+    {
+      "id": "smith",
+      "name": "Robert Smith",
+      "label": "Robert Smith",
+      "wikipedia_title": "Robert_Smith_(mathematician)",
+      "profile_url": "https://en.wikipedia.org/wiki/Robert_Smith_(mathematician)",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/smith.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/Robert_Smith_(mathematician)",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Robertsmith1689-1768.jpg/330px-Robertsmith1689-1768.jpg",
+        "dimensions": [
+          330,
+          400
+        ],
+        "credit": "John Vanderbank",
+        "license": "Public domain",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:Robertsmith1689-1768.jpg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:Robertsmith1689-1768.jpg",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "False",
+        "usage_terms": "Public domain"
+      }
+    },
+    {
+      "id": "taylor",
+      "name": "Walter Taylor",
+      "label": "Walter Taylor",
+      "wikipedia_title": "Walter_Taylor_(mathematician)",
+      "profile_url": "https://en.wikipedia.org/wiki/Walter_Taylor_(mathematician)",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "not_found",
+        "note": "No verified portrait located in Wikipedia, Cambridge, Commons or Art UK during this research. Initials placeholder is intentional."
+      }
+    },
+    {
+      "id": "whisson",
+      "name": "Stephen Whisson",
+      "label": "Stephen Whisson",
+      "wikipedia_title": "Stephen_Whisson",
+      "profile_url": "https://en.wikipedia.org/wiki/Stephen_Whisson",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/whisson.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/Stephen_Whisson",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Stephen_Whisson.jpg/330px-Stephen_Whisson.jpg",
+        "dimensions": [
+          330,
+          462
+        ],
+        "credit": "Thomas Trotter / Joseph Freeman / After Frans van der Mijn",
+        "license": "Public domain",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:Stephen_Whisson.jpg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:Stephen_Whisson.jpg",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "False",
+        "usage_terms": "Public domain"
+      }
+    },
+    {
+      "id": "postlethwaite",
+      "name": "Thomas Postlethwaite",
+      "label": "Thomas Postlethwaite",
+      "wikipedia_title": "Thomas_Postlethwaite",
+      "profile_url": "https://en.wikipedia.org/wiki/Thomas_Postlethwaite",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/postlethwaite.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/Thomas_Postlethwaite",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Thomas_Postlethwaite_after_DB_Murphy.jpg/330px-Thomas_Postlethwaite_after_DB_Murphy.jpg",
+        "dimensions": [
+          330,
+          402
+        ],
+        "credit": "Denis Brownell Murphy (1755-1842) (after)",
+        "license": "Public domain",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:Thomas_Postlethwaite_after_DB_Murphy.jpg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:Thomas_Postlethwaite_after_DB_Murphy.jpg",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "False",
+        "usage_terms": "Public domain"
+      }
+    },
+    {
+      "id": "cranke",
+      "name": "John Cranke",
+      "label": "John Cranke",
+      "wikipedia_title": "John_Cranke",
+      "profile_url": "https://en.wikipedia.org/wiki/John_Cranke",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "not_found",
+        "note": "No verified portrait located in Wikipedia, Cambridge, Commons or Art UK during this research. Initials placeholder is intentional."
+      }
+    },
+    {
+      "id": "waring",
+      "name": "Edward Waring",
+      "label": "Edward Waring",
+      "wikipedia_title": "Edward_Waring",
+      "profile_url": "https://en.wikipedia.org/wiki/Edward_Waring",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/waring.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/Edward_Waring",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Edwardwaring.jpg/330px-Edwardwaring.jpg",
+        "dimensions": [
+          330,
+          414
+        ],
+        "credit": "Unknown author Unknown author",
+        "license": "Public domain",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:Edwardwaring.jpg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:Edwardwaring.jpg",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "False",
+        "usage_terms": "Public domain"
+      }
+    },
+    {
+      "id": "bracken",
+      "name": "Henry Bracken",
+      "label": "Henry Bracken",
+      "wikipedia_title": "Henry_Bracken",
+      "profile_url": "https://en.wikipedia.org/wiki/Henry_Bracken",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "not_found",
+        "note": "No verified portrait located in Wikipedia, Cambridge, Commons or Art UK during this research. Initials placeholder is intentional."
+      }
+    },
+    {
+      "id": "jones",
+      "name": "Thomas Jones",
+      "label": "Thomas Jones",
+      "wikipedia_title": "Thomas_Jones_(mathematician)",
+      "profile_url": "https://en.wikipedia.org/wiki/Thomas_Jones_(mathematician)",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/jones.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/Thomas_Jones_(mathematician)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Thomas_jones_at_cambridge.jpg",
+        "dimensions": [
+          300,
+          300
+        ],
+        "credit": "Unknown author Unknown author",
+        "license": "Public domain",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:Thomas_jones_at_cambridge.jpg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:Thomas_jones_at_cambridge.jpg",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "False",
+        "usage_terms": "Public domain"
+      }
+    },
+    {
+      "id": "dawson",
+      "name": "John Dawson",
+      "label": "John Dawson",
+      "wikipedia_title": "John_Dawson_(surgeon)",
+      "profile_url": "https://en.wikipedia.org/wiki/John_Dawson_(surgeon)",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/dawson.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/John_Dawson_(surgeon)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/en/d/db/JohnDawson1734-1820.jpg",
+        "dimensions": [
+          153,
+          153
+        ],
+        "credit": "See file source page",
+        "license": "PD",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:JohnDawson1734-1820.jpg",
+        "wikimedia_project": "en",
+        "file_page": "https://en.wikipedia.org/wiki/File:JohnDawson1734-1820.jpg",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "False",
+        "usage_terms": "Public domain"
+      }
+    },
+    {
+      "id": "sedgwick",
+      "name": "Adam Sedgwick",
+      "label": "Adam Sedgwick",
+      "wikipedia_title": "Adam_Sedgwick",
+      "profile_url": "https://en.wikipedia.org/wiki/Adam_Sedgwick",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/sedgwick.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/Adam_Sedgwick",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Adam_Sedgwick_EE_1863_SLNSW_FL13248540.jpg/330px-Adam_Sedgwick_EE_1863_SLNSW_FL13248540.jpg",
+        "dimensions": [
+          330,
+          430
+        ],
+        "credit": "Ernest Edwards",
+        "license": "Public domain",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:Adam_Sedgwick_EE_1863_SLNSW_FL13248540.jpg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:Adam_Sedgwick_EE_1863_SLNSW_FL13248540.jpg",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "False",
+        "usage_terms": "Public domain"
+      }
+    },
+    {
+      "id": "hopkins",
+      "name": "William Hopkins",
+      "label": "William Hopkins",
+      "wikipedia_title": "William_Hopkins",
+      "profile_url": "https://en.wikipedia.org/wiki/William_Hopkins",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/hopkins.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/William_Hopkins",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/en/thumb/f/f6/William_Hopkins_%28Pickersgill%29.jpg/330px-William_Hopkins_%28Pickersgill%29.jpg",
+        "dimensions": [
+          330,
+          415
+        ],
+        "credit": "Henry William Pickersgill (Life time: 1782-1875)",
+        "license": "Public domain",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:William_Hopkins_(Pickersgill).jpg",
+        "wikimedia_project": "en",
+        "file_page": "https://en.wikipedia.org/wiki/File:William_Hopkins_(Pickersgill).jpg",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "True",
+        "usage_terms": "Public domain in the United States"
+      }
+    },
+    {
+      "id": "todhunter",
+      "name": "Isaac Todhunter",
+      "label": "Isaac Todhunter",
+      "wikipedia_title": "Isaac_Todhunter",
+      "profile_url": "https://en.wikipedia.org/wiki/Isaac_Todhunter",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/todhunter.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/Isaac_Todhunter",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Todhunter_Isaac.jpg/330px-Todhunter_Isaac.jpg",
+        "dimensions": [
+          330,
+          400
+        ],
+        "credit": "Alexander Macfarlane",
+        "license": "Public domain",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:Todhunter_Isaac.jpg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:Todhunter_Isaac.jpg",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "False",
+        "usage_terms": "Public domain"
+      }
+    },
+    {
+      "id": "routh",
+      "name": "Edward John Routh",
+      "label": "Edward Routh",
+      "wikipedia_title": "Edward_Routh",
+      "profile_url": "https://en.wikipedia.org/wiki/Edward_Routh",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/routh.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/Edward_Routh",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Edward_J_Routh.jpg/250px-Edward_J_Routh.jpg",
+        "dimensions": [
+          250,
+          320
+        ],
+        "credit": "en:user:QueenAdelaide",
+        "license": "Public domain",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:Edward_J_Routh.jpg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:Edward_J_Routh.jpg",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "False",
+        "usage_terms": "Public domain"
+      }
+    },
+    {
+      "id": "stokes",
+      "name": "George Gabriel Stokes",
+      "label": "George G. Stokes",
+      "wikipedia_title": "George_Gabriel_Stokes",
+      "profile_url": "https://en.wikipedia.org/wiki/George_Gabriel_Stokes",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/stokes.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/George_Gabriel_Stokes",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Portrait_of_George_Gabriel_Stokes_%281819-1903%29%2C_Physicist_and_Mathematician_%282551115803%29.jpg/250px-Portrait_of_George_Gabriel_Stokes_%281819-1903%29%2C_Physicist_and_Mathematician_%282551115803%29.jpg",
+        "dimensions": [
+          250,
+          399
+        ],
+        "credit": "Smithsonian Institution from United States",
+        "license": "No restrictions",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:Portrait_of_George_Gabriel_Stokes_(1819-1903),_Physicist_and_Mathematician_(2551115803).jpg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:Portrait_of_George_Gabriel_Stokes_(1819-1903),_Physicist_and_Mathematician_(2551115803).jpg",
+        "license_url": "https://www.flickr.com/commons/usage/",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "True",
+        "usage_terms": "No known copyright restrictions"
+      }
+    },
+    {
+      "id": "rayleigh",
+      "name": "John William Strutt, 3rd Baron Rayleigh",
+      "label": "Lord Rayleigh",
+      "wikipedia_title": "John_William_Strutt,_3rd_Baron_Rayleigh",
+      "profile_url": "https://en.wikipedia.org/wiki/John_William_Strutt,_3rd_Baron_Rayleigh",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/rayleigh.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/John_William_Strutt,_3rd_Baron_Rayleigh",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/John_William_Strutt.jpg/250px-John_William_Strutt.jpg",
+        "dimensions": [
+          250,
+          337
+        ],
+        "credit": "Unknown author Unknown author",
+        "license": "Public domain",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:John_William_Strutt.jpg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:John_William_Strutt.jpg",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "False",
+        "usage_terms": "Public domain"
+      }
+    },
+    {
+      "id": "thomson",
+      "name": "Joseph John Thomson",
+      "label": "J. J. Thomson",
+      "wikipedia_title": "J._J._Thomson",
+      "profile_url": "https://en.wikipedia.org/wiki/J._J._Thomson",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/thomson.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/J._J._Thomson",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/J.J_Thomson.jpg/330px-J.J_Thomson.jpg",
+        "dimensions": [
+          330,
+          516
+        ],
+        "credit": "Not Mentioned",
+        "license": "Public domain",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:J.J_Thomson.jpg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:J.J_Thomson.jpg",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "False",
+        "usage_terms": "Public domain"
+      }
+    },
+    {
+      "id": "rutherford",
+      "name": "Ernest Rutherford",
+      "label": "Ernest Rutherford",
+      "wikipedia_title": "Ernest_Rutherford",
+      "profile_url": "https://en.wikipedia.org/wiki/Ernest_Rutherford",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/rutherford.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/Ernest_Rutherford",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Sir_Ernest_Rutherford_LCCN2014716719_-_restoration1.jpg/250px-Sir_Ernest_Rutherford_LCCN2014716719_-_restoration1.jpg",
+        "dimensions": [
+          250,
+          338
+        ],
+        "credit": "Bain News Service, publisher Restored by: Bammesk",
+        "license": "Public domain",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:Sir_Ernest_Rutherford_LCCN2014716719_-_restoration1.jpg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:Sir_Ernest_Rutherford_LCCN2014716719_-_restoration1.jpg",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "False",
+        "usage_terms": "Public domain"
+      }
+    },
+    {
+      "id": "appleton",
+      "name": "Edward Victor Appleton",
+      "label": "Edward V. Appleton",
+      "wikipedia_title": "Edward_Victor_Appleton",
+      "profile_url": "https://en.wikipedia.org/wiki/Edward_Victor_Appleton",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/appleton.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/Edward_Victor_Appleton",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Appleton.jpg/250px-Appleton.jpg",
+        "dimensions": [
+          250,
+          354
+        ],
+        "credit": "Nobel foundation",
+        "license": "Public domain",
+        "reuse_status": "public_domain_or_open_license_see_terms",
+        "file_title": "File:Appleton.jpg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:Appleton.jpg",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "false",
+        "copyrighted": "False",
+        "usage_terms": "Public domain"
+      }
+    },
+    {
+      "id": "ratcliffe",
+      "name": "John Ashworth Ratcliffe",
+      "label": "J. A. Ratcliffe",
+      "wikipedia_title": "J._A._Ratcliffe",
+      "profile_url": "https://en.wikipedia.org/wiki/J._A._Ratcliffe",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/ratcliffe.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/J._A._Ratcliffe",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/en/thumb/f/fb/Portrait_of_John_Ashworth_Ratcliffe_FRS.jpg/250px-Portrait_of_John_Ashworth_Ratcliffe_FRS.jpg",
+        "dimensions": [
+          250,
+          331
+        ],
+        "credit": "Bassano Ltd",
+        "license": "Fair use",
+        "reuse_status": "restricted_wikipedia_use_not_cleared_for_public_website",
+        "file_title": "File:Portrait_of_John_Ashworth_Ratcliffe_FRS.jpg",
+        "wikimedia_project": "en",
+        "file_page": "https://en.wikipedia.org/wiki/File:Portrait_of_John_Ashworth_Ratcliffe_FRS.jpg",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "",
+        "copyrighted": "True",
+        "usage_terms": "Fair use of copyrighted material in the context of J. A. Ratcliffe",
+        "note": "Research-reference portrait. Wikipedia’s fair-use rationale is not a reuse license for the future website; source a licensed alternative or obtain permission before public publication."
+      }
+    },
+    {
+      "id": "wilkes",
+      "name": "Maurice Vincent Wilkes",
+      "label": "Maurice Wilkes",
+      "wikipedia_title": "Maurice_Wilkes",
+      "profile_url": "https://en.wikipedia.org/wiki/Maurice_Wilkes",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/wilkes.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/Maurice_Wilkes",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Maurice_Vincent_Wilkes_1980_%283%2C_cropped%29.jpg/250px-Maurice_Vincent_Wilkes_1980_%283%2C_cropped%29.jpg",
+        "dimensions": [
+          250,
+          369
+        ],
+        "credit": "Unknown author Unknown author",
+        "license": "CC BY 2.0 uk",
+        "reuse_status": "attribution_required",
+        "file_title": "File:Maurice_Vincent_Wilkes_1980_(3,_cropped).jpg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:Maurice_Vincent_Wilkes_1980_(3,_cropped).jpg",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/uk/deed.en",
+        "attribution": "",
+        "attribution_required": "true",
+        "copyrighted": "True",
+        "usage_terms": "Creative Commons Attribution 2.0 uk",
+        "note": "Retain the credited creator, file source, license link and modification note if the website resizes/crops this image."
+      }
+    },
+    {
+      "id": "wheeler",
+      "name": "David John Wheeler",
+      "label": "David Wheeler",
+      "wikipedia_title": "David_Wheeler_(computer_scientist)",
+      "profile_url": "https://en.wikipedia.org/wiki/David_Wheeler_(computer_scientist)",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/wheeler.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/David_Wheeler_(computer_scientist)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/EDSAC_%2814%29_%28cropped%29.jpg",
+        "dimensions": [
+          148,
+          185
+        ],
+        "credit": "See file source page",
+        "license": "CC BY 2.0",
+        "reuse_status": "attribution_required",
+        "file_title": "File:EDSAC_(14)_(cropped).jpg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:EDSAC_(14)_(cropped).jpg",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "attribution": "",
+        "attribution_required": "true",
+        "copyrighted": "True",
+        "usage_terms": "Creative Commons Attribution 2.0",
+        "note": "Retain the credited creator, file source, license link and modification note if the website resizes/crops this image."
+      }
+    },
+    {
+      "id": "needham",
+      "name": "Roger Michael Needham",
+      "label": "Roger Needham",
+      "wikipedia_title": "Roger_Needham",
+      "profile_url": "https://en.wikipedia.org/wiki/Roger_Needham",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/needham.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/Roger_Needham",
+        "image_url": "https://upload.wikimedia.org/wikipedia/en/7/70/Roger_Needham.jpg",
+        "dimensions": [
+          225,
+          225
+        ],
+        "credit": "http://europa.eu.int/comm/research/science-society/women/wir/cvneedham.html",
+        "license": "Fair use",
+        "reuse_status": "restricted_wikipedia_use_not_cleared_for_public_website",
+        "file_title": "File:Roger_Needham.jpg",
+        "wikimedia_project": "en",
+        "file_page": "https://en.wikipedia.org/wiki/File:Roger_Needham.jpg",
+        "license_url": "",
+        "attribution": "",
+        "attribution_required": "",
+        "copyrighted": "True",
+        "usage_terms": "Fair use of copyrighted material in the context of Roger Needham",
+        "note": "Research-reference portrait. Wikipedia’s fair-use rationale is not a reuse license for the future website; source a licensed alternative or obtain permission before public publication."
+      }
+    },
+    {
+      "id": "ross",
+      "name": "Ross John Anderson",
+      "label": "Ross Anderson",
+      "wikipedia_title": "Ross_J._Anderson",
+      "profile_url": "https://en.wikipedia.org/wiki/Ross_J._Anderson",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/ross.jpg",
+        "source_page": "https://en.wikipedia.org/wiki/Ross_J._Anderson",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Ross_Anderson_%28security_researcher%29.jpg/250px-Ross_Anderson_%28security_researcher%29.jpg",
+        "dimensions": [
+          250,
+          386
+        ],
+        "credit": "Markus Kuhn",
+        "license": "CC BY 3.0",
+        "reuse_status": "attribution_required",
+        "file_title": "File:Ross_Anderson_(security_researcher).jpg",
+        "wikimedia_project": "commons",
+        "file_page": "https://commons.wikimedia.org/wiki/File:Ross_Anderson_(security_researcher).jpg",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "attribution": "",
+        "attribution_required": "true",
+        "copyrighted": "True",
+        "usage_terms": "Creative Commons Attribution 3.0",
+        "note": "Retain the credited creator, file source, license link and modification note if the website resizes/crops this image."
+      }
+    },
+    {
+      "id": "bonneau",
+      "name": "Joseph Bonneau",
+      "label": "Joseph Bonneau",
+      "wikipedia_title": null,
+      "profile_url": "https://www.cl.cam.ac.uk/~jcb82/",
+      "in_original_bonneau_tree": true,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/bonneau.jpg",
+        "source_page": "https://jbonneau.com/bio.html",
+        "image_url": "https://jbonneau.com/images/profile.jpg",
+        "dimensions": [
+          3479,
+          3477
+        ],
+        "credit": "Portrait from https://jbonneau.com/bio.html; photographer not stated on the source page.",
+        "license": "Image-specific reuse license not stated on source page.",
+        "reuse_status": "needs_license_review"
+      }
+    },
+    {
+      "id": "stajano",
+      "name": "Frank Stajano",
+      "label": "Frank Stajano",
+      "wikipedia_title": null,
+      "profile_url": "https://www.cl.cam.ac.uk/~fms27/",
+      "in_original_bonneau_tree": false,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/stajano.jpg",
+        "source_page": "https://www.cl.cam.ac.uk/~fms27/",
+        "image_url": "https://www.cl.cam.ac.uk/~fms27/images/frank-stajano.jpg",
+        "dimensions": [
+          722,
+          948
+        ],
+        "credit": "Portrait from https://www.cl.cam.ac.uk/~fms27/; photographer not stated on the source page.",
+        "license": "Image-specific reuse license not stated on source page.",
+        "reuse_status": "needs_license_review"
+      }
+    },
+    {
+      "id": "beresford",
+      "name": "Alastair Richard Beresford",
+      "label": "Alastair R. Beresford",
+      "wikipedia_title": "Alastair_Beresford",
+      "profile_url": "https://www.cst.cam.ac.uk/people/arb33",
+      "in_original_bonneau_tree": false,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/beresford.jpg",
+        "source_page": "https://www.cst.cam.ac.uk/people/arb33",
+        "image_url": "https://www.cst.cam.ac.uk/sites/default/files/images/profile/alastair-beresford-hod-portrait-cropped-web.jpg",
+        "dimensions": [
+          500,
+          624
+        ],
+        "credit": "Portrait from https://www.cst.cam.ac.uk/people/arb33; photographer not stated on the source page.",
+        "license": "Image-specific reuse license not stated on source page.",
+        "reuse_status": "needs_license_review"
+      }
+    },
+    {
+      "id": "kleppmann",
+      "name": "Martin Kleppmann",
+      "label": "Martin Kleppmann",
+      "wikipedia_title": "Martin_Kleppmann",
+      "profile_url": "https://www.cst.cam.ac.uk/people/mk428",
+      "in_original_bonneau_tree": false,
+      "portrait": {
+        "status": "available",
+        "local_path": "portraits/kleppmann.jpg",
+        "source_page": "https://www.cst.cam.ac.uk/people/mk428",
+        "image_url": "https://www.cst.cam.ac.uk/sites/default/files/images/profile/mk428.jpg",
+        "dimensions": [
+          600,
+          845
+        ],
+        "credit": "Portrait from https://www.cst.cam.ac.uk/people/mk428; photographer not stated on the source page.",
+        "license": "Image-specific reuse license not stated on source page.",
+        "reuse_status": "needs_license_review"
+      }
+    },
+    {
+      "id": "hossein",
+      "name": "Hossein Hafezi Moghaddas",
+      "label": "Hossein Hafezi",
+      "wikipedia_title": null,
+      "profile_url": "https://www.cst.cam.ac.uk/people/hh674",
+      "in_original_bonneau_tree": false,
+      "portrait": {
+        "status": "available",
+        "local_path": "../../asset/profile.jpg",
+        "source_page": "https://hosseinhafezi.com/",
+        "image_url": "https://hosseinhafezi.com/asset/profile.jpg",
+        "credit": "Hossein Hafezi — existing owner-supplied website portrait",
+        "license": "Owner-supplied; not a Wikimedia image",
+        "reuse_status": "owner_supplied"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "advisor": "tartaglia",
+      "student": "ricci",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "ricci_museum",
+        "bio_ricci"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "ricci",
+      "student": "galileo",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "ricci_museum",
+        "bio_galileo"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "galileo",
+      "student": "castelli",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_castelli"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "castelli",
+      "student": "torricelli",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_torricelli"
+      ],
+      "note": "Private study and work as secretary; university enrolment is not established."
+    },
+    {
+      "advisor": "torricelli",
+      "student": "viviani",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_viviani"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "galileo",
+      "student": "viviani",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_viviani"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "mersenne",
+      "student": "roberval",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_roberval"
+      ],
+      "note": "Traditional academic-genealogy link; narrative sources establish Mersenne’s discussion circle rather than formal doctoral supervision."
+    },
+    {
+      "advisor": "roberval",
+      "student": "barrow",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_barrow"
+      ],
+      "note": "Historical mathematical study/mentorship in Paris; not a modern doctoral relationship."
+    },
+    {
+      "advisor": "viviani",
+      "student": "barrow",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_barrow"
+      ],
+      "note": "Historical mathematical study/mentorship in Florence; not a modern doctoral relationship."
+    },
+    {
+      "advisor": "barrow",
+      "student": "newton",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "barrow_trinity",
+        "bio_newton"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "pulleyn",
+      "student": "newton",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "newton_tutor",
+        "bio_newton"
+      ],
+      "note": "Undergraduate tutor, not doctoral supervision."
+    },
+    {
+      "advisor": "newton",
+      "student": "cotes",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_cotes"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "cotes",
+      "student": "smith",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_smith"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "smith",
+      "student": "taylor",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_taylor"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "taylor",
+      "student": "whisson",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_whisson"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "whisson",
+      "student": "postlethwaite",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_postlethwaite"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "postlethwaite",
+      "student": "jones",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_jones"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "cranke",
+      "student": "jones",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_jones"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "waring",
+      "student": "dawson",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_dawson"
+      ],
+      "note": "Genealogical adviser listing supported by mathematical contact; formal supervision is not established."
+    },
+    {
+      "advisor": "bracken",
+      "student": "dawson",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_dawson"
+      ],
+      "note": "Medical apprenticeship: Dawson was Bracken’s surgical assistant and pupil."
+    },
+    {
+      "advisor": "jones",
+      "student": "sedgwick",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_sedgwick"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "dawson",
+      "student": "sedgwick",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_sedgwick"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "sedgwick",
+      "student": "hopkins",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_hopkins"
+      ],
+      "note": "Geological mentoring after Hopkins’s mathematical graduation."
+    },
+    {
+      "advisor": "hopkins",
+      "student": "todhunter",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_todhunter"
+      ],
+      "note": "Private mathematical coaching."
+    },
+    {
+      "advisor": "hopkins",
+      "student": "routh",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_routh"
+      ],
+      "note": "Private mathematical coaching; Hopkins was not a doctoral supervisor here."
+    },
+    {
+      "advisor": "todhunter",
+      "student": "routh",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_routh"
+      ],
+      "note": "Mathematical teaching/coaching."
+    },
+    {
+      "advisor": "hopkins",
+      "student": "stokes",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_stokes"
+      ],
+      "note": "Mathematical coaching."
+    },
+    {
+      "advisor": "routh",
+      "student": "rayleigh",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_rayleigh"
+      ],
+      "note": "Mathematical coaching."
+    },
+    {
+      "advisor": "stokes",
+      "student": "rayleigh",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_rayleigh"
+      ],
+      "note": "Mathematical and experimental teaching."
+    },
+    {
+      "advisor": "rayleigh",
+      "student": "thomson",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_thomson"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "thomson",
+      "student": "rutherford",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_rutherford"
+      ],
+      "note": "Research teacher/supervisor before the modern Cambridge PhD system."
+    },
+    {
+      "advisor": "thomson",
+      "student": "appleton",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_appleton"
+      ],
+      "note": "Research supervision/mentorship, not a modern Cambridge PhD."
+    },
+    {
+      "advisor": "rutherford",
+      "student": "appleton",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_appleton"
+      ],
+      "note": "Research supervision/mentorship, not a modern Cambridge PhD."
+    },
+    {
+      "advisor": "appleton",
+      "student": "ratcliffe",
+      "type": "historical_mentorship",
+      "label": "teacher / tutor / mentor",
+      "sources": [
+        "bonneau_image",
+        "bio_ratcliffe"
+      ],
+      "note": "Radio-research supervision beginning in 1924; classified as research mentorship rather than assuming a doctorate."
+    },
+    {
+      "advisor": "ratcliffe",
+      "student": "wilkes",
+      "type": "doctoral_supervision",
+      "label": "supervisor",
+      "sources": [
+        "bonneau_image",
+        "stajano_ancestors",
+        "bio_wilkes"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "wilkes",
+      "student": "wheeler",
+      "type": "doctoral_supervision",
+      "label": "supervisor",
+      "sources": [
+        "bonneau_image",
+        "stajano_ancestors",
+        "bio_wheeler"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "wheeler",
+      "student": "needham",
+      "type": "doctoral_supervision",
+      "label": "supervisor",
+      "sources": [
+        "bonneau_image",
+        "stajano_ancestors",
+        "needham_interview",
+        "bio_needham"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "needham",
+      "student": "ross",
+      "type": "doctoral_supervision",
+      "label": "supervisor",
+      "sources": [
+        "bonneau_image",
+        "stajano_ancestors",
+        "bio_ross"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "ross",
+      "student": "bonneau",
+      "type": "doctoral_supervision",
+      "label": "supervisor",
+      "sources": [
+        "bonneau_image",
+        "bonneau_thesis"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "ross",
+      "student": "stajano",
+      "type": "doctoral_supervision",
+      "label": "supervisor",
+      "sources": [
+        "stajano_home"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "stajano",
+      "student": "beresford",
+      "type": "doctoral_supervision",
+      "label": "supervisor",
+      "sources": [
+        "stajano_home",
+        "beresford_thesis",
+        "bio_beresford"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "beresford",
+      "student": "kleppmann",
+      "type": "supervision",
+      "label": "supervisor",
+      "sources": [
+        "kleppmann_update",
+        "beresford_cv",
+        "user_confirmation",
+        "bio_kleppmann"
+      ],
+      "note": "Display as supervisor, per user clarification. Primary public sources explicitly establish research supervision/advising; they do not establish formal doctoral supervision, so this is not typed doctoral_supervision."
+    },
+    {
+      "advisor": "kleppmann",
+      "student": "hossein",
+      "type": "doctoral_supervision",
+      "label": "supervisor",
+      "sources": [
+        "cambridge_students",
+        "user_confirmation"
+      ],
+      "note": null
+    },
+    {
+      "advisor": "bonneau",
+      "student": "hossein",
+      "type": "supervision",
+      "label": "supervisor",
+      "sources": [
+        "user_confirmation"
+      ],
+      "note": "Academic advising relationship stated by Hossein; NYU role is recorded on his homepage."
+    }
+  ],
+  "sources": {
+    "bonneau_image": {
+      "url": "https://jbonneau.com/images/genealogy.png",
+      "description": "Supplied genealogy diagram. Used as the scope for the original 36 people and connections."
+    },
+    "stajano_ancestors": {
+      "url": "https://www.cl.cam.ac.uk/~fms27/papers/2025-stajano-ancestors.pdf",
+      "description": "Cambridge-hosted 2025 genealogy compiled by Frank Stajano from the Mathematics Genealogy Project; confirms most of the shared backbone, while selecting different side branches."
+    },
+    "ricci_museum": {
+      "url": "https://brunelleschi.imss.fi.it/itineraries/biography/OstilioRicci.html",
+      "description": "Museo Galileo biography supports Tartaglia → Ricci and Ricci → Galileo."
+    },
+    "newton_tutor": {
+      "url": "https://wwwe.lib.cam.ac.uk/CUL/exhibitions/Footprints_of_the_Lion/learning.html",
+      "description": "Cambridge University Library identifies Pulleyn as Newton’s undergraduate tutor."
+    },
+    "barrow_trinity": {
+      "url": "https://explore.trin.cam.ac.uk/assets/isaac-barrow/",
+      "description": "Trinity College describes Barrow as Newton’s teacher."
+    },
+    "bonneau_thesis": {
+      "url": "https://www.cl.cam.ac.uk/~jcb82/doc/2012-jbonneau-phd_thesis.pdf",
+      "description": "Acknowledgements identify Ross Anderson as Bonneau’s supervisor."
+    },
+    "stajano_home": {
+      "url": "https://www.cl.cam.ac.uk/~fms27/",
+      "description": "States Anderson supervised Stajano; lists Beresford among completed PhD students."
+    },
+    "beresford_thesis": {
+      "url": "https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-612.pdf",
+      "description": "Acknowledgements, printed page 7: current supervisor Frank Stajano; previous supervisor and later adviser Andy Hopper."
+    },
+    "kleppmann_update": {
+      "url": "https://martin.kleppmann.com/2019/10/30/research-update.html",
+      "description": "Kleppmann identifies Beresford as adviser, mentor, collaborator and PI."
+    },
+    "beresford_cv": {
+      "url": "https://www.cl.cam.ac.uk/~arb33/cv/",
+      "description": "Lists Kleppmann among research staff/postdocs, 2015–2022."
+    },
+    "cambridge_students": {
+      "url": "https://www.cl.cam.ac.uk/lists/phd/supervisor.html",
+      "description": "Lists Hossein Hafezi Moghaddas as a PhD student under M. Kleppmann, starting 2026-10-01."
+    },
+    "needham_interview": {
+      "url": "https://api.repository.cam.ac.uk/server/api/core/bitstreams/cde28c30-5285-40ef-be6d-47947da82662/content",
+      "description": "Cambridge repository oral history supports Wheeler’s supervision of Needham (PDF page 80)."
+    },
+    "user_confirmation": {
+      "url": null,
+      "description": "Hossein’s explicit statements in this conversation: advised by Joseph Bonneau and Martin Kleppmann; Beresford was Kleppmann’s supervisor."
+    },
+    "bio_ricci": {
+      "url": "https://en.wikipedia.org/wiki/Ostilio_Ricci",
+      "description": "Biography of Ostilio Ricci; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_galileo": {
+      "url": "https://en.wikipedia.org/wiki/Galileo_Galilei",
+      "description": "Biography of Galileo Galilei; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_castelli": {
+      "url": "https://en.wikipedia.org/wiki/Benedetto_Castelli",
+      "description": "Biography of Benedetto Castelli; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_torricelli": {
+      "url": "https://en.wikipedia.org/wiki/Evangelista_Torricelli",
+      "description": "Biography of Evangelista Torricelli; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_viviani": {
+      "url": "https://en.wikipedia.org/wiki/Vincenzo_Viviani",
+      "description": "Biography of Vincenzo Viviani; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_roberval": {
+      "url": "https://en.wikipedia.org/wiki/Gilles_de_Roberval",
+      "description": "Biography of Gilles Personne de Roberval; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_barrow": {
+      "url": "https://en.wikipedia.org/wiki/Isaac_Barrow",
+      "description": "Biography of Isaac Barrow; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_newton": {
+      "url": "https://en.wikipedia.org/wiki/Isaac_Newton",
+      "description": "Biography of Isaac Newton; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_cotes": {
+      "url": "https://en.wikipedia.org/wiki/Roger_Cotes",
+      "description": "Biography of Roger Cotes; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_smith": {
+      "url": "https://en.wikipedia.org/wiki/Robert_Smith_(mathematician)",
+      "description": "Biography of Robert Smith; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_taylor": {
+      "url": "https://en.wikipedia.org/wiki/Walter_Taylor_(mathematician)",
+      "description": "Biography of Walter Taylor; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_whisson": {
+      "url": "https://en.wikipedia.org/wiki/Stephen_Whisson",
+      "description": "Biography of Stephen Whisson; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_postlethwaite": {
+      "url": "https://en.wikipedia.org/wiki/Thomas_Postlethwaite",
+      "description": "Biography of Thomas Postlethwaite; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_jones": {
+      "url": "https://en.wikipedia.org/wiki/Thomas_Jones_(mathematician)",
+      "description": "Biography of Thomas Jones; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_dawson": {
+      "url": "https://en.wikipedia.org/wiki/John_Dawson_(surgeon)",
+      "description": "Biography of John Dawson; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_sedgwick": {
+      "url": "https://en.wikipedia.org/wiki/Adam_Sedgwick",
+      "description": "Biography of Adam Sedgwick; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_hopkins": {
+      "url": "https://en.wikipedia.org/wiki/William_Hopkins",
+      "description": "Biography of William Hopkins; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_todhunter": {
+      "url": "https://en.wikipedia.org/wiki/Isaac_Todhunter",
+      "description": "Biography of Isaac Todhunter; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_routh": {
+      "url": "https://en.wikipedia.org/wiki/Edward_Routh",
+      "description": "Biography of Edward John Routh; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_stokes": {
+      "url": "https://en.wikipedia.org/wiki/George_Gabriel_Stokes",
+      "description": "Biography of George Gabriel Stokes; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_rayleigh": {
+      "url": "https://en.wikipedia.org/wiki/John_William_Strutt,_3rd_Baron_Rayleigh",
+      "description": "Biography of John William Strutt, 3rd Baron Rayleigh; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_thomson": {
+      "url": "https://en.wikipedia.org/wiki/J._J._Thomson",
+      "description": "Biography of Joseph John Thomson; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_rutherford": {
+      "url": "https://en.wikipedia.org/wiki/Ernest_Rutherford",
+      "description": "Biography of Ernest Rutherford; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_appleton": {
+      "url": "https://en.wikipedia.org/wiki/Edward_Victor_Appleton",
+      "description": "Biography of Edward Victor Appleton; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_ratcliffe": {
+      "url": "https://en.wikipedia.org/wiki/J._A._Ratcliffe",
+      "description": "Biography of John Ashworth Ratcliffe; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_wilkes": {
+      "url": "https://en.wikipedia.org/wiki/Maurice_Wilkes",
+      "description": "Biography of Maurice Vincent Wilkes; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_wheeler": {
+      "url": "https://en.wikipedia.org/wiki/David_Wheeler_(computer_scientist)",
+      "description": "Biography of David John Wheeler; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_needham": {
+      "url": "https://en.wikipedia.org/wiki/Roger_Needham",
+      "description": "Biography of Roger Michael Needham; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_ross": {
+      "url": "https://en.wikipedia.org/wiki/Ross_J._Anderson",
+      "description": "Biography of Ross John Anderson; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_beresford": {
+      "url": "https://en.wikipedia.org/wiki/Alastair_Beresford",
+      "description": "Biography of Alastair Richard Beresford; corroborating tutor/adviser relationship where stated."
+    },
+    "bio_kleppmann": {
+      "url": "https://en.wikipedia.org/wiki/Martin_Kleppmann",
+      "description": "Biography of Martin Kleppmann; corroborating tutor/adviser relationship where stated."
+    },
+    "roberval_mactutor": {
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Roberval/",
+      "description": "Additional corroborating or conflicting historical source; see relationship notes."
+    },
+    "barrow_mactutor": {
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Barrow/",
+      "description": "Additional corroborating or conflicting historical source; see relationship notes."
+    },
+    "ross_archive": {
+      "url": "https://www.cl.cam.ac.uk/archive/rja14/",
+      "description": "Additional corroborating or conflicting historical source; see relationship notes."
+    }
+  }
+}
